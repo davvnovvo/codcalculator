@@ -10,7 +10,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:contentDescription="@string/logo_description"
         android:src="@drawable/call2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -47,37 +46,55 @@
         app:layout_constraintStart_toStartOf="@+id/editTextEmail"
         app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
 
-    <Button
-        android:id="@+id/buttonLogin"
+    <LinearLayout
+        android:id="@+id/linearLogin"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="26dp"
-        android:text="@string/login"
-        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="@+id/editTextPassword"
         app:layout_constraintStart_toStartOf="@+id/editTextPassword"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword">
 
-    <TextView
-        android:id="@+id/textViewForgotPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/forgot_password"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="@+id/buttonLogin"
-        app:layout_constraintStart_toStartOf="@+id/buttonLogin"
-        app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
+        <TextView
+            android:id="@+id/textViewForgotPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/forgot_password"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/login"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/textViewCreateAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="60dp"
         android:text="@string/create_account"
         android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="@+id/textViewForgotPassword"
-        app:layout_constraintStart_toStartOf="@+id/textViewForgotPassword"
-        app:layout_constraintTop_toBottomOf="@+id/textViewForgotPassword" />
+        app:layout_constraintEnd_toEndOf="@+id/linearLogin"
+        app:layout_constraintStart_toStartOf="@+id/linearLogin"
+        app:layout_constraintTop_toBottomOf="@+id/linearLogin" />
+
+    <Button
+        android:id="@+id/buttonLanguage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="showLanguagePopup"
+        android:text="@string/language"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/textViewCreateAccount"
+        app:layout_constraintStart_toStartOf="@+id/textViewCreateAccount"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCreateAccount" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

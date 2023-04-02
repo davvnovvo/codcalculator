@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">codcalculator</string>
+    <string name="email">Электронная почта</string>
+    <string name="password">Пароль</string>
+    <string name="login">Войти</string>
+    <string name="forgot_password">Забыли пароль?</string>
+    <string name="create_account">Нет учетной записи?</string>
+    <string name="language">Язык</string>
+    <string name="language_spanish">Испанский</string>
+    <string name="language_english">Английский</string>
+    <string name="language_french">Французский</string>
+    <string name="language_russian">Русский</string>
+    <string name="language_portuguese">Португальский</string>
+</resources>
