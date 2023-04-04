@@ -7,6 +7,7 @@
     <string name="forgot_password">Mot de passe oublié?</string>
     <string name="create_account">Pas de compte?</string>
     <string name="language">Langue</string>
+    <string name="language2">Choisissez la langue</string>
     <string name="language_spanish">Espagnol</string>
     <string name="language_english">Anglais</string>
     <string name="language_french">Français</string>

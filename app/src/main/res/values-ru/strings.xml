@@ -7,6 +7,7 @@
     <string name="forgot_password">Забыли пароль?</string>
     <string name="create_account">Нет учетной записи?</string>
     <string name="language">Язык</string>
+    <string name="language2">Выберите язык</string>
     <string name="language_spanish">Испанский</string>
     <string name="language_english">Английский</string>
     <string name="language_french">Французский</string>
