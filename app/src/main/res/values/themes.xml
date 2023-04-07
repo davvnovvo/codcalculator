@@ -29,4 +29,13 @@
         <item name="android:statusBarColor">@color/cod_status_bar</item>
         <item name="android:navigationBarColor">@color/cod_navigation_bar</item>
     </style>
+
+    <style name="Theme.Codcalculator.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Codcalculator.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Codcalculator.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

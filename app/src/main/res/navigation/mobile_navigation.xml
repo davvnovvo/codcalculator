@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_resources">
+
+    <fragment
+        android:id="@+id/nav_resources"
+        android:name="com.codcalculator.main.ui.resources.HomeFragment"
+        android:label="@string/menu_resources"
+        tools:layout="@layout/fragment_resources" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.codcalculator.main.ui.speedups.GalleryFragment"
+        android:label="@string/menu_speedups"
+        tools:layout="@layout/fragment_speedups" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.codcalculator.main.ui.honor.SlideshowFragment"
+        android:label="@string/menu_honor"
+        tools:layout="@layout/fragment_honor" />
+</navigation>

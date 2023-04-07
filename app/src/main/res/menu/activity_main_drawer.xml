@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_resources"
+            android:icon="@drawable/mana_general"
+            android:title="@string/menu_resources" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/speedups_general"
+            android:title="@string/menu_speedups" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/honor_general"
+            android:title="@string/menu_honor" />
+    </group>
+</menu>
