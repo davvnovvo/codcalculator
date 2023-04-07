@@ -2,15 +2,17 @@ package com.codcalculator.login;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.PopupMenu;
+import android.widget.TextView;
 
 import com.codcalculator.R;
+import com.codcalculator.main.MainActivity;
 
 import java.util.Locale;
 
@@ -19,11 +21,18 @@ public class LoginActivity extends AppCompatActivity {
     public static final String LANGUAGE_PREFERENCE = "language_preference";
     public static final String SELECTED_LANGUAGE = "selected_language";
 
+    TextView forgotPassword;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setLocale();
         setContentView(R.layout.activity_login);
+        forgotPassword = findViewById(R.id.textViewForgotPassword);
+        forgotPassword.setOnClickListener(v -> {
+            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+            startActivity(intent);
+        });
     }
 
     public void changeLanguage(String languageCode) {
@@ -71,9 +80,9 @@ public class LoginActivity extends AppCompatActivity {
         popup.show();
     }
 
-    private void setLocale() {
+    public void setLocale() {
         SharedPreferences preferences = getSharedPreferences(LANGUAGE_PREFERENCE, MODE_PRIVATE);
-        String lang = preferences.getString(SELECTED_LANGUAGE, "");
+        String lang = preferences.getString(SELECTED_LANGUAGE, "en");
         if (!lang.isEmpty()) {
             Locale locale = new Locale(lang);
             Locale.setDefault(locale);

@@ -13,4 +13,31 @@
     <string name="language_french">French</string>
     <string name="language_russian">Russian</string>
     <string name="language_portuguese">Portuguese</string>
+
+    <!--AUTO GENERADO CON EL DRAWER-->
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_resources">Resources</string>
+    <string name="menu_speedups">Speedups</string>
+    <string name="menu_honor">Honor</string>
+
+    <string name="rss_tab_gold">Gold</string>
+    <string name="rss_tab_wood">Wood</string>
+    <string name="rss_tab_stone">Stone</string>
+    <string name="rss_tab_mana">Mana</string>
+
+    <string name="image_label">Add your inventory screenshot</string>
+    <string name="_1k">1k</string>
+    <string name="_10k">10k</string>
+    <string name="_50k">50k</string>
+    <string name="_150k">150k</string>
+    <string name="_500k">500k</string>
+    <string name="_1_5m">1.5M</string>
+    <string name="_5m">5M</string>
 </resources>
