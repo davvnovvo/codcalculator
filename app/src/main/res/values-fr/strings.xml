@@ -41,4 +41,9 @@
     <string name="_1_5m">1.5M</string>
     <string name="_5m">5M</string>
 
+    <string name="speedups_building">Construction</string>
+    <string name="speedups_training">Entraînement</string>
+    <string name="speedups_research">Recherche</string>
+    <string name="speedups_universal">Universel</string>
+
 </resources>

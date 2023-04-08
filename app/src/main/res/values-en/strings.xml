@@ -40,4 +40,9 @@
     <string name="_500k">500k</string>
     <string name="_1_5m">1.5M</string>
     <string name="_5m">5M</string>
+
+    <string name="speedups_building">Building</string>
+    <string name="speedups_training">Training</string>
+    <string name="speedups_research">Research</string>
+    <string name="speedups_universal">Universal</string>
 </resources>
