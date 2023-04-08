@@ -12,13 +12,13 @@
         tools:layout="@layout/fragment_resources" />
 
     <fragment
-        android:id="@+id/nav_gallery"
+        android:id="@+id/nav_speedups"
         android:name="com.codcalculator.main.ui.speedups.GalleryFragment"
         android:label="@string/menu_speedups"
         tools:layout="@layout/fragment_speedups" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
+        android:id="@+id/nav_honor"
         android:name="com.codcalculator.main.ui.honor.SlideshowFragment"
         android:label="@string/menu_honor"
         tools:layout="@layout/fragment_honor" />
