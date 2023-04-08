@@ -36,9 +36,8 @@ public class WoodFragment extends Fragment {
     TextView wood_image_label, wood_total;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.wood_fragment, container, false);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View rootView = inflater.inflate(R.layout.resources_wood_fragment, container, false);
 
         wood_image = rootView.findViewById(R.id.wood_image_view);
         wood_image_label = rootView.findViewById(R.id.wood_image_label);

@@ -38,7 +38,7 @@ public class GoldFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.gold_fragment, container, false);
+        View rootView = inflater.inflate(R.layout.resources_gold_fragment, container, false);
 
         gold_image = rootView.findViewById(R.id.gold_image_view);
         gold_image_label = rootView.findViewById(R.id.gold_image_label);
