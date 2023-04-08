@@ -73,4 +73,29 @@
     <string name="_7_days">7 дней</string>
     <string name="_30_days">30 дней</string>
 
+    <plurals name="day">
+        <item quantity="one">день</item>
+        <item quantity="few">дня</item>
+        <item quantity="many">дней</item>
+        <item quantity="other">дня</item>
+    </plurals>
+
+    <plurals name="hour">
+        <item quantity="one">час</item>
+        <item quantity="few">часа</item>
+        <item quantity="many">часов</item>
+        <item quantity="other">часа</item>
+    </plurals>
+
+    <plurals name="minute">
+        <item quantity="one">минута</item>
+        <item quantity="few">минуты</item>
+        <item quantity="many">минут</item>
+        <item quantity="other">минуты</item>
+    </plurals>
+
+    <string name="time_format_days">%d %s, %d %s и %d %s</string>
+    <string name="time_format_hours">%d %s и %d %s</string>
+    <string name="time_format_minutes">%d %s</string>
+
 </resources>

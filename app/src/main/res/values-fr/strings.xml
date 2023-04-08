@@ -73,4 +73,26 @@
     <string name="_7_days">7 jours</string>
     <string name="_30_days">30 jours</string>
 
+    <plurals name="day">
+        <item quantity="one">jour</item>
+        <item quantity="other">jours</item>
+        <item quantity="many">de jours</item>
+    </plurals>
+
+    <plurals name="hour">
+        <item quantity="one">heure</item>
+        <item quantity="other">heures</item>
+        <item quantity="many">de heures</item>
+    </plurals>
+
+    <plurals name="minute">
+        <item quantity="one">minute</item>
+        <item quantity="other">minutes</item>
+        <item quantity="many">de minutes</item>
+    </plurals>
+
+    <string name="time_format_days">%d %s, %d %s et %d %s</string>
+    <string name="time_format_hours">%d %s et %d %s</string>
+    <string name="time_format_minutes">%d %s</string>
+
 </resources>
