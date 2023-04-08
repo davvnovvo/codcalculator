@@ -16,7 +16,7 @@
             android:paddingEnd="10dp">
 
             <FrameLayout
-                android:id="@+id/gold_image_field"
+                android:id="@+id/building_image_field"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -24,14 +24,14 @@
                 android:padding="8dp">
 
                 <com.jsibbold.zoomage.ZoomageView
-                    android:id="@+id/gold_image_view"
+                    android:id="@+id/building_image_view"
                     android:layout_width="match_parent"
                     android:layout_height="250dp"
                     android:scaleType="centerCrop"
                     android:src="@drawable/ic_menu_gallery" />
 
                 <TextView
-                    android:id="@+id/gold_image_label"
+                    android:id="@+id/building_image_label"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -46,7 +46,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/gold_total"
+                    android:id="@+id/building_total"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical|center_horizontal"
@@ -57,7 +57,7 @@
                     android:textStyle="bold" />
 
                 <ImageButton
-                    android:id="@+id/gold_add_image_button"
+                    android:id="@+id/building_add_image_button"
                     android:layout_width="38dp"
                     android:layout_height="38dp"
                     android:layout_marginStart="8dp"
@@ -68,7 +68,7 @@
                     android:src="@drawable/ic_add_image" />
 
                 <ImageButton
-                    android:id="@+id/gold_remove_image_button"
+                    android:id="@+id/building_remove_image_button"
                     android:layout_width="38dp"
                     android:layout_height="38dp"
                     android:layout_marginEnd="8dp"
