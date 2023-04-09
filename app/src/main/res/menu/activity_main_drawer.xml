@@ -15,7 +15,7 @@
             android:title="@string/menu_speedups" />
         <item
             android:id="@+id/nav_honor"
-            android:icon="@drawable/honor_general"
+            android:icon="@drawable/honor_general1"
             android:title="@string/menu_honor" />
     </group>
 </menu>
