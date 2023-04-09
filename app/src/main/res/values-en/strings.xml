@@ -88,7 +88,10 @@
         <item quantity="other">minutes</item>
     </plurals>
 
-    <string name="time_format_days">%s %s, %s %s, and %s %s</string>
-    <string name="time_format_hours">%s %s and %s %s</string>
-    <string name="time_format_minutes">%s %s</string>
+    <string name="time_format_days_only">%s %s</string>
+    <string name="time_format_days_and_minutes">%s %s and %s %s</string>
+    <string name="time_format_days_hours_and_minutes">%s %s, %s %s and %s %s</string>
+    <string name="time_format_hours_only">%s %s</string>
+    <string name="time_format_hours_and_minutes">%s %s and %s %s</string>
+    <string name="time_format_minutes_only">%s %s</string>
 </resources>

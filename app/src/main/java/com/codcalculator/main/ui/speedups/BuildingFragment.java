@@ -59,7 +59,9 @@ public class BuildingFragment extends Fragment {
                 rootView.findViewById(R.id.building_field_7_days),
                 rootView.findViewById(R.id.building_field_30_days)
         };
+
         fieldIds = new int[] {R.id.building_field_1min, R.id.building_field_5min, R.id.building_field_10min, R.id.building_field_15min, R.id.building_field_30min, R.id.building_field_60min, R.id.building_field_3h, R.id.building_field_8h, R.id.building_field_15h, R.id.building_field_24h, R.id.building_field_3_days, R.id.building_field_7_days, R.id.building_field_30_days};
+
         BigInteger[] values = new BigInteger[] {BigInteger.ONE, BigInteger.valueOf(5), BigInteger.TEN, BigInteger.valueOf(15), BigInteger.valueOf(30),
                 BigInteger.valueOf(60), BigInteger.valueOf(180), BigInteger.valueOf(480), BigInteger.valueOf(900),
                 BigInteger.valueOf(1440), BigInteger.valueOf(4320), BigInteger.valueOf(10080), BigInteger.valueOf(43200)};
@@ -91,33 +93,45 @@ public class BuildingFragment extends Fragment {
             BigInteger minutes = total.mod(BigInteger.valueOf(60)); // Obtiene los minutos sobrantes
             BigInteger totalHours = total.divide(BigInteger.valueOf(60));
             BigInteger hours = totalHours.mod(BigInteger.valueOf(24)); // 24 horas en un día
-            BigInteger days = totalHours.divide(BigInteger.valueOf(24));
+            BigInteger totalDays = totalHours.divide(BigInteger.valueOf(24));
 
             // Obtener los recursos de cadena para los plurales y singulares de "día", "hora" y "minuto"
             Resources res = getResources();
-            String day = res.getQuantityString(R.plurals.day, days.intValue());
+            String day = res.getQuantityString(R.plurals.day, totalDays.intValue());
             String hour = res.getQuantityString(R.plurals.hour, hours.intValue());
             String minute = res.getQuantityString(R.plurals.minute, minutes.intValue());
 
             String formattedTotal;
-            if (days.compareTo(BigInteger.ZERO) > 0) {
-                formattedTotal = res.getString(R.string.time_format_days,
-                        NumberFormat.getInstance().format(days),
-                        day,
-                        NumberFormat.getInstance().format(hours),
-                        hour,
-                        NumberFormat.getInstance().format(minutes),
-                        minute);
+            if (totalDays.compareTo(BigInteger.ZERO) > 0) {
+                String dayStr = NumberFormat.getInstance().format(totalDays);
+                String hourStr = "";
+                String minuteStr = "";
+                if (hours.compareTo(BigInteger.ZERO) > 0) {
+                    hourStr = NumberFormat.getInstance().format(hours);
+                }
+                if (minutes.compareTo(BigInteger.ZERO) > 0) {
+                    minuteStr = NumberFormat.getInstance().format(minutes);
+                }
+                if (hours.compareTo(BigInteger.ZERO) == 0 && minutes.compareTo(BigInteger.ZERO) == 0) {
+                    formattedTotal = res.getString(R.string.time_format_days_only, dayStr, day);
+                } else if (hours.compareTo(BigInteger.ZERO) == 0) {
+                    formattedTotal = res.getString(R.string.time_format_days_and_minutes, dayStr, day, minuteStr, minute);
+                } else {
+                    formattedTotal = res.getString(R.string.time_format_days_hours_and_minutes, dayStr, day, hourStr, hour, minuteStr, minute);
+                }
             } else if (hours.compareTo(BigInteger.ZERO) > 0) {
-                formattedTotal = res.getString(R.string.time_format_hours,
-                        NumberFormat.getInstance().format(hours),
-                        hour,
-                        NumberFormat.getInstance().format(minutes),
-                        minute);
+                String hourStr = NumberFormat.getInstance().format(hours);
+                String minuteStr = "";
+                if (minutes.compareTo(BigInteger.ZERO) > 0) {
+                    minuteStr = NumberFormat.getInstance().format(minutes);
+                }
+                if (minutes.compareTo(BigInteger.ZERO) == 0) {
+                    formattedTotal = res.getString(R.string.time_format_hours_only, hourStr, hour);
+                } else {
+                    formattedTotal = res.getString(R.string.time_format_hours_and_minutes, hourStr, hour, minuteStr, minute);
+                }
             } else {
-                formattedTotal = res.getString(R.string.time_format_minutes,
-                        NumberFormat.getInstance().format(minutes),
-                        minute);
+                formattedTotal = res.getString(R.string.time_format_minutes_only, NumberFormat.getInstance().format(minutes), minute);
             }
 
             building_total.setText(formattedTotal);
