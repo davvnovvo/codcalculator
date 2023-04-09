@@ -1,9 +1,10 @@
-package com.codcalculator.main.ui.resources;
+package com.codcalculator.main.ui.speedups;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.text.Spannable;
 import android.text.SpannableString;
+import android.text.SpannableStringBuilder;
 import android.text.style.ImageSpan;
 
 import androidx.annotation.NonNull;
@@ -13,19 +14,23 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
 import com.codcalculator.R;
+import com.codcalculator.main.ui.resources.GoldFragment;
+import com.codcalculator.main.ui.resources.ManaFragment;
+import com.codcalculator.main.ui.resources.StoneFragment;
+import com.codcalculator.main.ui.resources.WoodFragment;
 
-public class rssPagerAdapter extends FragmentPagerAdapter {
+public class speedsPagerAdapter extends FragmentPagerAdapter {
 
     private int[] tabIcons = {
-            R.drawable.gold_general,
-            R.drawable.wood_general,
-            R.drawable.stone_general,
+            R.drawable.speedups_building,
+            R.drawable.speedups_training,
+            R.drawable.speedups_research,
             R.drawable.mana_general
     };
 
     private Context context;
 
-    public rssPagerAdapter(Context context, FragmentManager fm) {
+    public speedsPagerAdapter(Context context, FragmentManager fm) {
         super(fm, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
         this.context = context;
     }
@@ -35,13 +40,13 @@ public class rssPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-                return new GoldFragment();
+                return new BuildingFragment();
             case 1:
-                return new WoodFragment();
+                return new TrainingFragment();
             case 2:
-                return new StoneFragment();
+                return new ResearchFragment();
             case 3:
-                return new ManaFragment();
+                return new UniversalFragment();
             default:
                 throw new IllegalArgumentException("Invalid position: " + position);
         }
@@ -54,18 +59,11 @@ public class rssPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public CharSequence getPageTitle(int position) {
-        String[] tabTitles = {
-                context.getString(R.string.rss_tab_gold),
-                context.getString(R.string.rss_tab_wood),
-                context.getString(R.string.rss_tab_stone),
-                context.getString(R.string.rss_tab_mana)
-        };
         Drawable icon = ContextCompat.getDrawable(context, tabIcons[position]);
-        icon.setBounds(0, 0, 50, 50);
-        SpannableString spannableString = new SpannableString(" " + tabTitles[position]);
-        ImageSpan imageSpan = new ImageSpan(icon, ImageSpan.ALIGN_BOTTOM);
-        spannableString.setSpan(imageSpan, 0, 1, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-        return spannableString;
+        icon.setBounds(0, 0, 75, 75);
+        SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder();
+        spannableStringBuilder.append(" "); // Agregar un espacio para separar los iconos
+        spannableStringBuilder.setSpan(new ImageSpan(icon, ImageSpan.ALIGN_CENTER), 0, 1, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+        return spannableStringBuilder;
     }
 }
-

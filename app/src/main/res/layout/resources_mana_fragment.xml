@@ -16,7 +16,7 @@
             android:paddingEnd="10dp">
 
             <FrameLayout
-                android:id="@+id/gold_image_field"
+                android:id="@+id/mana_image_field"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -24,14 +24,14 @@
                 android:padding="8dp">
 
                 <com.jsibbold.zoomage.ZoomageView
-                    android:id="@+id/gold_image_view"
+                    android:id="@+id/mana_image_view"
                     android:layout_width="match_parent"
                     android:layout_height="250dp"
                     android:scaleType="centerCrop"
                     android:src="@drawable/ic_menu_gallery" />
 
                 <TextView
-                    android:id="@+id/gold_image_label"
+                    android:id="@+id/mana_image_label"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -46,18 +46,18 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/gold_total"
+                    android:id="@+id/mana_total"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
                     android:layout_weight="3"
-                    android:text=""
-                    android:textStyle="bold"
-                    android:textSize="16sp"
                     android:gravity="center"
-                    android:layout_gravity="center_vertical|center_horizontal"/>
+                    android:text=""
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
                 <ImageButton
-                    android:id="@+id/gold_add_image_button"
+                    android:id="@+id/mana_add_image_button"
                     android:layout_width="38dp"
                     android:layout_height="38dp"
                     android:layout_marginStart="8dp"
@@ -68,7 +68,7 @@
                     android:src="@drawable/ic_add_image" />
 
                 <ImageButton
-                    android:id="@+id/gold_remove_image_button"
+                    android:id="@+id/mana_remove_image_button"
                     android:layout_width="38dp"
                     android:layout_height="38dp"
                     android:layout_marginEnd="8dp"
@@ -102,19 +102,19 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:hint="@string/_1k"
+                        android:hint="@string/_500"
                         android:padding="3dp"
                         app:boxBackgroundMode="outline"
                         app:hintAnimationEnabled="true"
                         app:hintEnabled="true">
 
                         <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/gold_field_1k"
-                            android:inputType="number"
+                            android:id="@+id/mana_field_500"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:backgroundTint="@android:color/transparent"
-                            android:gravity="center" />
+                            android:gravity="center"
+                            android:inputType="number" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -122,19 +122,19 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:hint="@string/_10k"
+                        android:hint="@string/_3k"
                         android:padding="3dp"
                         app:boxBackgroundMode="outline"
                         app:hintAnimationEnabled="true"
                         app:hintEnabled="true">
 
                         <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/gold_field_10k"
-                            android:inputType="number"
+                            android:id="@+id/mana_field_3k"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:backgroundTint="@android:color/transparent"
-                            android:gravity="center" />
+                            android:gravity="center"
+                            android:inputType="number" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -142,19 +142,19 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:hint="@string/_50k"
+                        android:hint="@string/_15k"
                         android:padding="3dp"
                         app:boxBackgroundMode="outline"
                         app:hintAnimationEnabled="true"
                         app:hintEnabled="true">
 
                         <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/gold_field_50k"
-                            android:inputType="number"
+                            android:id="@+id/mana_field_15k"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:backgroundTint="@android:color/transparent"
-                            android:gravity="center" />
+                            android:gravity="center"
+                            android:inputType="number" />
 
                     </com.google.android.material.textfield.TextInputLayout>
                 </LinearLayout>
@@ -170,19 +170,19 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:hint="@string/_150k"
+                        android:hint="@string/_50k"
                         android:padding="3dp"
                         app:boxBackgroundMode="outline"
                         app:hintAnimationEnabled="true"
                         app:hintEnabled="true">
 
                         <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/gold_field_150k"
-                            android:inputType="number"
+                            android:id="@+id/mana_field_50k"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:backgroundTint="@android:color/transparent"
-                            android:gravity="center" />
+                            android:gravity="center"
+                            android:inputType="number" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -190,19 +190,19 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:hint="@string/_500k"
+                        android:hint="@string/_200k"
                         android:padding="3dp"
                         app:boxBackgroundMode="outline"
                         app:hintAnimationEnabled="true"
                         app:hintEnabled="true">
 
                         <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/gold_field_500k"
-                            android:inputType="number"
+                            android:id="@+id/mana_field_200k"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:backgroundTint="@android:color/transparent"
-                            android:gravity="center" />
+                            android:gravity="center"
+                            android:inputType="number" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -210,19 +210,19 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:hint="@string/_1_5m"
+                        android:hint="@string/_600k"
                         android:padding="3dp"
                         app:boxBackgroundMode="outline"
                         app:hintAnimationEnabled="true"
                         app:hintEnabled="true">
 
                         <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/gold_field_1_5M"
-                            android:inputType="number"
+                            android:id="@+id/mana_field_600k"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:backgroundTint="@android:color/transparent"
-                            android:gravity="center" />
+                            android:gravity="center"
+                            android:inputType="number" />
 
                     </com.google.android.material.textfield.TextInputLayout>
                 </LinearLayout>
@@ -239,59 +239,63 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:hint="@string/_5m"
+                        android:hint="@string/_2m"
                         app:boxBackgroundMode="outline"
                         app:hintAnimationEnabled="true"
                         app:hintEnabled="true">
 
                         <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/gold_field_5M"
-                            android:inputType="number"
+                            android:id="@+id/mana_field_2M"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:backgroundTint="@android:color/transparent"
-                            android:gravity="center" />
+                            android:gravity="center"
+                            android:inputType="number" />
 
                     </com.google.android.material.textfield.TextInputLayout>
                 </LinearLayout>
             </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:layout_marginTop="12dp"
-            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:id="@+id/mana_reset_fields"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_redo" />
+
+                <ImageButton
+                    android:id="@+id/mana_calculate"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_equals" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
 
             <View
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"/>
-
-            <ImageButton
-                android:id="@+id/gold_reset_fields"
-                android:layout_width="38dp"
-                android:layout_height="38dp"
-                android:layout_weight="1"
-                android:background="@android:color/transparent"
-                android:scaleType="fitCenter"
-                android:src="@drawable/ic_redo" />
-
-            <ImageButton
-                android:id="@+id/gold_calculate"
-                android:layout_width="38dp"
-                android:layout_height="38dp"
-                android:layout_weight="1"
-                android:background="@android:color/transparent"
-                android:scaleType="fitCenter"
-                android:src="@drawable/ic_equals" />
-
-            <View
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"/>
-
-        </LinearLayout>
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
 
         </LinearLayout>
 

@@ -33,12 +33,69 @@
     <string name="rss_tab_mana">Мана</string>
 
     <string name="image_label">Добавьте скриншот своего инвентаря</string>
+    <string name="_500">500</string>
+    <string name="_750">750</string>
     <string name="_1k">1k</string>
+    <string name="_3k">3k</string>
+    <string name="_7_5k">7.5k</string>
     <string name="_10k">10k</string>
+    <string name="_15k">15k</string>
+    <string name="_37_5k">37.5k</string>
     <string name="_50k">50k</string>
+    <string name="_112_5k">112.5k</string>
     <string name="_150k">150k</string>
+    <string name="_200k">200k</string>
+    <string name="_375k">375k</string>
     <string name="_500k">500k</string>
+    <string name="_600k">600k</string>
+    <string name="_1_125m">1.125M</string>
     <string name="_1_5m">1.5M</string>
+    <string name="_2m">2M</string>
+    <string name="_3_75m">3.75M</string>
     <string name="_5m">5M</string>
+
+    <string name="speedups_building">Строительство</string>
+    <string name="speedups_training">Обучение</string>
+    <string name="speedups_research">Исследование</string>
+    <string name="speedups_universal">Универсальный</string>
+
+    <string name="_1_min">1 мин</string>
+    <string name="_5_min">5 мин</string>
+    <string name="_10_min">10 мин</string>
+    <string name="_15_min">15 мин</string>
+    <string name="_30_min">30 мин</string>
+    <string name="_60_min">60 мин</string>
+    <string name="_3_hours">3 часа</string>
+    <string name="_8_hours">8 часов</string>
+    <string name="_15_hours">15 часов</string>
+    <string name="_24_hours">24 часа</string>
+    <string name="_3_days">3 дня</string>
+    <string name="_7_days">7 дней</string>
+    <string name="_30_days">30 дней</string>
+
+    <plurals name="day">
+        <item quantity="one">день</item>
+        <item quantity="few">дня</item>
+        <item quantity="many">дней</item>
+        <item quantity="other">дня</item>
+    </plurals>
+
+    <plurals name="hour">
+        <item quantity="one">час</item>
+        <item quantity="few">часа</item>
+        <item quantity="many">часов</item>
+        <item quantity="other">часа</item>
+    </plurals>
+
+    <plurals name="minute">
+        <item quantity="one">минута</item>
+        <item quantity="few">минуты</item>
+        <item quantity="many">минут</item>
+        <item quantity="other">минуты</item>
+    </plurals>
+
+    <string name="time_format_days">%s %s, %s %s и %s %s</string>
+    <string name="time_format_hours">%s %s и %s %s</string>
+    <string name="time_format_minutes">%s %s</string>
 
 </resources>

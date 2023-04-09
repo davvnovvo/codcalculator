@@ -33,12 +33,66 @@
     <string name="rss_tab_mana">Mana</string>
 
     <string name="image_label">Ajoutez la capture d\'écran de votre inventaire</string>
+    <string name="_500">500</string>
+    <string name="_750">750</string>
     <string name="_1k">1k</string>
+    <string name="_3k">3k</string>
+    <string name="_7_5k">7.5k</string>
     <string name="_10k">10k</string>
+    <string name="_15k">15k</string>
+    <string name="_37_5k">37.5k</string>
     <string name="_50k">50k</string>
+    <string name="_112_5k">112.5k</string>
     <string name="_150k">150k</string>
+    <string name="_200k">200k</string>
+    <string name="_375k">375k</string>
     <string name="_500k">500k</string>
+    <string name="_600k">600k</string>
+    <string name="_1_125m">1.125M</string>
     <string name="_1_5m">1.5M</string>
+    <string name="_2m">2M</string>
+    <string name="_3_75m">3.75M</string>
     <string name="_5m">5M</string>
+
+    <string name="speedups_building">Construction</string>
+    <string name="speedups_training">Entraînement</string>
+    <string name="speedups_research">Recherche</string>
+    <string name="speedups_universal">Universel</string>
+
+    <string name="_1_min">1 min</string>
+    <string name="_5_min">5 min</string>
+    <string name="_10_min">10 min</string>
+    <string name="_15_min">15 min</string>
+    <string name="_30_min">30 min</string>
+    <string name="_60_min">60 min</string>
+    <string name="_3_hours">3 heures</string>
+    <string name="_8_hours">8 heures</string>
+    <string name="_15_hours">15 heures</string>
+    <string name="_24_hours">24 heures</string>
+    <string name="_3_days">3 jours</string>
+    <string name="_7_days">7 jours</string>
+    <string name="_30_days">30 jours</string>
+
+    <plurals name="day">
+        <item quantity="one">jour</item>
+        <item quantity="other">jours</item>
+        <item quantity="many">de jours</item>
+    </plurals>
+
+    <plurals name="hour">
+        <item quantity="one">heure</item>
+        <item quantity="other">heures</item>
+        <item quantity="many">de heures</item>
+    </plurals>
+
+    <plurals name="minute">
+        <item quantity="one">minute</item>
+        <item quantity="other">minutes</item>
+        <item quantity="many">de minutes</item>
+    </plurals>
+
+    <string name="time_format_days">%s %s, %s %s et %s %s</string>
+    <string name="time_format_hours">%s %s et %s %s</string>
+    <string name="time_format_minutes">%s %s</string>
 
 </resources>

@@ -20,6 +20,7 @@ import com.codcalculator.R;
 import com.google.android.material.textfield.TextInputEditText;
 
 import java.io.IOException;
+import java.math.BigInteger;
 import java.text.NumberFormat;
 import java.util.Locale;
 
@@ -36,9 +37,8 @@ public class WoodFragment extends Fragment {
     TextView wood_image_label, wood_total;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.wood_fragment, container, false);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View rootView = inflater.inflate(R.layout.resources_wood_fragment, container, false);
 
         wood_image = rootView.findViewById(R.id.wood_image_view);
         wood_image_label = rootView.findViewById(R.id.wood_image_label);
@@ -57,7 +57,15 @@ public class WoodFragment extends Fragment {
                 rootView.findViewById(R.id.wood_field_5M)
         };
         fieldIds = new int[] { R.id.wood_field_1k, R.id.wood_field_10k, R.id.wood_field_50k, R.id.wood_field_150k, R.id.wood_field_500k, R.id.wood_field_1_5M, R.id.wood_field_5M};
-        int[] values = new int[] {1000, 10000, 50000, 150000, 500000, 1500000, 5000000};
+        BigInteger[] values = new BigInteger[] {
+                BigInteger.valueOf(1000),
+                BigInteger.valueOf(10000),
+                BigInteger.valueOf(50000),
+                BigInteger.valueOf(150000),
+                BigInteger.valueOf(500000),
+                BigInteger.valueOf(1500000),
+                BigInteger.valueOf(5000000)
+        };
 
         resetFields(rootView);
 
@@ -76,13 +84,13 @@ public class WoodFragment extends Fragment {
         reset.setOnClickListener(v -> resetFields(rootView));
 
         calculate.setOnClickListener(v -> {
-            int total = 0;
+            BigInteger total = BigInteger.ZERO;
             for (int i = 0; i < fields.length; i++) {
-                int quantity = TextUtils.isEmpty(fields[i].getText()) ? 0 : Integer.parseInt(fields[i].getText().toString());
-                total += quantity * values[i];
+                BigInteger quantity = TextUtils.isEmpty(fields[i].getText()) ? BigInteger.ZERO : new BigInteger(fields[i].getText().toString());
+                total = total.add(quantity.multiply(values[i]));
             }
             NumberFormat numberFormat = NumberFormat.getNumberInstance(Locale.getDefault());
-            String formattedTotal = numberFormat.format(total);
+            String formattedTotal = total.compareTo(BigInteger.ZERO) > 0 ? numberFormat.format(total) : "";
             wood_total.setText(formattedTotal);
         });
 

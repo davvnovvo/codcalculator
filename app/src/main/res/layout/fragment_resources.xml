@@ -7,7 +7,7 @@
     tools:context=".main.ui.resources.HomeFragment">
 
     <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tab_layout"
+        android:id="@+id/resources_tab_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:tabGravity="fill"
@@ -16,10 +16,10 @@
         />
 
     <androidx.viewpager.widget.ViewPager
-        android:id="@+id/view_pager"
+        android:id="@+id/resources_view_pager"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintTop_toBottomOf="@+id/tab_layout"
+        app:layout_constraintTop_toBottomOf="@+id/resources_tab_layout"
         app:layout_constraintBottom_toBottomOf="parent"
         />
 

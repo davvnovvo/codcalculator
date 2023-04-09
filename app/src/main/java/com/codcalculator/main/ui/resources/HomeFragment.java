@@ -19,23 +19,17 @@ public class HomeFragment extends Fragment {
     private ViewPager viewPager;
     private TabLayout tabLayout;
 
-    public View onCreateView(@NonNull LayoutInflater inflater,
-                             ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         // Inflar el layout del fragmento
         binding = FragmentResourcesBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         // Configurar ViewPager y TabLayout
-        viewPager = root.findViewById(R.id.view_pager);
-        tabLayout = root.findViewById(R.id.tab_layout);
+        viewPager = root.findViewById(R.id.resources_view_pager);
+        tabLayout = root.findViewById(R.id.resources_tab_layout);
         viewPager.setAdapter(new rssPagerAdapter(getContext(), getChildFragmentManager()));
         tabLayout.setupWithViewPager(viewPager);
-
-        // Configurar el texto en TextView
-        //final TextView textView = binding.textHome;
-        //HomeViewModel homeViewModel = new ViewModelProvider(this).get(HomeViewModel.class);
-        //homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
 
         return root;
     }
