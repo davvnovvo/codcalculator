@@ -125,13 +125,9 @@ public class BuildingFragment extends Fragment {
                 if (minutes.compareTo(BigInteger.ZERO) > 0) {
                     minuteStr = NumberFormat.getInstance().format(minutes);
                 }
-                if (minutes.compareTo(BigInteger.ZERO) == 0) {
-                    formattedTotal = res.getString(R.string.time_format_hours_only, hourStr, hour);
-                } else {
-                    formattedTotal = res.getString(R.string.time_format_hours_and_minutes, hourStr, hour, minuteStr, minute);
-                }
+                formattedTotal = minutes.compareTo(BigInteger.ZERO) == 0 ? res.getString(R.string.time_format_hours_only, hourStr, hour) : res.getString(R.string.time_format_hours_and_minutes, hourStr, hour, minuteStr, minute);
             } else {
-                formattedTotal = res.getString(R.string.time_format_minutes_only, NumberFormat.getInstance().format(minutes), minute);
+                formattedTotal = minutes.compareTo(BigInteger.ZERO) > 0 ? res.getString(R.string.time_format_minutes_only, NumberFormat.getInstance().format(minutes), minute) : "";
             }
 
             building_total.setText(formattedTotal);
