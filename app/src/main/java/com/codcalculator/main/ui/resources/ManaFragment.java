@@ -20,6 +20,7 @@ import com.codcalculator.R;
 import com.google.android.material.textfield.TextInputEditText;
 
 import java.io.IOException;
+import java.math.BigInteger;
 import java.text.NumberFormat;
 import java.util.Locale;
 
@@ -56,7 +57,15 @@ public class ManaFragment extends Fragment {
                 rootView.findViewById(R.id.mana_field_2M)
         };
         fieldIds = new int[]{R.id.mana_field_500, R.id.mana_field_3k, R.id.mana_field_15k, R.id.mana_field_50k, R.id.mana_field_200k, R.id.mana_field_600k, R.id.mana_field_2M};
-        int[] values = new int[]{500, 3000, 15000, 50000, 200000, 600000, 2000000};
+        BigInteger[] values = new BigInteger[]{
+                BigInteger.valueOf(500),
+                BigInteger.valueOf(3000),
+                BigInteger.valueOf(15000),
+                BigInteger.valueOf(50000),
+                BigInteger.valueOf(200000),
+                BigInteger.valueOf(600000),
+                BigInteger.valueOf(2000000)
+        };
 
         resetFields(rootView);
 
@@ -75,13 +84,13 @@ public class ManaFragment extends Fragment {
         reset.setOnClickListener(v -> resetFields(rootView));
 
         calculate.setOnClickListener(v -> {
-            int total = 0;
+            BigInteger total = BigInteger.ZERO;
             for (int i = 0; i < fields.length; i++) {
-                int quantity = TextUtils.isEmpty(fields[i].getText()) ? 0 : Integer.parseInt(fields[i].getText().toString());
-                total += quantity * values[i];
+                BigInteger quantity = TextUtils.isEmpty(fields[i].getText()) ? BigInteger.ZERO : new BigInteger(fields[i].getText().toString());
+                total = total.add(quantity.multiply(values[i]));
             }
             NumberFormat numberFormat = NumberFormat.getNumberInstance(Locale.getDefault());
-            String formattedTotal = numberFormat.format(total);
+            String formattedTotal = total.compareTo(BigInteger.ZERO) > 0 ? numberFormat.format(total) : "";
             mana_total.setText(formattedTotal);
         });
 

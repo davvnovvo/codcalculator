@@ -17,8 +17,8 @@ import androidx.fragment.app.Fragment;
 import com.codcalculator.R;
 import com.google.android.material.textfield.TextInputEditText;
 
+import java.math.BigInteger;
 import java.text.NumberFormat;
-import java.util.Locale;
 
 public class BuildingFragment extends Fragment {
 
@@ -60,7 +60,10 @@ public class BuildingFragment extends Fragment {
                 rootView.findViewById(R.id.building_field_30_days)
         };
         fieldIds = new int[] {R.id.building_field_1min, R.id.building_field_5min, R.id.building_field_10min, R.id.building_field_15min, R.id.building_field_30min, R.id.building_field_60min, R.id.building_field_3h, R.id.building_field_8h, R.id.building_field_15h, R.id.building_field_24h, R.id.building_field_3_days, R.id.building_field_7_days, R.id.building_field_30_days};
-        int[] values = new int[] {1, 5, 10, 15, 30, 60, 180, 480, 900, 1440, 4320, 10080, 43200};
+        BigInteger[] values = new BigInteger[] {BigInteger.ONE, BigInteger.valueOf(5), BigInteger.TEN, BigInteger.valueOf(15), BigInteger.valueOf(30),
+                BigInteger.valueOf(60), BigInteger.valueOf(180), BigInteger.valueOf(480), BigInteger.valueOf(900),
+                BigInteger.valueOf(1440), BigInteger.valueOf(4320), BigInteger.valueOf(10080), BigInteger.valueOf(43200)};
+
 
         resetFields(rootView);
 
@@ -79,33 +82,47 @@ public class BuildingFragment extends Fragment {
         reset.setOnClickListener(v -> resetFields(rootView));
 
         calculate.setOnClickListener(v -> {
-            int total = 0;
+            BigInteger total = BigInteger.ZERO;
             for (int i = 0; i < fields.length; i++) {
-                int quantity = TextUtils.isEmpty(fields[i].getText()) ? 0 : Integer.parseInt(fields[i].getText().toString());
-                total += quantity * values[i];
+                BigInteger quantity = TextUtils.isEmpty(fields[i].getText()) ? BigInteger.ZERO : new BigInteger(fields[i].getText().toString());
+                total = total.add(quantity.multiply(values[i]));
             }
 
-            int days = total / 1440; // 1440 minutos en un día
-            int hours = (total % 1440) / 60; // 60 minutos en una hora
-            int minutes = total % 60;
+            BigInteger minutes = total.mod(BigInteger.valueOf(60)); // Obtiene los minutos sobrantes
+            BigInteger totalHours = total.divide(BigInteger.valueOf(60));
+            BigInteger hours = totalHours.mod(BigInteger.valueOf(24)); // 24 horas en un día
+            BigInteger days = totalHours.divide(BigInteger.valueOf(24));
 
             // Obtener los recursos de cadena para los plurales y singulares de "día", "hora" y "minuto"
             Resources res = getResources();
-            String day = res.getQuantityString(R.plurals.day, days);
-            String hour = res.getQuantityString(R.plurals.hour, hours);
-            String minute = res.getQuantityString(R.plurals.minute, minutes);
+            String day = res.getQuantityString(R.plurals.day, days.intValue());
+            String hour = res.getQuantityString(R.plurals.hour, hours.intValue());
+            String minute = res.getQuantityString(R.plurals.minute, minutes.intValue());
 
             String formattedTotal;
-            if (days > 0) {
-                formattedTotal = res.getString(R.string.time_format_days, days, day, hours, hour, minutes, minute);
-            } else if (hours > 0) {
-                formattedTotal = res.getString(R.string.time_format_hours, hours, hour, minutes, minute);
+            if (days.compareTo(BigInteger.ZERO) > 0) {
+                formattedTotal = res.getString(R.string.time_format_days,
+                        NumberFormat.getInstance().format(days),
+                        day,
+                        NumberFormat.getInstance().format(hours),
+                        hour,
+                        NumberFormat.getInstance().format(minutes),
+                        minute);
+            } else if (hours.compareTo(BigInteger.ZERO) > 0) {
+                formattedTotal = res.getString(R.string.time_format_hours,
+                        NumberFormat.getInstance().format(hours),
+                        hour,
+                        NumberFormat.getInstance().format(minutes),
+                        minute);
             } else {
-                formattedTotal = res.getString(R.string.time_format_minutes, minutes, minute);
+                formattedTotal = res.getString(R.string.time_format_minutes,
+                        NumberFormat.getInstance().format(minutes),
+                        minute);
             }
 
             building_total.setText(formattedTotal);
         });
+
 
         return rootView;
     }

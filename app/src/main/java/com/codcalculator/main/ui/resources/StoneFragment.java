@@ -20,6 +20,7 @@ import com.codcalculator.R;
 import com.google.android.material.textfield.TextInputEditText;
 
 import java.io.IOException;
+import java.math.BigInteger;
 import java.text.NumberFormat;
 import java.util.Locale;
 
@@ -56,7 +57,15 @@ public class StoneFragment extends Fragment {
                 rootView.findViewById(R.id.stone_field_3_75M)
         };
         fieldIds = new int[] { R.id.stone_field_750, R.id.stone_field_7_5k, R.id.stone_field_37_5k, R.id.stone_field_112_5k, R.id.stone_field_375k, R.id.stone_field_1_125M, R.id.stone_field_3_75M};
-        int[] values = new int[] {750, 7500, 37500, 112500, 375000, 1125000, 3750000};
+        BigInteger[] values = new BigInteger[] {
+                BigInteger.valueOf(750),
+                BigInteger.valueOf(7500),
+                BigInteger.valueOf(37500),
+                BigInteger.valueOf(112500),
+                BigInteger.valueOf(375000),
+                BigInteger.valueOf(1125000),
+                BigInteger.valueOf(3750000)
+        };
 
         resetFields(rootView);
 
@@ -75,13 +84,13 @@ public class StoneFragment extends Fragment {
         reset.setOnClickListener(v -> resetFields(rootView));
 
         calculate.setOnClickListener(v -> {
-            int total = 0;
+            BigInteger total = BigInteger.ZERO;
             for (int i = 0; i < fields.length; i++) {
-                int quantity = TextUtils.isEmpty(fields[i].getText()) ? 0 : Integer.parseInt(fields[i].getText().toString());
-                total += quantity * values[i];
+                BigInteger quantity = TextUtils.isEmpty(fields[i].getText()) ? BigInteger.ZERO : new BigInteger(fields[i].getText().toString());
+                total = total.add(quantity.multiply(values[i]));
             }
             NumberFormat numberFormat = NumberFormat.getNumberInstance(Locale.getDefault());
-            String formattedTotal = numberFormat.format(total);
+            String formattedTotal = total.compareTo(BigInteger.ZERO) > 0 ? numberFormat.format(total) : "";
             stone_total.setText(formattedTotal);
         });
 
