@@ -67,6 +67,7 @@
             android:id="@+id/textViewForgotPassword"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
             android:layout_weight="1"
             android:clickable="true"
             android:text="@string/forgot_password"
@@ -86,18 +87,28 @@
         android:id="@+id/textViewCreateAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="40dp"
         android:text="@string/create_account"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/linearLogin"
         app:layout_constraintStart_toStartOf="@+id/linearLogin"
         app:layout_constraintTop_toBottomOf="@+id/linearLogin" />
 
+    <ImageButton
+        android:id="@+id/google_logo_button"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_google"
+        app:layout_constraintEnd_toEndOf="@+id/textViewCreateAccount"
+        app:layout_constraintStart_toStartOf="@+id/textViewCreateAccount"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCreateAccount" />
+
     <Button
         android:id="@+id/buttonLanguage"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="50dp"
         android:onClick="showLanguagePopup"
         android:text="@string/language"
         android:textColor="@color/white"
