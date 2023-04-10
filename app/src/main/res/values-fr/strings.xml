@@ -2,10 +2,14 @@
 <resources>
     <string name="app_name">codcalculator</string>
     <string name="email">E-mail</string>
+    <string name="username">Nom d\'utilisateur</string>
     <string name="password">Mot de passe</string>
     <string name="login">Se connecter</string>
     <string name="forgot_password">Mot de passe oublié?</string>
-    <string name="create_account">Pas de compte?</string>
+    <string name="createaccount">Créer un compte</string>
+    <string name="createaccount2">CRÉER UN COMPTE</string>
+    <string name="create_account">Vous n\'avez pas de compte?</string>
+    <string name="login_account">Vous avez déjà un compte?</string>
     <string name="language">Langue</string>
     <string name="language2">Choisissez la langue</string>
     <string name="language_spanish">Espagnol</string>

@@ -2,10 +2,14 @@
 <resources>
     <string name="app_name">codcalculator</string>
     <string name="email">Электронная почта</string>
+    <string name="username">Имя пользователя</string>
     <string name="password">Пароль</string>
     <string name="login">Войти</string>
     <string name="forgot_password">Забыли пароль?</string>
-    <string name="create_account">Нет учетной записи?</string>
+    <string name="createaccount">Создать аккаунт</string>
+    <string name="createaccount2">СОЗДАТЬ АККАУНТ</string>
+    <string name="create_account">Нет аккаунта?</string>
+    <string name="login_account">Уже есть аккаунт?</string>
     <string name="language">Язык</string>
     <string name="language2">Выберите язык</string>
     <string name="language_spanish">Испанский</string>

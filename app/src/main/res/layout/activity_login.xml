@@ -2,14 +2,21 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/gradient_background">
+    android:layout_height="match_parent">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:src="@drawable/call2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -21,13 +28,13 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="200dp"
         android:layout_marginRight="15dp"
         android:hint="@string/email"
         android:inputType="textEmailAddress"
         android:padding="16dp"
-        android:textColor="@color/black"
-        android:textColorHint="@color/black"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
@@ -40,8 +47,8 @@
         android:hint="@string/password"
         android:inputType="textPassword"
         android:padding="16dp"
-        android:textColor="@color/black"
-        android:textColorHint="@color/black"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/editTextEmail"
         app:layout_constraintStart_toStartOf="@+id/editTextEmail"
         app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
@@ -58,12 +65,12 @@
 
         <TextView
             android:id="@+id/textViewForgotPassword"
-            android:clickable="true"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:clickable="true"
             android:text="@string/forgot_password"
-            android:textColor="@color/black" />
+            android:textColor="@color/white" />
 
         <Button
             android:id="@+id/buttonLogin"
@@ -81,7 +88,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:text="@string/create_account"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/linearLogin"
         app:layout_constraintStart_toStartOf="@+id/linearLogin"
         app:layout_constraintTop_toBottomOf="@+id/linearLogin" />
