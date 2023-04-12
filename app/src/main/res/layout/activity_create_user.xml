@@ -9,9 +9,9 @@
         android:id="@+id/textAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="80dp"
         android:fontFamily="@font/blackcastle"
-        android:text="@string/createaccount2"
+        android:text="@string/createaccount"
         android:textColor="@android:color/black"
         android:textSize="40dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -106,12 +106,12 @@
         app:layout_constraintStart_toStartOf="@+id/linearCreate"
         app:layout_constraintTop_toBottomOf="@+id/linearCreate" />
 
-    <Button
+    <ImageButton
         android:id="@+id/buttonInfo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
         android:layout_marginTop="20dp"
-        android:text="INFO"
+        android:background="@drawable/info_btn"
         app:layout_constraintEnd_toEndOf="@+id/textViewLogin"
         app:layout_constraintStart_toStartOf="@+id/textViewLogin"
         app:layout_constraintTop_toBottomOf="@+id/textViewLogin" />

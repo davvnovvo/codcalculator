@@ -13,6 +13,11 @@
         android:theme="@style/Theme.Codcalculator"
         tools:targetApi="31">
         <activity
+            android:name=".login.ForgotPassword"
+            android:exported="false"
+            android:parentActivityName=".login.CreateUserActivity"
+            android:theme="@style/Theme.Codcalculator" />
+        <activity
             android:name=".main.MainActivity"
             android:exported="false"
             android:label="@string/title_activity_main"
@@ -24,7 +29,8 @@
         <activity
             android:name=".login.CreateUserActivity"
             android:exported="false"
-            android:theme="@style/Theme.Codcalculator.NoAction">
+            android:parentActivityName=".login.LoginActivity"
+            android:theme="@style/Theme.Codcalculator">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

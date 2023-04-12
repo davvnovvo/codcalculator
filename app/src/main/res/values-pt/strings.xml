@@ -17,6 +17,7 @@
     <string name="language_french">Francês</string>
     <string name="language_russian">Russo</string>
     <string name="language_portuguese">Português</string>
+    <string name="reset_pass">REDEFINIR SENHA</string>
 
     <!--AUTO GENERADO CON EL DRAWER-->
     <string name="title_activity_main">MainActivity</string>

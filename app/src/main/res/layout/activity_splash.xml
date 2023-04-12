@@ -10,22 +10,10 @@
     <pl.droidsonroids.gif.GifImageView
         android:id="@+id/dragon"
         android:layout_width="match_parent"
-        android:layout_height="550dp"
+        android:layout_height="match_parent"
         android:src="@drawable/gif5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/blackcastle"
-        android:text="Cod Calculator"
-        android:textColor="@android:color/black"
-        android:textSize="46dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/dragon" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
