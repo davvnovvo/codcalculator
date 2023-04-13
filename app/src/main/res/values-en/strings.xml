@@ -7,7 +7,6 @@
     <string name="login">Log in</string>
     <string name="forgot_password">Forgot Password?</string>
     <string name="createaccount">Create Account</string>
-    <string name="createaccount2">CREATE ACCOUNT</string>
     <string name="create_account">Don\'t have an account?</string>
     <string name="login_account">Already have an account?</string>
     <string name="language">Language</string>
@@ -18,6 +17,13 @@
     <string name="language_russian">Russian</string>
     <string name="language_portuguese">Portuguese</string>
     <string name="reset_pass">RESET PASSWORD</string>
+    <string name="emptyFields">This field is mandatory</string>
+    <string name="invalidEmail">Please enter a valid email</string>
+    <string name="mailNotFound">The email entered is not registered</string>
+    <string name="sentEmail">Email sent</string>
+    <string name="exit">Do you want to exit the application?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
 
     <!--AUTO GENERADO CON EL DRAWER-->
     <string name="title_activity_main">MainActivity</string>

@@ -16,6 +16,13 @@
     <string name="language_russian">Ruso</string>
     <string name="language_portuguese">Portugués</string>
     <string name="reset_pass">RESTABLECER CONTRASEÑA</string>
+    <string name="emptyFields">Este campo es obligatorio</string>
+    <string name="invalidEmail">Introduce un correo válido</string>
+    <string name="mailNotFound">El email introducido no está registrado</string>
+    <string name="sentEmail">Email enviado</string>
+    <string name="exit">¿Deseas salir de la aplicación?</string>
+    <string name="yes">Si</string>
+    <string name="no">No</string>
 
     <!--AUTO GENERADO CON EL DRAWER-->
     <string name="title_activity_main">MainActivity</string>

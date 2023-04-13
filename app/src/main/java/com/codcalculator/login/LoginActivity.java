@@ -1,5 +1,6 @@
 package com.codcalculator.login;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
@@ -132,4 +133,16 @@ public class LoginActivity extends AppCompatActivity {
             getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
         }
     }
+
+    @Override
+    public void onBackPressed() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage(R.string.exit)
+                .setCancelable(false)
+                .setPositiveButton(R.string.yes, (dialog, id) -> finish())
+                .setNegativeButton(R.string.no, (dialog, id) -> dialog.cancel());
+        AlertDialog alert = builder.create();
+        alert.show();
+    }
+
 }

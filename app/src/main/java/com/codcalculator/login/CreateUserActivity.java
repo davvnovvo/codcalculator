@@ -46,4 +46,10 @@ public class CreateUserActivity extends AppCompatActivity {
         });
 
     }
+
+    @Override
+    public void onBackPressed() {
+        // No hacemos nada
+    }
+
 }

@@ -7,7 +7,6 @@
     <string name="login">Se connecter</string>
     <string name="forgot_password">Mot de passe oublié?</string>
     <string name="createaccount">Créer un compte</string>
-    <string name="createaccount2">CRÉER UN COMPTE</string>
     <string name="create_account">Vous n\'avez pas de compte?</string>
     <string name="login_account">Vous avez déjà un compte?</string>
     <string name="language">Langue</string>
@@ -18,6 +17,13 @@
     <string name="language_russian">Russe</string>
     <string name="language_portuguese">Portugais</string>
     <string name="reset_pass">RÉINITIALISER LE MOT DE PASSE</string>
+    <string name="emptyFields">Ce champ est obligatoire</string>
+    <string name="invalidEmail">Veuillez saisir une adresse e-mail valide</string>
+    <string name="mailNotFound">L\'e-mail saisi n\'est pas enregistré</string>
+    <string name="sentEmail">E-mail envoyé</string>
+    <string name="exit">Voulez-vous quitter l\'application?</string>
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
 
     <!--AUTO GENERADO CON EL DRAWER-->
     <string name="title_activity_main">MainActivity</string>
