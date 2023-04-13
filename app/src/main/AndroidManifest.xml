@@ -16,11 +16,13 @@
             android:name=".login.ForgotPassword"
             android:exported="false"
             android:parentActivityName=".login.CreateUserActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.Codcalculator" />
         <activity
             android:name=".main.MainActivity"
             android:exported="false"
             android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.Codcalculator.NoActionBar">
             <meta-data
                 android:name="android.app.lib_name"
@@ -30,6 +32,7 @@
             android:name=".login.CreateUserActivity"
             android:exported="false"
             android:parentActivityName=".login.LoginActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.Codcalculator">
             <meta-data
                 android:name="android.app.lib_name"
@@ -38,16 +41,22 @@
         <activity
             android:name=".splash.SplashActivity"
             android:exported="true"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.Codcalculator.NoAction">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
         </activity>
         <activity
             android:name=".login.LoginActivity"
             android:exported="false"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.Codcalculator.NoAction">
             <meta-data
                 android:name="android.app.lib_name"
