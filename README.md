@@ -39,5 +39,4 @@ Las contribuciones son bienvenidas. Si desea contribuir al proyecto, siga estos 
 
 ## Licencia
 
-Este proyecto está licenciado bajo la Licencia MIT - ver el archivo [LICENSE.md](LICENSE.md) para
-más detalles.
+Este proyecto está licenciado bajo [Creativecommons Org Licenses By Sa 4](https://creativecommons.org/licenses/by-nc-sa/4.0/)
