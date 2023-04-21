@@ -29,6 +29,8 @@
     <string name="faq3">Aplicación</string>
     <string name="faq4"><u>¿Por qué necesito registrarme?</u></string>
     <string name="faq5">Es recomendable crear una cuenta para poder tener un mejor control de tu inventario y nosotros poder controlar las imágenes que se suben al inventario.</string>
+    <string name="googleLoginError">Fallo al iniciar sesión con Google</string>
+    <string name="googleLoginSuccess">Inicio de sesión con Google correcto</string>
 
 
     <!--AUTO GENERADO CON EL DRAWER-->
@@ -108,5 +110,10 @@
     <string name="time_format_days">%s %s, %s %s y %s %s</string>
     <string name="time_format_hours">%s %s y %s %s</string>
     <string name="time_format_minutes">%s %s</string>
+
+    <!-- Signout -->
+    <string name="signout">Cerrar Sesión</string>
+    <string name="signout_confirm">¿Está seguro que desea cerrar sesión?</string>
+    <string name="closedSession">Sesión cerrada</string>
 
 </resources>
