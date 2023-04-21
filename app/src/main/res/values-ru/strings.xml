@@ -4,6 +4,7 @@
     <string name="email">Электронная почта</string>
     <string name="username">Имя пользователя</string>
     <string name="password">Пароль</string>
+    <string name="password2">Повторите пароль</string>
     <string name="login">Войти</string>
     <string name="forgot_password">Забыли пароль?</string>
     <string name="createaccount">Создать аккаунт</string>
@@ -24,6 +25,11 @@
     <string name="exit">Хотите выйти из приложения?</string>
     <string name="yes">Да</string>
     <string name="no">Нет</string>
+    <string name="faq">FAQ</string>
+    <string name="faq2"><u>О нас</u></string>
+    <string name="faq4"><u>Почему мне нужно зарегистрироваться?</u></string>
+    <string name="faq5">Рекомендуется создать учетную запись, чтобы иметь лучший контроль над своим инвентарем, а мы могли контролировать изображения, загружаемые в инвентарь.</string>
+
 
     <!--AUTO GENERADO CON EL DRAWER-->
     <string name="title_activity_main">MainActivity</string>

@@ -28,7 +28,7 @@ public class LoginActivity extends AppCompatActivity {
     public static final String SELECTED_LANGUAGE = "selected_language";
 
     private ViewPager viewPager;
-    private int[] images = {R.drawable.image1, R.drawable.image2, R.drawable.image3};
+    private int[] images = {R.drawable.atheus, R.drawable.gwanwyn, R.drawable.oso};
     private int currentPage = 0;
     private Timer timer;
     final long DELAY_MS = 500;

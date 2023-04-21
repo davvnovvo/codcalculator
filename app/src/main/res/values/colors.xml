@@ -20,4 +20,6 @@
     <color name="cod_status_bar">#20457E</color>
     <color name="cod_navigation_bar">#20457E</color>
 
+    <color name="semi_transparent_background">#90000000</color>
+
 </resources>

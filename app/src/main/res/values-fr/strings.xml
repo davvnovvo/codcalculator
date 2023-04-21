@@ -4,6 +4,7 @@
     <string name="email">E-mail</string>
     <string name="username">Nom d\'utilisateur</string>
     <string name="password">Mot de passe</string>
+    <string name="password2">Répéter le mot de passe</string>
     <string name="login">Se connecter</string>
     <string name="forgot_password">Mot de passe oublié?</string>
     <string name="createaccount">Créer un compte</string>
@@ -24,6 +25,11 @@
     <string name="exit">Voulez-vous quitter l\'application?</string>
     <string name="yes">Oui</string>
     <string name="no">Non</string>
+    <string name="faq">FAQ</string>
+    <string name="faq2"><u>À propos de nous</u></string>
+    <string name="faq4"><u>Pourquoi ai-je besoin de m\'inscrire?</u></string>
+    <string name="faq5">Il est recommandé de créer un compte afin de mieux contrôler votre inventaire et que nous puissions contrôler les images téléchargées dans l\'inventaire.</string>
+
 
     <!--AUTO GENERADO CON EL DRAWER-->
     <string name="title_activity_main">MainActivity</string>

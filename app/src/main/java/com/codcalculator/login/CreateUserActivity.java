@@ -1,17 +1,18 @@
 package com.codcalculator.login;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.PopupWindow;
 import android.widget.TextView;
 
 import com.codcalculator.R;
-import com.codcalculator.main.MainActivity;
 
 public class CreateUserActivity extends AppCompatActivity {
 
@@ -28,11 +29,12 @@ public class CreateUserActivity extends AppCompatActivity {
         textViewLogin = findViewById(R.id.textViewLogin);
 
         infoButton.setOnClickListener(v -> {
-            AlertDialog.Builder builder = new AlertDialog.Builder(CreateUserActivity.this);
-            builder.setTitle("Términos y Condiciones");
-            builder.setMessage("Texto de ejemplo xD");
-            AlertDialog dialog = builder.create();
-            dialog.show();
+            LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            View popupView = inflater.inflate(R.layout.popup_layout, null);
+            PopupWindow popupWindow = new PopupWindow(popupView, 1000, 1100);
+            popupWindow.setFocusable(true);
+            popupWindow.setOutsideTouchable(true);
+            popupWindow.showAtLocation(v, Gravity.CENTER, 0, 0);
         });
 
         textViewForgotPassword.setOnClickListener(v -> {

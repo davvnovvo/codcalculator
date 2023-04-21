@@ -3,6 +3,7 @@
     <string name="email">Correo electrónico</string>
     <string name="username">Usuario</string>
     <string name="password">Contraseña</string>
+    <string name="password2">Repite contraseña</string>
     <string name="login">Iniciar sesión</string>
     <string name="forgot_password">¿Olvidaste tu contraseña?</string>
     <string name="createaccount">Crear cuenta</string>
@@ -23,6 +24,12 @@
     <string name="exit">¿Deseas salir de la aplicación?</string>
     <string name="yes">Si</string>
     <string name="no">No</string>
+    <string name="faq">FAQ</string>
+    <string name="faq2"><u>Sobre Nosotros</u></string>
+    <string name="faq3">Aplicación</string>
+    <string name="faq4"><u>¿Por qué necesito registrarme?</u></string>
+    <string name="faq5">Es recomendable crear una cuenta para poder tener un mejor control de tu inventario y nosotros poder controlar las imágenes que se suben al inventario.</string>
+
 
     <!--AUTO GENERADO CON EL DRAWER-->
     <string name="title_activity_main">MainActivity</string>
