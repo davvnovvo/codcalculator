@@ -25,22 +25,14 @@ public class SplashActivity extends AppCompatActivity {
 
         ToS = SharedPrefsUtil.getBoolean(this, "ToS");
         openApp(ToS);
-
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
-                startActivity(intent);
-                // Finalizamos esta actividad para evitar que el usuario pueda volver atrás
-                finish();
-            }
-        }, SPLASH_TIMEOUT);
     }
 
     private void openApp(boolean b) {
 
         Handler handler = new Handler();
         handler.postDelayed(() -> {
+
+            Intent intent;
 
             FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
             FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
@@ -49,6 +41,13 @@ public class SplashActivity extends AppCompatActivity {
                 Intent mainIntent = new Intent(this, MainActivity.class);
                 startActivity(mainIntent);
                 finish();
+            } else {
+                intent = new Intent(SplashActivity.this, LoginActivity.class);
+
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+
+                startActivity(intent);
             }
 
         }, 6500);
