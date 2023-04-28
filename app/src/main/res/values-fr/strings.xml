@@ -112,4 +112,13 @@
     <string name="time_format_hours">%s %s et %s %s</string>
     <string name="time_format_minutes">%s %s</string>
 
+    <!-- Google account -->
+    <string name="googleLoginError">Échec de la connexion avec Google</string>
+    <string name="googleLoginSuccess">Connexion réussie avec Google</string>
+
+    <!-- Signout -->
+    <string name="signout">Déconnexion</string>
+    <string name="signout_confirm">Êtes-vous sûr de vouloir vous déconnecter?</string>
+    <string name="closedSession">Session fermée</string>
+
 </resources>

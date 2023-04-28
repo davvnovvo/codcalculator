@@ -115,4 +115,13 @@
     <string name="time_format_hours">%s %s и %s %s</string>
     <string name="time_format_minutes">%s %s</string>
 
+    <!-- Google account -->
+    <string name="googleLoginError">Ошибка входа через Google</string>
+    <string name="googleLoginSuccess">Успешный вход через Google</string>
+
+    <!-- Signout -->
+    <string name="signout">Выход</string>
+    <string name="signout_confirm">Вы уверены, что хотите выйти?</string>
+    <string name="closedSession">Сессия закрыта</string>
+
 </resources>

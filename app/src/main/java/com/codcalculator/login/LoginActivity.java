@@ -89,7 +89,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         }, DELAY_MS, PERIOD_MS);
 
-        // Configure Google Sign In
+        // Configuramos Google Sign In
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken(getString(R.string.default_web_client_id))
                 .requestEmail()
@@ -233,5 +233,4 @@ public class LoginActivity extends AppCompatActivity {
         AlertDialog alert = builder.create();
         alert.show();
     }
-
 }
