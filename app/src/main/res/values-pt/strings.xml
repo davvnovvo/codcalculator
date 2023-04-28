@@ -109,4 +109,13 @@
     <string name="time_format_hours">%s %s e %s %s</string>
     <string name="time_format_minutes">%s %s</string>
 
+    <!-- Google account -->
+    <string name="googleLoginError">Falha ao entrar com o Google</string>
+    <string name="googleLoginSuccess">Login bem-sucedido com o Google</string>
+
+    <!-- Signout -->
+    <string name="signout">Sair</string>
+    <string name="signout_confirm">Tem certeza de que deseja sair?</string>
+    <string name="closedSession">Sessão encerrada</string>
+
 </resources>
