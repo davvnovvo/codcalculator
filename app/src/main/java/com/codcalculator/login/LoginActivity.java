@@ -228,7 +228,7 @@ public class LoginActivity extends AppCompatActivity {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setMessage(R.string.exit)
                 .setCancelable(false)
-                .setPositiveButton(R.string.yes, (dialog, id) -> finish())
+                .setPositiveButton(R.string.yes, (dialog, id) -> System.exit(0))
                 .setNegativeButton(R.string.no, (dialog, id) -> dialog.cancel());
         AlertDialog alert = builder.create();
         alert.show();
