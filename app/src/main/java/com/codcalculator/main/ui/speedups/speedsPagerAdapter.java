@@ -25,7 +25,7 @@ public class speedsPagerAdapter extends FragmentPagerAdapter {
             R.drawable.speedups_building,
             R.drawable.speedups_training,
             R.drawable.speedups_research,
-            R.drawable.mana_general
+            R.drawable.speedups_universal
     };
 
     private Context context;

@@ -103,4 +103,7 @@
     <string name="time_format_hours">%s %s e %s %s</string>
     <string name="time_format_minutes">%s %s</string>
 
+    <string name="honor_inventory">Inventário</string>
+    <string name="honor_fromto">Níveis</string>
+
 </resources>

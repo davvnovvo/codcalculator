@@ -102,4 +102,7 @@
     <string name="time_format_hours_and_minutes">%s %s et %s %s</string>
     <string name="time_format_minutes_only">%s %s</string>
 
+    <string name="honor_inventory">Inventaire</string>
+    <string name="honor_fromto">Niveaux</string>
+
 </resources>

@@ -105,4 +105,7 @@
     <string name="time_format_hours_and_minutes">%s %s и %s %s</string>
     <string name="time_format_minutes_only">%s %s</string>
 
+    <string name="honor_inventory">Инвентарь</string>
+    <string name="honor_fromto">Уровни</string>
+
 </resources>
