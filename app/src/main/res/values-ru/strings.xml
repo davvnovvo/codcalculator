@@ -132,4 +132,13 @@
     <string name="signout_confirm">Вы уверены, что хотите выйти?</string>
     <string name="closedSession">Сессия закрыта</string>
 
+    <!-- Crete User -->
+    <string name="passwordsDoNotMatch">Пароли не совпадают</string>
+    <string name="error_password_length">6 символов</string>
+    <string name="error_password_digit">1 цифра</string>
+    <string name="error_password_uppercase">1 прописная буква</string>
+    <string name="error_password_special">1 специальный символ</string>
+    <string name="error_password_header">Требования к паролю:</string>
+    <string name="newUserSuccess">Отправлено письмо с подтверждением</string>
+    <string name="newUserFail">Ошибка при создании пользователя</string>
 </resources>
