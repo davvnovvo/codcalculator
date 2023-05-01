@@ -8,6 +8,7 @@
     <string name="login">Se connecter</string>
     <string name="forgot_password">Mot de passe oublié?</string>
     <string name="createaccount">Créer un compte</string>
+    <string name="createaccount2">CRÉER UN COMPTE</string>
     <string name="create_account">Vous n\'avez pas de compte?</string>
     <string name="login_account">Vous avez déjà un compte?</string>
     <string name="language">Langue</string>
@@ -27,6 +28,7 @@
     <string name="no">Non</string>
     <string name="faq">FAQ</string>
     <string name="faq2"><u>À propos de nous</u></string>
+    <string name="faq3">Application</string>
     <string name="faq4"><u>Pourquoi ai-je besoin de m\'inscrire?</u></string>
     <string name="faq5">Il est recommandé de créer un compte afin de mieux contrôler votre inventaire et que nous puissions contrôler les images téléchargées dans l\'inventaire.</string>
 
