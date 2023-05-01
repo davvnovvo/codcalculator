@@ -129,4 +129,13 @@
     <string name="signout_confirm">Êtes-vous sûr de vouloir vous déconnecter?</string>
     <string name="closedSession">Session fermée</string>
 
+    <!-- Crete User -->
+    <string name="passwordsDoNotMatch">Les mots de passe ne correspondent pas</string>
+    <string name="error_password_length">6 caractères</string>
+    <string name="error_password_digit">1 chiffre</string>
+    <string name="error_password_uppercase">1 lettre majuscule</string>
+    <string name="error_password_special">1 caractère spécial</string>
+    <string name="error_password_header">Exigences de mot de passe:</string>
+    <string name="newUserSuccess">Email de vérification envoyé</string>
+    <string name="newUserFail">Erreur lors de la création de l\'utilisateur</string>
 </resources>
