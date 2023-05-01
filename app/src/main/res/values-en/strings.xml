@@ -101,4 +101,13 @@
 
     <string name="honor_inventory">Inventory</string>
     <string name="honor_fromto">Levels</string>
+
+    <!-- Google account -->
+    <string name="googleLoginError">Failed to sign in with Google</string>
+    <string name="googleLoginSuccess">Successfully signed in with Google</string>
+
+    <!-- Signout -->
+    <string name="signout">Sign out</string>
+    <string name="signout_confirm">Are you sure you want to sign out?</string>
+    <string name="closedSession">Session closed</string>
 </resources>

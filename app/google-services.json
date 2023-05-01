@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "855643182510",
+    "project_id": "codcalculator-2023",
+    "storage_bucket": "codcalculator-2023.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:855643182510:android:6a7124958e878d6de0643f",
+        "android_client_info": {
+          "package_name": "com.codcalculator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "855643182510-edo8l2n6hfbl0bfvrl2a0asiro5bdedc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgSg_973mb2UZspgDd8yKErsnODOgmQhY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "855643182510-edo8l2n6hfbl0bfvrl2a0asiro5bdedc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

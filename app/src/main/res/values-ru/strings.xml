@@ -4,10 +4,10 @@
     <string name="email">Электронная почта</string>
     <string name="username">Имя пользователя</string>
     <string name="password">Пароль</string>
+    <string name="password2">Повторите пароль</string>
     <string name="login">Войти</string>
     <string name="forgot_password">Забыли пароль?</string>
     <string name="createaccount">Создать аккаунт</string>
-    <string name="createaccount2">СОЗДАТЬ АККАУНТ</string>
     <string name="create_account">Нет аккаунта?</string>
     <string name="login_account">Уже есть аккаунт?</string>
     <string name="language">Язык</string>
@@ -17,6 +17,19 @@
     <string name="language_french">Французский</string>
     <string name="language_russian">Русский</string>
     <string name="language_portuguese">Португальский</string>
+    <string name="reset_pass">СБРОСИТЬ ПАРОЛЬ</string>
+    <string name="emptyFields">Это поле обязательно</string>
+    <string name="invalidEmail">Введите действительный адрес электронной почты</string>
+    <string name="mailNotFound">Введенный адрес электронной почты не зарегистрирован</string>
+    <string name="sentEmail">Электронное письмо отправлено</string>
+    <string name="exit">Хотите выйти из приложения?</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="faq">FAQ</string>
+    <string name="faq2"><u>О нас</u></string>
+    <string name="faq4"><u>Почему мне нужно зарегистрироваться?</u></string>
+    <string name="faq5">Рекомендуется создать учетную запись, чтобы иметь лучший контроль над своим инвентарем, а мы могли контролировать изображения, загружаемые в инвентарь.</string>
+
 
     <!--AUTO GENERADO CON EL DRAWER-->
     <string name="title_activity_main">MainActivity</string>
@@ -107,5 +120,14 @@
 
     <string name="honor_inventory">Инвентарь</string>
     <string name="honor_fromto">Уровни</string>
+
+    <!-- Google account -->
+    <string name="googleLoginError">Ошибка входа через Google</string>
+    <string name="googleLoginSuccess">Успешный вход через Google</string>
+
+    <!-- Signout -->
+    <string name="signout">Выход</string>
+    <string name="signout_confirm">Вы уверены, что хотите выйти?</string>
+    <string name="closedSession">Сессия закрыта</string>
 
 </resources>
