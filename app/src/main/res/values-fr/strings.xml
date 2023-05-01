@@ -8,6 +8,7 @@
     <string name="login">Se connecter</string>
     <string name="forgot_password">Mot de passe oublié?</string>
     <string name="createaccount">Créer un compte</string>
+    <string name="createaccount2">CRÉER UN COMPTE</string>
     <string name="create_account">Vous n\'avez pas de compte?</string>
     <string name="login_account">Vous avez déjà un compte?</string>
     <string name="language">Langue</string>
@@ -27,6 +28,7 @@
     <string name="no">Non</string>
     <string name="faq">FAQ</string>
     <string name="faq2"><u>À propos de nous</u></string>
+    <string name="faq3">Application</string>
     <string name="faq4"><u>Pourquoi ai-je besoin de m\'inscrire?</u></string>
     <string name="faq5">Il est recommandé de créer un compte afin de mieux contrôler votre inventaire et que nous puissions contrôler les images téléchargées dans l\'inventaire.</string>
 
@@ -108,9 +110,15 @@
         <item quantity="many">de minutes</item>
     </plurals>
 
-    <string name="time_format_days">%s %s, %s %s et %s %s</string>
-    <string name="time_format_hours">%s %s et %s %s</string>
-    <string name="time_format_minutes">%s %s</string>
+    <string name="time_format_days_only">%s %s</string>
+    <string name="time_format_days_and_minutes">%s %s et %s %s</string>
+    <string name="time_format_days_hours_and_minutes">%s %s, %s %s et %s %s</string>
+    <string name="time_format_hours_only">%s %s</string>
+    <string name="time_format_hours_and_minutes">%s %s et %s %s</string>
+    <string name="time_format_minutes_only">%s %s</string>
+
+    <string name="honor_inventory">Inventaire</string>
+    <string name="honor_fromto">Niveaux</string>
 
     <!-- Google account -->
     <string name="googleLoginError">Échec de la connexion avec Google</string>

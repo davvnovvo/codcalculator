@@ -4,10 +4,11 @@
     <string name="email">E-mail</string>
     <string name="username">Usuário</string>
     <string name="password">Senha</string>
-    <string name="password2">Repetir senha</string>
+    <string name="password2">Repita a senha</string>
     <string name="login">Login</string>
     <string name="forgot_password">Esqueceu sua senha?</string>
     <string name="createaccount">Criar conta</string>
+    <string name="createaccount2">CRIAR CONTA</string>
     <string name="create_account">Não tem conta?</string>
     <string name="login_account">Já tem conta?</string>
     <string name="language">Idioma</string>
@@ -19,17 +20,17 @@
     <string name="language_portuguese">Português</string>
     <string name="reset_pass">REDEFINIR SENHA</string>
     <string name="emptyFields">Este campo é obrigatório</string>
-    <string name="invalidEmail">Por favor, digite um e-mail válido</string>
-    <string name="mailNotFound">O e-mail inserido não está registrado</string>
+    <string name="invalidEmail">Digite um e-mail válido</string>
+    <string name="mailNotFound">O e-mail digitado não está registrado</string>
     <string name="sentEmail">E-mail enviado</string>
-    <string name="exit">Deseja sair do aplicativo?</string>
+    <string name="exit">Você deseja sair do aplicativo?</string>
     <string name="yes">Sim</string>
     <string name="no">Não</string>
     <string name="faq">FAQ</string>
     <string name="faq2"><u>Sobre Nós</u></string>
-    <string name="faq4"><u>Por que preciso me cadastrar?</u></string>
-    <string name="faq5">É recomendável criar uma conta para ter um melhor controle do seu inventário e para que possamos controlar as imagens carregadas no inventário.</string>
-
+    <string name="faq3">Aplicativo</string>
+    <string name="faq4"><u>Por que eu preciso me registrar?</u></string>
+    <string name="faq5">Recomendamos criar uma conta para ter um melhor controle do seu inventário e para que possamos controlar as imagens que são carregadas no inventário.</string>
 
     <!--AUTO GENERADO CON EL DRAWER-->
     <string name="title_activity_main">MainActivity</string>
@@ -105,13 +106,19 @@
         <item quantity="other">minutos</item>
     </plurals>
 
-    <string name="time_format_days">%s %s, %s %s e %s %s</string>
-    <string name="time_format_hours">%s %s e %s %s</string>
-    <string name="time_format_minutes">%s %s</string>
+    <string name="time_format_days_only">%s %s</string>
+    <string name="time_format_days_and_minutes">%s %s e %s %s</string>
+    <string name="time_format_days_hours_and_minutes">%s %s, %s %s e %s %s</string>
+    <string name="time_format_hours_only">%s %s</string>
+    <string name="time_format_hours_and_minutes">%s %s e %s %s</string>
+    <string name="time_format_minutes_only">%s %s</string>
+
+    <string name="honor_inventory">Inventário</string>
+    <string name="honor_fromto">Níveis</string>
 
     <!-- Google account -->
-    <string name="googleLoginError">Falha ao entrar com o Google</string>
-    <string name="googleLoginSuccess">Login bem-sucedido com o Google</string>
+    <string name="googleLoginError">Falha ao fazer login com o Google</string>
+    <string name="googleLoginSuccess">Login com o Google bem-sucedido</string>
 
     <!-- Signout -->
     <string name="signout">Sair</string>

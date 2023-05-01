@@ -32,13 +32,13 @@ public class GalleryFragment extends Fragment {
                 R.drawable.speedups_building,
                 R.drawable.speedups_training,
                 R.drawable.speedups_research,
-                R.drawable.mana_general
+                R.drawable.speedups_universal
         };
         String[] tabTitles = {
-                getContext().getString(R.string.speedups_building),
-                getContext().getString(R.string.speedups_training),
-                getContext().getString(R.string.speedups_research),
-                getContext().getString(R.string.speedups_universal)
+                requireContext().getString(R.string.speedups_building),
+                requireContext().getString(R.string.speedups_training),
+                requireContext().getString(R.string.speedups_research),
+                requireContext().getString(R.string.speedups_universal)
         };
 
         // Inflar el layout del fragmento
@@ -60,7 +60,7 @@ public class GalleryFragment extends Fragment {
             @Override
             public void onTabUnselected(TabLayout.Tab tab) {
                 int position = tab.getPosition();
-                Drawable icon = ContextCompat.getDrawable(getContext(), tabIcons[position]);
+                Drawable icon = ContextCompat.getDrawable(requireContext(), tabIcons[position]);
                 icon.setBounds(0, 0, 75, 75);
                 SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder();
                 spannableStringBuilder.append(" "); // Agregar un espacio para separar los iconos

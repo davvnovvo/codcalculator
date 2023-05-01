@@ -8,6 +8,7 @@
     <string name="login">Log in</string>
     <string name="forgot_password">Forgot Password?</string>
     <string name="createaccount">Create Account</string>
+    <string name="createaccount2">CREATE ACCOUNT</string>
     <string name="create_account">Don\'t have an account?</string>
     <string name="login_account">Already have an account?</string>
     <string name="language">Language</string>
@@ -18,18 +19,18 @@
     <string name="language_russian">Russian</string>
     <string name="language_portuguese">Portuguese</string>
     <string name="reset_pass">RESET PASSWORD</string>
-    <string name="emptyFields">This field is mandatory</string>
+    <string name="emptyFields">This field is required</string>
     <string name="invalidEmail">Please enter a valid email</string>
-    <string name="mailNotFound">The email entered is not registered</string>
+    <string name="mailNotFound">The entered email is not registered</string>
     <string name="sentEmail">Email sent</string>
     <string name="exit">Do you want to exit the application?</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
     <string name="faq">FAQ</string>
     <string name="faq2"><u>About Us</u></string>
+    <string name="faq3">Application</string>
     <string name="faq4"><u>Why do I need to register?</u></string>
-    <string name="faq5">It is advisable to create an account in order to have better control of your inventory and for us to be able to control the images uploaded to the inventory.</string>
-
+    <string name="faq5">It is recommended to create an account to have better control of your inventory and for us to control the images that are uploaded to the inventory.</string>
 
     <!--AUTO GENERADO CON EL DRAWER-->
     <string name="title_activity_main">MainActivity</string>
@@ -105,9 +106,15 @@
         <item quantity="other">minutes</item>
     </plurals>
 
-    <string name="time_format_days">%s %s, %s %s, and %s %s</string>
-    <string name="time_format_hours">%s %s and %s %s</string>
-    <string name="time_format_minutes">%s %s</string>
+    <string name="time_format_days_only">%s %s</string>
+    <string name="time_format_days_and_minutes">%s %s and %s %s</string>
+    <string name="time_format_days_hours_and_minutes">%s %s, %s %s and %s %s</string>
+    <string name="time_format_hours_only">%s %s</string>
+    <string name="time_format_hours_and_minutes">%s %s and %s %s</string>
+    <string name="time_format_minutes_only">%s %s</string>
+
+    <string name="honor_inventory">Inventory</string>
+    <string name="honor_fromto">Levels</string>
 
     <!-- Google account -->
     <string name="googleLoginError">Failed to sign in with Google</string>
@@ -117,5 +124,4 @@
     <string name="signout">Sign out</string>
     <string name="signout_confirm">Are you sure you want to sign out?</string>
     <string name="closedSession">Session closed</string>
-
 </resources>

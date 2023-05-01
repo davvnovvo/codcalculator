@@ -8,6 +8,7 @@
     <string name="login">Войти</string>
     <string name="forgot_password">Забыли пароль?</string>
     <string name="createaccount">Создать аккаунт</string>
+    <string name="createaccount2">СОЗДАТЬ УЧЕТНУЮ ЗАПИСЬ</string>
     <string name="create_account">Нет аккаунта?</string>
     <string name="login_account">Уже есть аккаунт?</string>
     <string name="language">Язык</string>
@@ -27,6 +28,7 @@
     <string name="no">Нет</string>
     <string name="faq">FAQ</string>
     <string name="faq2"><u>О нас</u></string>
+    <string name="faq3">Приложение</string>
     <string name="faq4"><u>Почему мне нужно зарегистрироваться?</u></string>
     <string name="faq5">Рекомендуется создать учетную запись, чтобы иметь лучший контроль над своим инвентарем, а мы могли контролировать изображения, загружаемые в инвентарь.</string>
 
@@ -111,9 +113,15 @@
         <item quantity="other">минуты</item>
     </plurals>
 
-    <string name="time_format_days">%s %s, %s %s и %s %s</string>
-    <string name="time_format_hours">%s %s и %s %s</string>
-    <string name="time_format_minutes">%s %s</string>
+    <string name="time_format_days_only">%s %s</string>
+    <string name="time_format_days_and_minutes">%s %s и %s %s</string>
+    <string name="time_format_days_hours_and_minutes">%s %s, %s %s и %s %s</string>
+    <string name="time_format_hours_only">%s %s</string>
+    <string name="time_format_hours_and_minutes">%s %s и %s %s</string>
+    <string name="time_format_minutes_only">%s %s</string>
+
+    <string name="honor_inventory">Инвентарь</string>
+    <string name="honor_fromto">Уровни</string>
 
     <!-- Google account -->
     <string name="googleLoginError">Ошибка входа через Google</string>
