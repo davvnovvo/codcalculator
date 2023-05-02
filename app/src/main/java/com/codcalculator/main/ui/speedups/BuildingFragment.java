@@ -1,7 +1,10 @@
 package com.codcalculator.main.ui.speedups;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.content.res.Resources;
+import android.graphics.Bitmap;
+import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.text.TextUtils;
@@ -17,6 +20,7 @@ import androidx.fragment.app.Fragment;
 import com.codcalculator.R;
 import com.google.android.material.textfield.TextInputEditText;
 
+import java.io.IOException;
 import java.math.BigInteger;
 import java.text.NumberFormat;
 
@@ -135,6 +139,26 @@ public class BuildingFragment extends Fragment {
 
 
         return rootView;
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        // Comprobar si el resultado corresponde a la selección de una imagen
+        if (requestCode == PICK_IMAGE_REQUEST && resultCode == Activity.RESULT_OK && data != null && data.getData() != null) {
+            // Obtener la URI de la imagen seleccionada
+            Uri imageUri = data.getData();
+
+            // Mostrar la imagen en el ImageView
+            try {
+                Bitmap bitmap = MediaStore.Images.Media.getBitmap(getActivity().getContentResolver(), imageUri);
+                building_image.setImageBitmap(bitmap);
+                building_image_label.setVisibility(View.GONE);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     private void resetFields(View v) {
