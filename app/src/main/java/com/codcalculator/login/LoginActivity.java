@@ -223,14 +223,24 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
+    private boolean doubleBackToExitPressedOnce = false;
+
     @Override
     public void onBackPressed() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(R.string.exit)
-                .setCancelable(false)
-                .setPositiveButton(R.string.yes, (dialog, id) -> System.exit(0))
-                .setNegativeButton(R.string.no, (dialog, id) -> dialog.cancel());
-        AlertDialog alert = builder.create();
-        alert.show();
+        if (doubleBackToExitPressedOnce) {
+            finishAffinity();
+            return;
+        }
+
+        this.doubleBackToExitPressedOnce = true;
+        Toast.makeText(this, "Pulsa de nuevo para salir", Toast.LENGTH_SHORT).show();
+
+        new Handler().postDelayed(new Runnable() {
+
+            @Override
+            public void run() {
+                doubleBackToExitPressedOnce=false;
+            }
+        }, 2000);
     }
 }
