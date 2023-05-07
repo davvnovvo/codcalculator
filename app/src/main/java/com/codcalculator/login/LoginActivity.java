@@ -72,13 +72,23 @@ public class LoginActivity extends AppCompatActivity {
         viewPager.setAdapter(adapter);
 
         final Handler handler = new Handler();
-        final Runnable update = new Runnable() {
-            public void run() {
-                if (currentPage == images.length) {
-                    currentPage = 0;
-                }
-                viewPager.setCurrentItem(currentPage++, true);
+        final Runnable update = () -> {
+            if (currentPage == images.length) {
+                currentPage = 0;
             }
+
+            viewPager.animate()
+                    .alpha(0f)
+                    .setDuration(300)
+                    .withEndAction(() -> {
+                        viewPager.setCurrentItem(currentPage++, false);
+                        viewPager.setAlpha(0f);
+                        viewPager.animate()
+                                .alpha(1f)
+                                .setDuration(300)
+                                .start();
+                    })
+                    .start();
         };
 
         timer = new Timer();
@@ -88,6 +98,8 @@ public class LoginActivity extends AppCompatActivity {
                 handler.post(update);
             }
         }, DELAY_MS, PERIOD_MS);
+
+
 
         // Configuramos Google Sign In
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
