@@ -1,6 +1,5 @@
 package com.codcalculator.login;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
@@ -91,6 +90,7 @@ public class LoginActivity extends AppCompatActivity {
                     .start();
         };
 
+        viewPager.setOnTouchListener((v, event) -> true);
         timer = new Timer();
         timer.schedule(new TimerTask() {
             @Override
@@ -98,7 +98,6 @@ public class LoginActivity extends AppCompatActivity {
                 handler.post(update);
             }
         }, DELAY_MS, PERIOD_MS);
-
 
 
         // Configuramos Google Sign In
@@ -251,7 +250,7 @@ public class LoginActivity extends AppCompatActivity {
 
             @Override
             public void run() {
-                doubleBackToExitPressedOnce=false;
+                doubleBackToExitPressedOnce = false;
             }
         }, 2000);
     }
