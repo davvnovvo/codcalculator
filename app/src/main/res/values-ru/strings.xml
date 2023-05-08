@@ -141,4 +141,12 @@
     <string name="error_password_header">Требования к паролю:</string>
     <string name="newUserSuccess">Отправлено письмо с подтверждением</string>
     <string name="newUserFail">Ошибка при создании пользователя</string>
+
+    <!-- Login User -->
+    <string name="loginSuccess">Успешный вход в систему</string>
+    <string name="mailNotVerified">Электронная почта не подтверждена</string>
+    <string name="wrongPassword">Неверный адрес электронной почты или пароль</string>
+    <string name="userNotFound">Пользователь не зарегистрирован</string>
+    <string name="loginError">Ошибка при входе в систему</string>
+
 </resources>
