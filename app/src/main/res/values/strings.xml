@@ -133,4 +133,12 @@
     <string name="error_password_header">La contraseña no cumple los requisitos:</string>
     <string name="newUserSuccess">Correo de verificación enviado</string>
     <string name="newUserFail">Error al crear usuario</string>
+
+    <!-- Login User -->
+    <string name="loginSuccess">Inicio de sesión correcto</string>
+    <string name="mailNotVerified">El email no ha sido verificado</string>
+    <string name="wrongPassword">Contraseña o email incorrectos</string>
+    <string name="userNotFound">Usuario no registrado</string>
+    <string name="loginError">Error al iniciar sesión</string>
+
 </resources>

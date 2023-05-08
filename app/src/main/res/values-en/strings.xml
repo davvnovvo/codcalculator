@@ -134,4 +134,12 @@
     <string name="error_password_header">Password requirements:</string>
     <string name="newUserSuccess">Verification email sent</string>
     <string name="newUserFail">Error creating user</string>
+
+    <!-- Login User -->
+    <string name="loginSuccess">Successful login</string>
+    <string name="mailNotVerified">Email not verified</string>
+    <string name="wrongPassword">Incorrect email or password</string>
+    <string name="userNotFound">User not found</string>
+    <string name="loginError">Error logging in</string>
+
 </resources>

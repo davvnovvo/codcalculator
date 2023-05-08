@@ -134,4 +134,12 @@
     <string name="error_password_header">Requisitos da senha:</string>
     <string name="newUserSuccess">E-mail de verificação enviado</string>
     <string name="newUserFail">Erro ao criar usuário</string>
+
+    <!-- Login User -->
+    <string name="loginSuccess">Login bem-sucedido</string>
+    <string name="mailNotVerified">Email não verificado</string>
+    <string name="wrongPassword">Email ou senha incorretos</string>
+    <string name="userNotFound">Usuário não registrado</string>
+    <string name="loginError">Erro ao fazer login</string>
+
 </resources>

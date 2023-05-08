@@ -4,16 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
     android:fitsSystemWindows="true"
     tools:context=".splash.SplashActivity">
 
-    <pl.droidsonroids.gif.GifImageView
-        android:id="@+id/dragon"
-        android:layout_width="match_parent"
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="600dp"
         android:layout_height="match_parent"
-        android:scaleType="fitXY"
-        android:src="@drawable/dragon"
+        android:src="@drawable/splash"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.455"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

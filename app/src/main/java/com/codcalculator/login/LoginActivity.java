@@ -1,5 +1,7 @@
 package com.codcalculator.login;
 
+import static android.content.ContentValues.TAG;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
@@ -9,9 +11,11 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
+import android.util.Patterns;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.PopupMenu;
 import android.widget.TextView;
@@ -26,8 +30,11 @@ import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
+import com.google.firebase.auth.FirebaseAuthInvalidUserException;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
 import com.google.firebase.storage.FirebaseStorage;
@@ -36,6 +43,7 @@ import com.google.firebase.storage.StorageReference;
 import java.util.Locale;
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.regex.Pattern;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -47,12 +55,14 @@ public class LoginActivity extends AppCompatActivity {
     private Timer timer;
     final long DELAY_MS = 500;
     final long PERIOD_MS = 3000;
-    TextView forgotPassword, createAccount;
-    ImageButton googleAccess_btn;
-    Button buttonLogin;
-    GoogleSignInClient mGoogleSignInClient;
+    private TextView forgotPassword, createAccount;
+    private ImageButton googleAccess_btn, guest_button;
+    private Button buttonLogin;
+    private GoogleSignInClient mGoogleSignInClient;
     int RC_SIGN_IN = 1;
-    FirebaseAuth mAuth;
+    private FirebaseAuth mAuth;
+    private TextInputLayout lMail, lPasswd;
+    private EditText editmail, editpass;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,7 +73,12 @@ public class LoginActivity extends AppCompatActivity {
         forgotPassword = findViewById(R.id.textViewForgotPassword);
         createAccount = findViewById(R.id.textViewCreateAccount);
         googleAccess_btn = findViewById(R.id.google_logo_button);
+        guest_button = findViewById(R.id.guest_button);
         buttonLogin = findViewById(R.id.buttonLogin);
+        lMail = findViewById(R.id.email_text_input);
+        lPasswd = findViewById(R.id.password_text_input);
+        editmail = findViewById(R.id.editTextEmail);
+        editpass = findViewById(R.id.editTextPassword);
         mAuth = FirebaseAuth.getInstance();
 
         viewPager = findViewById(R.id.viewPager);
@@ -109,17 +124,62 @@ public class LoginActivity extends AppCompatActivity {
 
         googleAccess_btn.setOnClickListener(view -> signInWithGoogle());
 
+        //Botón para resetear la contraseña si se ha olvidado
         forgotPassword.setOnClickListener(v -> {
             Intent intent = new Intent(LoginActivity.this, ForgotPassword.class);
             startActivity(intent);
         });
-        buttonLogin.setOnClickListener(v -> {
+
+        //Botón para iniciar sesión como invitado
+        guest_button.setOnClickListener(v -> {
             Intent intent = new Intent(LoginActivity.this, MainActivity.class);
             startActivity(intent);
         });
+
+        //Botón para crear cuenta nueva
         createAccount.setOnClickListener(v -> {
             Intent intent = new Intent(LoginActivity.this, CreateUserActivity.class);
             startActivity(intent);
+        });
+
+        //Manejamos el inicio de sesión del usuario com emai, y contraseña
+        buttonLogin.setOnClickListener(view -> {
+            lMail.setError(null);
+            lPasswd.setError(null);
+            if (editmail.getText().toString().isEmpty() || editpass.getText().toString().isEmpty() || !validarEmail(editmail.getText().toString())) {
+                if (editmail.getText().toString().isEmpty())
+                    lMail.setError(getString(R.string.emptyFields));
+                else if (!validarEmail(editmail.getText().toString()))
+                    lMail.setError(getString(R.string.invalidEmail));
+                if (editpass.getText().toString().isEmpty())
+                    lPasswd.setError(getString(R.string.emptyFields));
+            } else {
+                mAuth.signInWithEmailAndPassword(editmail.getText().toString(), editpass.getText().toString())
+                        .addOnCompleteListener(task -> {
+                            if (task.isSuccessful()) {
+                                FirebaseUser user = mAuth.getCurrentUser();
+                                if (user.isEmailVerified()) {
+                                    Toast.makeText(this, getString(R.string.loginSuccess), Toast.LENGTH_SHORT).show();
+                                    limpiar();
+                                    updateUI(user);
+                                } else {
+                                    Toast.makeText(this, getString(R.string.mailNotVerified), Toast.LENGTH_SHORT).show();
+                                }
+                            } else {
+                                try {
+                                    throw task.getException();
+                                } catch (FirebaseAuthInvalidCredentialsException e) {
+                                    Toast.makeText(this, getString(R.string.wrongPassword), Toast.LENGTH_SHORT).show();
+                                } catch (FirebaseAuthInvalidUserException e) {
+                                    Toast.makeText(this, getString(R.string.userNotFound), Toast.LENGTH_SHORT).show();
+                                } catch (Exception e) {
+                                    Log.e(TAG, e.toString());
+                                    Toast.makeText(this, getString(R.string.loginError), Toast.LENGTH_SHORT).show();
+                                }
+                                updateUI(null);
+                            }
+                        });
+            }
         });
     }
 
@@ -232,6 +292,16 @@ public class LoginActivity extends AppCompatActivity {
             Intent i = new Intent(this, MainActivity.class);
             startActivity(i);
         }
+    }
+
+    private boolean validarEmail(String email) {
+        Pattern pattern = Patterns.EMAIL_ADDRESS;
+        return pattern.matcher(email).matches();
+    }
+
+    private void limpiar() {
+        editmail.setText("");
+        editpass.setText("");
     }
 
     private boolean doubleBackToExitPressedOnce = false;
