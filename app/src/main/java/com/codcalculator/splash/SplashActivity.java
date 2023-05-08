@@ -5,6 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 
 import com.codcalculator.login.LoginActivity;
 import com.codcalculator.R;
@@ -25,6 +28,11 @@ public class SplashActivity extends AppCompatActivity {
 
         ToS = SharedPrefsUtil.getBoolean(this, "ToS");
         openApp(ToS);
+
+        ImageView imageView = findViewById(R.id.logo);
+        Animation animacion = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.animacion_parpadeo);
+
+        imageView.startAnimation(animacion);
     }
 
     private void openApp(boolean b) {
