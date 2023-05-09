@@ -8,6 +8,7 @@ import androidx.viewpager.widget.ViewPager;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
@@ -50,8 +51,9 @@ public class LoginActivity extends AppCompatActivity {
     public static final String LANGUAGE_PREFERENCE = "language_preference";
     public static final String SELECTED_LANGUAGE = "selected_language";
     private ViewPager viewPager;
-    private int[] images = {R.drawable.atheus, R.drawable.gwanwyn, R.drawable.oso};
+    private int[] images = {R.drawable.atheus, R.drawable.gwanwyn, R.drawable.oso, R.drawable.roc_trueno};
     private int currentPage = 0;
+    private boolean isFirstTime;
     private Timer timer;
     final long DELAY_MS = 500;
     final long PERIOD_MS = 3000;
@@ -91,18 +93,23 @@ public class LoginActivity extends AppCompatActivity {
                 currentPage = 0;
             }
 
-            viewPager.animate()
-                    .alpha(0f)
-                    .setDuration(300)
-                    .withEndAction(() -> {
-                        viewPager.setCurrentItem(currentPage++, false);
-                        viewPager.setAlpha(0f);
-                        viewPager.animate()
-                                .alpha(1f)
-                                .setDuration(300)
-                                .start();
-                    })
-                    .start();
+            if (isFirstTime) {
+                isFirstTime = false;
+                viewPager.setCurrentItem(currentPage++, false);
+            } else {
+                viewPager.animate()
+                        .alpha(0f)
+                        .setDuration(300)
+                        .withEndAction(() -> {
+                            viewPager.setCurrentItem(currentPage++, false);
+                            viewPager.setAlpha(0f);
+                            viewPager.animate()
+                                    .alpha(1f)
+                                    .setDuration(300)
+                                    .start();
+                        })
+                        .start();
+            }
         };
 
         viewPager.setOnTouchListener((v, event) -> true);
@@ -114,6 +121,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         }, DELAY_MS, PERIOD_MS);
 
+        isFirstTime = true;
 
         // Configuramos Google Sign In
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
@@ -271,7 +279,10 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
         });
-        popup.inflate(R.menu.menu_language);
+        popup.getMenuInflater().inflate(R.menu.menu_language, popup.getMenu());
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+            popup.setForceShowIcon(true);
+        }
         popup.show();
     }
 
@@ -314,7 +325,7 @@ public class LoginActivity extends AppCompatActivity {
         }
 
         this.doubleBackToExitPressedOnce = true;
-        Toast.makeText(this, "Pulsa de nuevo para salir", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, getString(R.string.press_to_exit), Toast.LENGTH_SHORT).show();
 
         new Handler().postDelayed(new Runnable() {
 

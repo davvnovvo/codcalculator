@@ -1,27 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:title="@string/language2">
-        <menu>
-            <item
-                android:id="@+id/spanish"
-                android:icon="@drawable/esp"
-                android:title="@string/language_spanish" />
-            <item
-                android:id="@+id/english"
-                android:icon="@drawable/uk"
-                android:title="@string/language_english" />
-            <item
-                android:id="@+id/french"
-                android:icon="@drawable/fr"
-                android:title="@string/language_french" />
-            <item
-                android:id="@+id/russian"
-                android:icon="@drawable/rs"
-                android:title="@string/language_russian" />
-            <item
-                android:id="@+id/portuguese"
-                android:icon="@drawable/pr"
-                android:title="@string/language_portuguese" />
-        </menu>
-    </item>
+
+    <item
+        android:id="@+id/spanish"
+        android:icon="@drawable/esp"
+        android:title="@string/language_spanish" />
+    <item
+        android:id="@+id/english"
+        android:icon="@drawable/uk"
+        android:title="@string/language_english" />
+    <item
+        android:id="@+id/french"
+        android:icon="@drawable/fr"
+        android:title="@string/language_french" />
+    <item
+        android:id="@+id/russian"
+        android:icon="@drawable/rs"
+        android:title="@string/language_russian" />
+    <item
+        android:id="@+id/portuguese"
+        android:icon="@drawable/pr"
+        android:title="@string/language_portuguese" />
+
 </menu>
