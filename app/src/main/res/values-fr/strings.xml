@@ -146,4 +146,7 @@
     <string name="userNotFound">Utilisateur non enregistré</string>
     <string name="loginError">Erreur de connexion</string>
 
+    <!-- BackPressed -->
+    <string name="press_to_exit">Appuyez à nouveau pour quitter</string>
+
 </resources>

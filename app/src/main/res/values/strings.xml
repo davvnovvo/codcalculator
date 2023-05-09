@@ -141,4 +141,7 @@
     <string name="userNotFound">Usuario no registrado</string>
     <string name="loginError">Error al iniciar sesión</string>
 
+    <!-- BackPressed -->
+    <string name="press_to_exit">Pulsa de nuevo para salir</string>
+
 </resources>
