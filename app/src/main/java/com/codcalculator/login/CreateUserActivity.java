@@ -18,6 +18,7 @@ import android.widget.Toast;
 
 import com.codcalculator.R;
 import com.codcalculator.utilities.SharedPrefsUtil;
+import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.FirebaseAuth;
@@ -30,7 +31,7 @@ public class CreateUserActivity extends AppCompatActivity {
 
     private TextInputEditText mUsernameEditText, mEmailEditText, mPasswordEditText, mConfirmPasswordEditText;
     private TextInputLayout lUsername, lMail, lPasswd, lConfirmPasswd;
-    ImageButton infoButton;
+    ImageButton infoButton, passInfo;
     Button buttonCreate;
     TextView textViewForgotPassword, textViewLogin;
 
@@ -51,6 +52,7 @@ public class CreateUserActivity extends AppCompatActivity {
         buttonCreate = findViewById(R.id.buttonCreate);
         textViewForgotPassword = findViewById(R.id.textViewForgotPassword);
         textViewLogin = findViewById(R.id.textViewLogin);
+        passInfo = findViewById(R.id.password_infobutton);
 
         buttonCreate.setOnClickListener(v -> {
             lPasswd.setError(null);
@@ -89,6 +91,13 @@ public class CreateUserActivity extends AppCompatActivity {
             popupWindow.setFocusable(true);
             popupWindow.setOutsideTouchable(true);
             popupWindow.showAtLocation(v, Gravity.CENTER, 0, 0);
+        });
+
+        passInfo.setOnClickListener(view12 -> {
+            View bottomSheetView = getLayoutInflater().inflate(R.layout.bottom_sheet, null);
+            BottomSheetDialog dialog = new BottomSheetDialog(this);
+            dialog.setContentView(bottomSheetView);
+            dialog.show();
         });
 
         textViewForgotPassword.setOnClickListener(v -> {
