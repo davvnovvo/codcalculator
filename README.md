@@ -12,7 +12,7 @@ obtener.
 
 ## Requerimentos
 
-Para utilizar esta aplicación necesitarás un dispositivo móvil Android con sistema operativo 6.0 o
+Para utilizar esta aplicación necesitarás un dispositivo móvil Android con sistema operativo 8.0 o
 superior.
 
 ## Características
