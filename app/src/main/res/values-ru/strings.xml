@@ -152,4 +152,11 @@
     <!-- BackPressed -->
     <string name="press_to_exit">Нажмите еще раз, чтобы выйти</string>
 
+    <!-- Password Requirements -->
+    <string name="password_requirements">Требования к паролю</string>
+    <string name="password_length">- По крайней мере 6 символов</string>
+    <string name="password_uppercase">- По крайней мере 1 заглавная буква</string>
+    <string name="password_number">- По крайней мере 1 цифра</string>
+    <string name="password_special_char">- По крайней мере 1 специальный символ</string>
+
 </resources>

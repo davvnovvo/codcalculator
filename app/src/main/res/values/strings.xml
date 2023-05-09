@@ -144,4 +144,11 @@
     <!-- BackPressed -->
     <string name="press_to_exit">Pulsa de nuevo para salir</string>
 
+    <!-- Password Requirements -->
+    <string name="password_requirements">Requisitos de contraseña</string>
+    <string name="password_length">- Al menos 6 caracteres</string>
+    <string name="password_uppercase">- Al menos 1 mayúscula</string>
+    <string name="password_number">- Al menos 1 número</string>
+    <string name="password_special_char">- Al menos 1 carácter especial</string>
+
 </resources>

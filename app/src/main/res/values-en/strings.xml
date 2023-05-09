@@ -145,4 +145,11 @@
     <!-- BackPressed -->
     <string name="press_to_exit">Press again to exit</string>
 
+    <!-- Password Requirements -->
+    <string name="password_requirements">Password Requirements</string>
+    <string name="password_length">- At least 6 characters</string>
+    <string name="password_uppercase">- At least 1 uppercase</string>
+    <string name="password_number">- At least 1 number</string>
+    <string name="password_special_char">- At least 1 special character</string>
+
 </resources>

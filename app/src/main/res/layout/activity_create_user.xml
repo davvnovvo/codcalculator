@@ -111,11 +111,21 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
+        <ImageButton
+            android:id="@+id/password_infobutton"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/info_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password2_text_input" />
+
         <LinearLayout
             android:id="@+id/linearCreate"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="50dp"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="@+id/password2_text_input"
             app:layout_constraintStart_toStartOf="@+id/password2_text_input"
@@ -145,7 +155,7 @@
             android:id="@+id/textViewLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="30dp"
             android:text="@string/login_account"
             android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="@+id/linearCreate"
@@ -157,7 +167,7 @@
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:layout_marginTop="20dp"
-            android:background="@drawable/info_btn"
+            android:background="@drawable/faq"
             app:layout_constraintEnd_toEndOf="@+id/textViewLogin"
             app:layout_constraintStart_toStartOf="@+id/textViewLogin"
             app:layout_constraintTop_toBottomOf="@+id/textViewLogin" />
