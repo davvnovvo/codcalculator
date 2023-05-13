@@ -34,11 +34,9 @@ public class honorPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-                //return new InventoryFragment();
-                return null;
+                return new InventoryFragment();
             case 1:
-                //return new FromToFragment();
-                return null;
+                return new FromToFragment();
             default:
                 throw new IllegalArgumentException("Invalid position: " + position);
         }
