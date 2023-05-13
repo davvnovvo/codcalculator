@@ -11,6 +11,7 @@ import android.content.res.Configuration;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.text.TextUtils;
 import android.util.Log;
 import android.util.Patterns;
 import android.view.MenuItem;
@@ -51,7 +52,7 @@ public class LoginActivity extends AppCompatActivity {
     public static final String LANGUAGE_PREFERENCE = "language_preference";
     public static final String SELECTED_LANGUAGE = "selected_language";
     private ViewPager viewPager;
-    private int[] images = {R.drawable.atheus, R.drawable.gwanwyn, R.drawable.oso, R.drawable.roc_trueno};
+    private int[] images = {R.drawable.atheus, R.drawable.oso, R.drawable.gwanwyn, R.drawable.roc_trueno};
     private int currentPage = 0;
     private boolean isFirstTime;
     private Timer timer;
@@ -150,7 +151,7 @@ public class LoginActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        //Manejamos el inicio de sesión del usuario com emai, y contraseña
+        //Manejamos el inicio de sesión del usuario com email, y contraseña
         buttonLogin.setOnClickListener(view -> {
             lMail.setError(null);
             lPasswd.setError(null);
@@ -286,16 +287,21 @@ public class LoginActivity extends AppCompatActivity {
         popup.show();
     }
 
-    public void setLocale() {
-        SharedPreferences preferences = getSharedPreferences(LANGUAGE_PREFERENCE, MODE_PRIVATE);
-        String lang = preferences.getString(SELECTED_LANGUAGE, "en");
-        if (!lang.isEmpty()) {
-            Locale locale = new Locale(lang);
-            Locale.setDefault(locale);
-            Configuration config = new Configuration();
-            config.locale = locale;
-            getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
+    private void setLocale() {
+        SharedPreferences prefs = getSharedPreferences(LANGUAGE_PREFERENCE, MODE_PRIVATE);
+        String language = prefs.getString(SELECTED_LANGUAGE, "");
+        if (TextUtils.isEmpty(language)) {
+            Locale current = getResources().getConfiguration().locale;
+            language = current.getLanguage();
+            SharedPreferences.Editor editor = prefs.edit();
+            editor.putString(SELECTED_LANGUAGE, language);
+            editor.apply();
         }
+        Locale locale = new Locale(language);
+        Locale.setDefault(locale);
+        Configuration config = new Configuration();
+        config.setLocale(locale);
+        getResources().updateConfiguration(config, getResources().getDisplayMetrics());
     }
 
     private void updateUI(FirebaseUser user) {
