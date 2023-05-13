@@ -151,4 +151,16 @@
     <string name="password_number">- Al menos 1 número</string>
     <string name="password_special_char">- Al menos 1 carácter especial</string>
 
+    <!-- Honor items -->
+    <string name="honor_5">5</string>
+    <string name="honor_10">10</string>
+    <string name="honor_20">20</string>
+    <string name="honor_50">50</string>
+    <string name="honor_100">100</string>
+    <string name="honor_200">200</string>
+    <string name="honor_500">500</string>
+    <string name="honor_1000">1000</string>
+    <string name="honor_2000">2000</string>
+    <string name="honor_5000">5000</string>
+
 </resources>
