@@ -112,8 +112,8 @@
     <string name="time_format_hours_and_minutes">%s %s y %s %s</string>
     <string name="time_format_minutes_only">%s %s</string>
 
-    <string name="honor_inventory">Inventario</string>
-    <string name="honor_fromto">Niveles</string>
+    <string name="honor_inventory"> Inventario</string>
+    <string name="honor_fromto"> Niveles</string>
 
     <!-- Google account -->
     <string name="googleLoginError">Fallo al iniciar sesión con Google</string>
@@ -162,5 +162,10 @@
     <string name="honor_1000">1000</string>
     <string name="honor_2000">2000</string>
     <string name="honor_5000">5000</string>
+    <string name="honor_level_prompt">Nivel objetivo</string>
+    <string name="honor_points">Puntos de honor</string>
+    <string name="honor_points_empty">Introduce tus puntos de honor actuales</string>
+    <string name="honor_points_wrong_level">Ya has alcanzado el nivel objetivo</string>
+    <string name="honor_level_prompt_error">Selecciona un nivel objetivo válido</string>
 
 </resources>

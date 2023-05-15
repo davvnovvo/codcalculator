@@ -120,8 +120,8 @@
     <string name="time_format_hours_and_minutes">%s %s и %s %s</string>
     <string name="time_format_minutes_only">%s %s</string>
 
-    <string name="honor_inventory">Инвентарь</string>
-    <string name="honor_fromto">Уровни</string>
+    <string name="honor_inventory"> Инвентарь</string>
+    <string name="honor_fromto"> Уровни</string>
 
     <!-- Google account -->
     <string name="googleLoginError">Ошибка входа через Google</string>
@@ -170,5 +170,10 @@
     <string name="honor_1000">1000</string>
     <string name="honor_2000">2000</string>
     <string name="honor_5000">5000</string>
+    <string name="honor_level_prompt">Целевой уровень</string>
+    <string name="honor_points">Очки чести</string>
+    <string name="honor_points_empty">Введите ваши текущие очки чести</string>
+    <string name="honor_points_wrong_level">Вы уже достигли целевого уровня</string>
+    <string name="honor_level_prompt_error">Выберите допустимый уровень цели</string>
 
 </resources>
