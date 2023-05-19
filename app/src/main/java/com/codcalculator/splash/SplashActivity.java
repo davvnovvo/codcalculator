@@ -2,12 +2,13 @@ package com.codcalculator.splash;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.animation.AnimatorSet;
+import android.animation.ObjectAnimator;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.codcalculator.login.LoginActivity;
 import com.codcalculator.R;
@@ -18,7 +19,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class SplashActivity extends AppCompatActivity {
 
-    private static final int SPLASH_TIMEOUT = 4000;
+    private static final int SPLASH_TIMEOUT = 5200;
     boolean ToS;
 
     @Override
@@ -29,10 +30,27 @@ public class SplashActivity extends AppCompatActivity {
         ToS = SharedPrefsUtil.getBoolean(this, "ToS");
         openApp(ToS);
 
-        ImageView imageView = findViewById(R.id.logo);
-        Animation animacion = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.animacion_parpadeo);
+        ImageView logo = findViewById(R.id.logo);
+        TextView textCalculator = findViewById(R.id.textCalculator);
 
-        imageView.startAnimation(animacion);
+        // Animación del logo
+        ObjectAnimator logoScaleX = ObjectAnimator.ofFloat(logo, "scaleX", 1.0f, 0.75f);
+        ObjectAnimator logoScaleY = ObjectAnimator.ofFloat(logo, "scaleY", 1.0f, 0.75f);
+        ObjectAnimator logoTranslationY = ObjectAnimator.ofFloat(logo, "translationY", 0, -500);
+        logoTranslationY.setDuration(2000);
+
+        // Animación del texto
+        ObjectAnimator textFadeIn = ObjectAnimator.ofFloat(textCalculator, "alpha", 0f, 1f);
+        ObjectAnimator textScaleX = ObjectAnimator.ofFloat(textCalculator, "scaleX", 0.5f, 1.0f);
+        ObjectAnimator textScaleY = ObjectAnimator.ofFloat(textCalculator, "scaleY", 0.5f, 1.0f);
+        textFadeIn.setDuration(4500);
+
+        // Animación combinada
+        AnimatorSet animatorSet = new AnimatorSet();
+        animatorSet.playTogether(logoScaleX, logoScaleY, logoTranslationY, textFadeIn, textScaleX, textScaleY);
+        animatorSet.setStartDelay(1000);
+        animatorSet.start();
+
     }
 
     private void openApp(boolean b) {
