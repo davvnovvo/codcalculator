@@ -48,6 +48,7 @@
     <style name="Theme.Codcalculator.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/cod_on_primary</item>
     </style>
 
     <style name="Theme.Codcalculator.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
