@@ -20,7 +20,7 @@
             android:noHistory="true"
             android:parentActivityName=".login.CreateUserActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.Codcalculator.Action2">
+            android:theme="@style/Theme.Codcalculator">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -40,7 +40,7 @@
             android:exported="false"
             android:parentActivityName=".login.LoginActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.Codcalculator.Action2">
+            android:theme="@style/Theme.Codcalculator">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
