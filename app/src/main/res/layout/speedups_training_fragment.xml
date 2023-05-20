@@ -35,7 +35,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="@string/image_label" />
+                    android:text="@string/image_label"
+                    android:textColor="@color/white" />
 
             </FrameLayout>
 
@@ -53,6 +54,7 @@
                     android:layout_weight="3"
                     android:gravity="center"
                     android:text=""
+                    android:textColor="@color/white"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
@@ -99,15 +101,16 @@
                     android:orientation="horizontal">
 
                     <com.google.android.material.textfield.TextInputLayout
+                        style="@style/TextInputLayoutStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:hint="@string/_1_min"
-                        style="@style/TextInputLayoutStyle"
                         android:padding="3dp"
                         app:boxBackgroundMode="outline"
                         app:hintAnimationEnabled="true"
-                        app:hintEnabled="true">
+                        app:hintEnabled="true"
+                        app:hintTextColor="@color/white">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/training_field_1min"
@@ -115,20 +118,23 @@
                             android:layout_height="wrap_content"
                             android:backgroundTint="@android:color/transparent"
                             android:gravity="center"
-                            android:inputType="number" />
+                            android:inputType="number"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
+                        style="@style/TextInputLayoutStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:hint="@string/_5_min"
-                        style="@style/TextInputLayoutStyle"
                         android:padding="3dp"
                         app:boxBackgroundMode="outline"
                         app:hintAnimationEnabled="true"
-                        app:hintEnabled="true">
+                        app:hintEnabled="true"
+                        app:hintTextColor="@color/white">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/training_field_5min"
@@ -136,20 +142,23 @@
                             android:layout_height="wrap_content"
                             android:backgroundTint="@android:color/transparent"
                             android:gravity="center"
-                            android:inputType="number" />
+                            android:inputType="number"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
+                        style="@style/TextInputLayoutStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:hint="@string/_10_min"
-                        style="@style/TextInputLayoutStyle"
                         android:padding="3dp"
                         app:boxBackgroundMode="outline"
                         app:hintAnimationEnabled="true"
-                        app:hintEnabled="true">
+                        app:hintEnabled="true"
+                        app:hintTextColor="@color/white">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/training_field_10min"
@@ -157,20 +166,23 @@
                             android:layout_height="wrap_content"
                             android:backgroundTint="@android:color/transparent"
                             android:gravity="center"
-                            android:inputType="number" />
+                            android:inputType="number"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
+                        style="@style/TextInputLayoutStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:hint="@string/_15_min"
-                        style="@style/TextInputLayoutStyle"
                         android:padding="3dp"
                         app:boxBackgroundMode="outline"
                         app:hintAnimationEnabled="true"
-                        app:hintEnabled="true">
+                        app:hintEnabled="true"
+                        app:hintTextColor="@color/white">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/training_field_15min"
@@ -178,7 +190,9 @@
                             android:layout_height="wrap_content"
                             android:backgroundTint="@android:color/transparent"
                             android:gravity="center"
-                            android:inputType="number" />
+                            android:inputType="number"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white" />
 
                     </com.google.android.material.textfield.TextInputLayout>
                 </LinearLayout>
@@ -191,15 +205,16 @@
                     android:orientation="horizontal">
 
                     <com.google.android.material.textfield.TextInputLayout
+                        style="@style/TextInputLayoutStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:hint="@string/_30_min"
-                        style="@style/TextInputLayoutStyle"
                         android:padding="3dp"
                         app:boxBackgroundMode="outline"
                         app:hintAnimationEnabled="true"
-                        app:hintEnabled="true">
+                        app:hintEnabled="true"
+                        app:hintTextColor="@color/white">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/training_field_30min"
@@ -207,20 +222,23 @@
                             android:layout_height="wrap_content"
                             android:backgroundTint="@android:color/transparent"
                             android:gravity="center"
-                            android:inputType="number" />
+                            android:inputType="number"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
+                        style="@style/TextInputLayoutStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:hint="@string/_60_min"
-                        style="@style/TextInputLayoutStyle"
                         android:padding="3dp"
                         app:boxBackgroundMode="outline"
                         app:hintAnimationEnabled="true"
-                        app:hintEnabled="true">
+                        app:hintEnabled="true"
+                        app:hintTextColor="@color/white">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/training_field_60min"
@@ -228,20 +246,23 @@
                             android:layout_height="wrap_content"
                             android:backgroundTint="@android:color/transparent"
                             android:gravity="center"
-                            android:inputType="number" />
+                            android:inputType="number"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
+                        style="@style/TextInputLayoutStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:hint="@string/_3_hours"
-                        style="@style/TextInputLayoutStyle"
                         android:padding="3dp"
                         app:boxBackgroundMode="outline"
                         app:hintAnimationEnabled="true"
-                        app:hintEnabled="true">
+                        app:hintEnabled="true"
+                        app:hintTextColor="@color/white">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/training_field_3h"
@@ -249,20 +270,23 @@
                             android:layout_height="wrap_content"
                             android:backgroundTint="@android:color/transparent"
                             android:gravity="center"
-                            android:inputType="number" />
+                            android:inputType="number"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
+                        style="@style/TextInputLayoutStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:hint="@string/_8_hours"
-                        style="@style/TextInputLayoutStyle"
                         android:padding="3dp"
                         app:boxBackgroundMode="outline"
                         app:hintAnimationEnabled="true"
-                        app:hintEnabled="true">
+                        app:hintEnabled="true"
+                        app:hintTextColor="@color/white">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/training_field_8h"
@@ -270,7 +294,9 @@
                             android:layout_height="wrap_content"
                             android:backgroundTint="@android:color/transparent"
                             android:gravity="center"
-                            android:inputType="number" />
+                            android:inputType="number"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white" />
 
                     </com.google.android.material.textfield.TextInputLayout>
                 </LinearLayout>
@@ -284,6 +310,7 @@
                     android:orientation="horizontal">
 
                     <com.google.android.material.textfield.TextInputLayout
+                        style="@style/TextInputLayoutStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -292,7 +319,7 @@
                         app:boxBackgroundMode="outline"
                         app:hintAnimationEnabled="true"
                         app:hintEnabled="true"
-                        style="@style/TextInputLayoutStyle">
+                        app:hintTextColor="@color/white">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/training_field_15h"
@@ -300,20 +327,23 @@
                             android:layout_height="wrap_content"
                             android:backgroundTint="@android:color/transparent"
                             android:gravity="center"
-                            android:inputType="number" />
+                            android:inputType="number"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
+                        style="@style/TextInputLayoutStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:hint="@string/_24_hours"
-                        style="@style/TextInputLayoutStyle"
                         android:padding="3dp"
                         app:boxBackgroundMode="outline"
                         app:hintAnimationEnabled="true"
-                        app:hintEnabled="true">
+                        app:hintEnabled="true"
+                        app:hintTextColor="@color/white">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/training_field_24h"
@@ -321,20 +351,23 @@
                             android:layout_height="wrap_content"
                             android:backgroundTint="@android:color/transparent"
                             android:gravity="center"
-                            android:inputType="number" />
+                            android:inputType="number"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
+                        style="@style/TextInputLayoutStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:hint="@string/_3_days"
-                        style="@style/TextInputLayoutStyle"
                         android:padding="3dp"
                         app:boxBackgroundMode="outline"
                         app:hintAnimationEnabled="true"
-                        app:hintEnabled="true">
+                        app:hintEnabled="true"
+                        app:hintTextColor="@color/white">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/training_field_3_days"
@@ -342,20 +375,23 @@
                             android:layout_height="wrap_content"
                             android:backgroundTint="@android:color/transparent"
                             android:gravity="center"
-                            android:inputType="number" />
+                            android:inputType="number"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
+                        style="@style/TextInputLayoutStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:hint="@string/_7_days"
-                        style="@style/TextInputLayoutStyle"
                         android:padding="3dp"
                         app:boxBackgroundMode="outline"
                         app:hintAnimationEnabled="true"
-                        app:hintEnabled="true">
+                        app:hintEnabled="true"
+                        app:hintTextColor="@color/white">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/training_field_7_days"
@@ -363,7 +399,9 @@
                             android:layout_height="wrap_content"
                             android:backgroundTint="@android:color/transparent"
                             android:gravity="center"
-                            android:inputType="number" />
+                            android:inputType="number"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white" />
 
                     </com.google.android.material.textfield.TextInputLayout>
                 </LinearLayout>
@@ -376,15 +414,16 @@
                     android:orientation="horizontal">
 
                     <com.google.android.material.textfield.TextInputLayout
+                        style="@style/TextInputLayoutStyle"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:hint="@string/_30_days"
-                        style="@style/TextInputLayoutStyle"
                         android:padding="3dp"
                         app:boxBackgroundMode="outline"
                         app:hintAnimationEnabled="true"
-                        app:hintEnabled="true">
+                        app:hintEnabled="true"
+                        app:hintTextColor="@color/white">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/training_field_30_days"
@@ -392,7 +431,9 @@
                             android:layout_height="wrap_content"
                             android:backgroundTint="@android:color/transparent"
                             android:gravity="center"
-                            android:inputType="number" />
+                            android:inputType="number"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
