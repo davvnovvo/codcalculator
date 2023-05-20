@@ -177,4 +177,12 @@
     <string name="honor_points_wrong_level">Вы уже достигли целевого уровня</string>
     <string name="honor_level_prompt_error">Выберите допустимый уровень цели</string>
 
+    <!-- Токены -->
+    <string-array name="token_type">
+        <item>Элита</item>
+        <item>Эпический</item>
+        <item>Легендарный</item>
+    </string-array>
+
+
 </resources>

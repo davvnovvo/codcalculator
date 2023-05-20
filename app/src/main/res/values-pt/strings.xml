@@ -170,4 +170,11 @@
     <string name="honor_points_wrong_level">Você já atingiu o nível objetivo</string>
     <string name="honor_level_prompt_error">Selecione um nível de destino válido</string>
 
+    <!-- Tokens -->
+    <string-array name="token_type">
+        <item>Elite</item>
+        <item>Épico</item>
+        <item>Lendário</item>
+    </string-array>
+
 </resources>

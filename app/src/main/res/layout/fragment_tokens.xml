@@ -6,12 +6,10 @@
     android:layout_height="match_parent"
     tools:context=".main.ui.tokens.TokensFragment">
 
-    <ImageButton
-        android:id="@+id/honor_reset_fields"
-        android:layout_width="38dp"
-        android:layout_height="38dp"
+    <Spinner
+        android:id="@+id/token_type_spinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:background="@android:color/transparent"
-        android:scaleType="fitCenter"
-        android:src="@drawable/ic_redo" />
+        android:entries="@array/token_type" />
 </androidx.constraintlayout.widget.ConstraintLayout>
