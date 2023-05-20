@@ -30,25 +30,10 @@
         <item name="android:navigationBarColor">@color/cod_navigation_bar</item>
     </style>
 
-    <style name="Theme.Codcalculator.Action2" parent="Theme.MaterialComponents.DayNight">
-        <!-- Primary brand color (blue) -->
-        <item name="colorPrimary">@color/cod_primary</item>
-        <item name="colorPrimaryVariant">@color/cod_primary_variant</item>
-        <item name="colorOnPrimary">@color/cod_on_primary</item>
-        <!-- Secondary brand color (yellow) -->
-        <item name="colorSecondary">@color/cod_secondary</item>
-        <item name="colorSecondaryVariant">@color/cod_secondary_variant</item>
-        <item name="colorOnSecondary">@color/cod_on_secondary</item>
-        <!-- Other customizations -->
-        <item name="android:windowBackground">@color/cod_background</item>
-        <item name="android:statusBarColor">@color/cod_status_bar</item>
-        <item name="android:navigationBarColor">@color/cod_navigation_bar</item>
-    </style>
-
     <style name="Theme.Codcalculator.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
-        <item name="android:windowBackground">@color/cod_on_primary</item>
+        <item name="colorPrimary">@color/cod_primary_variant</item>
     </style>
 
     <style name="Theme.Codcalculator.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
@@ -60,5 +45,9 @@
         <item name="boxCornerRadiusTopEnd">8dp</item>
         <item name="boxCornerRadiusBottomStart">8dp</item>
         <item name="boxCornerRadiusBottomEnd">8dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="boxStrokeColor">@color/white</item>
     </style>
+
 </resources>

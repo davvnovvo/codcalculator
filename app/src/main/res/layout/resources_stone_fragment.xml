@@ -35,7 +35,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="@string/image_label" />
+                    android:text="@string/image_label"
+                    android:textColor="@color/white" />
 
             </FrameLayout>
 
@@ -53,6 +54,7 @@
                     android:layout_weight="3"
                     android:gravity="center"
                     android:text=""
+                    android:textColor="@color/white"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
@@ -99,15 +101,16 @@
                     android:orientation="horizontal">
 
                     <com.google.android.material.textfield.TextInputLayout
+                        style="@style/TextInputLayoutStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:hint="@string/_750"
-                        style="@style/TextInputLayoutStyle"
                         android:padding="3dp"
                         app:boxBackgroundMode="outline"
                         app:hintAnimationEnabled="true"
-                        app:hintEnabled="true">
+                        app:hintEnabled="true"
+                        app:hintTextColor="@color/white">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/stone_field_750"
@@ -115,20 +118,23 @@
                             android:layout_height="wrap_content"
                             android:backgroundTint="@android:color/transparent"
                             android:gravity="center"
-                            android:inputType="number" />
+                            android:inputType="number"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
+                        style="@style/TextInputLayoutStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:hint="@string/_7_5k"
-                        style="@style/TextInputLayoutStyle"
                         android:padding="3dp"
                         app:boxBackgroundMode="outline"
                         app:hintAnimationEnabled="true"
-                        app:hintEnabled="true">
+                        app:hintEnabled="true"
+                        app:hintTextColor="@color/white">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/stone_field_7_5k"
@@ -136,20 +142,23 @@
                             android:layout_height="wrap_content"
                             android:backgroundTint="@android:color/transparent"
                             android:gravity="center"
-                            android:inputType="number" />
+                            android:inputType="number"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
+                        style="@style/TextInputLayoutStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:hint="@string/_37_5k"
-                        style="@style/TextInputLayoutStyle"
                         android:padding="3dp"
                         app:boxBackgroundMode="outline"
                         app:hintAnimationEnabled="true"
-                        app:hintEnabled="true">
+                        app:hintEnabled="true"
+                        app:hintTextColor="@color/white">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/stone_field_37_5k"
@@ -157,7 +166,9 @@
                             android:layout_height="wrap_content"
                             android:backgroundTint="@android:color/transparent"
                             android:gravity="center"
-                            android:inputType="number" />
+                            android:inputType="number"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white" />
 
                     </com.google.android.material.textfield.TextInputLayout>
                 </LinearLayout>
@@ -170,15 +181,16 @@
                     android:orientation="horizontal">
 
                     <com.google.android.material.textfield.TextInputLayout
+                        style="@style/TextInputLayoutStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:hint="@string/_112_5k"
-                        style="@style/TextInputLayoutStyle"
                         android:padding="3dp"
                         app:boxBackgroundMode="outline"
                         app:hintAnimationEnabled="true"
-                        app:hintEnabled="true">
+                        app:hintEnabled="true"
+                        app:hintTextColor="@color/white">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/stone_field_112_5k"
@@ -186,20 +198,23 @@
                             android:layout_height="wrap_content"
                             android:backgroundTint="@android:color/transparent"
                             android:gravity="center"
-                            android:inputType="number" />
+                            android:inputType="number"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
+                        style="@style/TextInputLayoutStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:hint="@string/_375k"
-                        style="@style/TextInputLayoutStyle"
                         android:padding="3dp"
                         app:boxBackgroundMode="outline"
                         app:hintAnimationEnabled="true"
-                        app:hintEnabled="true">
+                        app:hintEnabled="true"
+                        app:hintTextColor="@color/white">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/stone_field_375k"
@@ -207,20 +222,23 @@
                             android:layout_height="wrap_content"
                             android:backgroundTint="@android:color/transparent"
                             android:gravity="center"
-                            android:inputType="number" />
+                            android:inputType="number"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
+                        style="@style/TextInputLayoutStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:hint="@string/_1_125m"
-                        style="@style/TextInputLayoutStyle"
                         android:padding="3dp"
                         app:boxBackgroundMode="outline"
                         app:hintAnimationEnabled="true"
-                        app:hintEnabled="true">
+                        app:hintEnabled="true"
+                        app:hintTextColor="@color/white">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/stone_field_1_125M"
@@ -228,7 +246,9 @@
                             android:layout_height="wrap_content"
                             android:backgroundTint="@android:color/transparent"
                             android:gravity="center"
-                            android:inputType="number" />
+                            android:inputType="number"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white" />
 
                     </com.google.android.material.textfield.TextInputLayout>
                 </LinearLayout>
