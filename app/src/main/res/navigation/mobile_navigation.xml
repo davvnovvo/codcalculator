@@ -22,4 +22,10 @@
         android:name="com.codcalculator.main.ui.honor.SlideshowFragment"
         android:label="@string/menu_honor"
         tools:layout="@layout/fragment_honor" />
+
+    <fragment
+        android:id="@+id/nav_tokens"
+        android:name="com.codcalculator.main.ui.tokens.TokensFragment"
+        android:label="@string/menu_tokens"
+        tools:layout="@layout/fragment_tokens" />
 </navigation>

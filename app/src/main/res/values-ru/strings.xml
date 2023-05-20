@@ -45,6 +45,7 @@
     <string name="menu_resources">Ресурсы</string>
     <string name="menu_speedups">Ускорения</string>
     <string name="menu_honor">Честь</string>
+    <string name="menu_tokens">Жетоны</string>
 
     <string name="rss_tab_gold">Золото</string>
     <string name="rss_tab_wood">Дерево</string>
@@ -175,5 +176,13 @@
     <string name="honor_points_empty">Введите ваши текущие очки чести</string>
     <string name="honor_points_wrong_level">Вы уже достигли целевого уровня</string>
     <string name="honor_level_prompt_error">Выберите допустимый уровень цели</string>
+
+    <!-- Токены -->
+    <string-array name="token_type">
+        <item>Элита</item>
+        <item>Эпический</item>
+        <item>Легендарный</item>
+    </string-array>
+
 
 </resources>

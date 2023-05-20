@@ -43,6 +43,7 @@
     <string name="menu_resources">Recursos</string>
     <string name="menu_speedups">Aceleradores</string>
     <string name="menu_honor">Honor</string>
+    <string name="menu_tokens">Tokens</string>
 
     <string name="rss_tab_gold">Oro</string>
     <string name="rss_tab_wood">Madera</string>
@@ -167,5 +168,12 @@
     <string name="honor_points_empty">Introduce tus puntos de honor actuales</string>
     <string name="honor_points_wrong_level">Ya has alcanzado el nivel objetivo</string>
     <string name="honor_level_prompt_error">Selecciona un nivel objetivo válido</string>
+
+    <!--Tokens -->
+    <string-array name="token_type">
+        <item>Elite</item>
+        <item>Epico</item>
+        <item>Legendario</item>
+    </string-array>
 
 </resources>
