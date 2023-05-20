@@ -43,6 +43,7 @@
     <string name="menu_resources">Recursos</string>
     <string name="menu_speedups">Aceleradores</string>
     <string name="menu_honor">Honor</string>
+    <string name="menu_tokens">Tokens</string>
 
     <string name="rss_tab_gold">Oro</string>
     <string name="rss_tab_wood">Madera</string>

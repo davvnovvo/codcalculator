@@ -17,5 +17,9 @@
             android:id="@+id/nav_honor"
             android:icon="@drawable/honor_general"
             android:title="@string/menu_honor" />
+        <item
+            android:id="@+id/nav_tokens"
+            android:icon="@drawable/ic_token"
+            android:title="@string/menu_tokens" />
     </group>
 </menu>

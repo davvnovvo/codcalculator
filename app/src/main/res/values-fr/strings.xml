@@ -45,6 +45,7 @@
     <string name="menu_resources">Ressources</string>
     <string name="menu_speedups">Accélérations</string>
     <string name="menu_honor">Honneur</string>
+    <string name="menu_tokens">Jetons</string>
 
     <string name="rss_tab_gold">Or</string>
     <string name="rss_tab_wood">Bois</string>
