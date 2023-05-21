@@ -262,13 +262,15 @@
                     android:orientation="horizontal">
 
                     <com.google.android.material.textfield.TextInputLayout
+                        style="@style/TextInputLayoutStyle"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:hint="@string/_3_75m"
                         app:boxBackgroundMode="outline"
                         app:hintAnimationEnabled="true"
-                        app:hintEnabled="true">
+                        app:hintEnabled="true"
+                        app:hintTextColor="@color/white">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/stone_field_3_75M"
@@ -276,7 +278,9 @@
                             android:layout_height="wrap_content"
                             android:backgroundTint="@android:color/transparent"
                             android:gravity="center"
-                            android:inputType="number" />
+                            android:inputType="number"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white" />
 
                     </com.google.android.material.textfield.TextInputLayout>
                 </LinearLayout>
