@@ -7,6 +7,7 @@
         android:endColor="@color/cod_secondary"
         android:endX="1"
         android:endY="1"
+        android:startColor="@color/cod_background"
         android:startX="0"
         android:startY="0"
         android:type="linear" />
