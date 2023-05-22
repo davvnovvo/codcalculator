@@ -24,6 +24,7 @@
     <string name="mailNotFound">The entered email is not registered</string>
     <string name="sentEmail">Email sent</string>
     <string name="exit">Do you want to exit the application?</string>
+    <string name="volver">Back</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
     <string name="faq">FAQ</string>

@@ -23,6 +23,7 @@
     <string name="mailNotFound">El email introducido no está registrado</string>
     <string name="sentEmail">Email enviado</string>
     <string name="exit">¿Deseas salir de la aplicación?</string>
+    <string name="volver">Volver</string>
     <string name="yes">Si</string>
     <string name="no">No</string>
     <string name="faq">FAQ</string>

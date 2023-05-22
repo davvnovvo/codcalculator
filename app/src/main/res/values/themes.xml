@@ -26,8 +26,8 @@
         <item name="colorOnSecondary">@color/cod_on_secondary</item>
         <!-- Other customizations -->
         <item name="android:windowBackground">@color/cod_background</item>
-        <item name="android:statusBarColor">@color/cod_status_bar</item>
-        <item name="android:navigationBarColor">@color/cod_navigation_bar</item>
+        <item name="android:statusBarColor">@color/cod_primary</item>
+        <item name="android:navigationBarColor">@color/cod_primary</item>
     </style>
 
     <style name="Theme.Codcalculator.NoActionBar">

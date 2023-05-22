@@ -1,6 +1,7 @@
 package com.codcalculator.login;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Context;
 import android.content.Intent;
@@ -39,6 +40,9 @@ public class CreateUserActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_user);
+
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
         mUsernameEditText = findViewById(R.id.editTextUserName);
         mEmailEditText = findViewById(R.id.editTextEmail);

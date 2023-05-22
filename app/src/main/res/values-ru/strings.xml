@@ -24,6 +24,7 @@
     <string name="mailNotFound">Введенный адрес электронной почты не зарегистрирован</string>
     <string name="sentEmail">Электронное письмо отправлено</string>
     <string name="exit">Хотите выйти из приложения?</string>
+    <string name="volver">Назад</string>
     <string name="yes">Да</string>
     <string name="no">Нет</string>
     <string name="faq">FAQ</string>
