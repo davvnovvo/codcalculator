@@ -24,6 +24,7 @@
     <string name="mailNotFound">O e-mail digitado não está registrado</string>
     <string name="sentEmail">E-mail enviado</string>
     <string name="exit">Você deseja sair do aplicativo?</string>
+    <string name="volver">Voltar</string>
     <string name="yes">Sim</string>
     <string name="no">Não</string>
     <string name="faq">FAQ</string>

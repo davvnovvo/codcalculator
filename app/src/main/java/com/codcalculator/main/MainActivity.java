@@ -2,12 +2,19 @@ package com.codcalculator.main;
 
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.text.SpannableString;
+import android.text.style.ForegroundColorSpan;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.codcalculator.R;
@@ -65,6 +72,18 @@ public class MainActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
+
+        // Obtenemos la referencia al elemento del menú que queremos personalizar
+        MenuItem signOutMenuItem = menu.findItem(R.id.signout);
+
+        // Establece el estilo personalizado
+        SpannableString spannableString = new SpannableString(signOutMenuItem.getTitle());
+        spannableString.setSpan(new ForegroundColorSpan(Color.BLACK), 0, spannableString.length(), 0);
+        signOutMenuItem.setTitle(spannableString);
+
+        signOutMenuItem.setActionView(new View(this));
+        signOutMenuItem.getActionView().setBackgroundColor(Color.WHITE);
+
         return true;
     }
 
@@ -81,18 +100,36 @@ public class MainActivity extends AppCompatActivity {
 
     private void signOut() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(getString(R.string.signout_confirm));
+        String message = getString(R.string.signout_confirm);
+
+        // Establecemos el estilo personalizado del mensaje del diálogo
+        SpannableString spannableString = new SpannableString(message);
+        spannableString.setSpan(new ForegroundColorSpan(Color.BLACK), 0, spannableString.length(), 0);
+        builder.setMessage(spannableString);
+
         builder.setPositiveButton(getString(R.string.yes), (dialog, which) -> {
             FirebaseAuth.getInstance().signOut();
             Intent intent = new Intent(this, LoginActivity.class);
             startActivity(intent);
             Toast.makeText(this, getString(R.string.closedSession), Toast.LENGTH_LONG).show();
-            //userTextView.setText("");
             finish();
         });
+
         builder.setNegativeButton(getString(R.string.no), (dialog, which) -> {
         });
+
         AlertDialog dialog = builder.create();
+
+        dialog.setOnShowListener(dialogInterface -> {
+            Button positiveButton = dialog.getButton(DialogInterface.BUTTON_POSITIVE);
+            positiveButton.setTextColor(Color.BLACK);
+
+            Button negativeButton = dialog.getButton(DialogInterface.BUTTON_NEGATIVE);
+            negativeButton.setTextColor(Color.BLACK);
+        });
+
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.WHITE));
+
         dialog.show();
     }
 
