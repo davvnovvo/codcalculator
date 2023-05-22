@@ -24,6 +24,7 @@ import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 
 import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -75,6 +76,9 @@ public class MainActivity extends AppCompatActivity {
 
         // Obtenemos la referencia al elemento del menú que queremos personalizar
         MenuItem signOutMenuItem = menu.findItem(R.id.signout);
+
+        // Obtener el modo actual (claro u oscuro)
+        int currentMode = AppCompatDelegate.getDefaultNightMode();
 
         // Establece el estilo personalizado
         SpannableString spannableString = new SpannableString(signOutMenuItem.getTitle());
