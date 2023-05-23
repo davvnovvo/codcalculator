@@ -11,5 +11,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:entries="@array/token_type" />
+        android:entries="@array/token_type"
+        android:theme="@style/SpinnerTheme" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
