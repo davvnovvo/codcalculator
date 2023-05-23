@@ -73,21 +73,6 @@ public class MainActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
-
-        // Obtenemos la referencia al elemento del menú que queremos personalizar
-        MenuItem signOutMenuItem = menu.findItem(R.id.signout);
-
-        // Obtener el modo actual (claro u oscuro)
-        int currentMode = AppCompatDelegate.getDefaultNightMode();
-
-        // Establece el estilo personalizado
-        SpannableString spannableString = new SpannableString(signOutMenuItem.getTitle());
-        spannableString.setSpan(new ForegroundColorSpan(Color.BLACK), 0, spannableString.length(), 0);
-        signOutMenuItem.setTitle(spannableString);
-
-        signOutMenuItem.setActionView(new View(this));
-        signOutMenuItem.getActionView().setBackgroundColor(Color.WHITE);
-
         return true;
     }
 
