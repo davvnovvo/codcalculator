@@ -1,5 +1,6 @@
 package com.codcalculator.main.ui.honor;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,9 +14,12 @@ import android.widget.Toast;
 import androidx.fragment.app.Fragment;
 
 import com.codcalculator.R;
+import com.codcalculator.utilities.CustomSpinnerAdapter;
 import com.google.android.material.textfield.TextInputEditText;
 
 import java.text.NumberFormat;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Locale;
 
 public class FromToFragment extends Fragment {
@@ -39,8 +43,8 @@ public class FromToFragment extends Fragment {
         honor_total = rootView.findViewById(R.id.honor_result_text);
         ImageButton calculate = rootView.findViewById(R.id.honor_calculate);
         honor_points = rootView.findViewById(R.id.honor_points_input);
-
         honor_lvl = rootView.findViewById(R.id.honor_level_spinner);
+
         String[] honorLevels = getResources().getStringArray(R.array.honor_levels);
         String[] honorLevelsWithPrompt = new String[honorLevels.length + 1];
         honorLevelsWithPrompt[0] = getString(R.string.honor_level_prompt);
@@ -49,6 +53,10 @@ public class FromToFragment extends Fragment {
         honor_lvl.setAdapter(adapter);
 
         honorTable = new int[]{200, 400, 1200, 3500, 6000, 11500, 17500, 35000, 75000, 150000, 250000, 350000, 500000, 750000, 1000000};
+
+        List<String> honorLevels2 = Arrays.asList(getResources().getStringArray(R.array.honor_levels));
+        CustomSpinnerAdapter adapter2 = new CustomSpinnerAdapter(getContext(), android.R.layout.simple_spinner_item, honorLevels2, Color.WHITE);
+        honor_lvl.setAdapter(adapter2);
 
         resetFields();
         reset.setOnClickListener(v -> resetFields());
@@ -85,7 +93,7 @@ public class FromToFragment extends Fragment {
             return;
         }
 
-        int remainingPoints = honorTable[targetLevel-1] - honorPoints;
+        int remainingPoints = honorTable[targetLevel - 1] - honorPoints;
         NumberFormat numberFormat = NumberFormat.getNumberInstance(Locale.getDefault());
         String formattedTotal = numberFormat.format(remainingPoints);
         honor_total.setText(formattedTotal);

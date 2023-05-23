@@ -59,7 +59,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:entries="@array/honor_levels"
-                    android:prompt="@string/honor_level_prompt" />
+                    android:prompt="@string/honor_level_prompt"
+                    android:theme="@style/SpinnerTheme" />
 
             </LinearLayout>
 
