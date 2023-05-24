@@ -18,7 +18,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:navigationIcon="@drawable/ic_flecha"
+            app:navigationIcon="@drawable/ic_arrow"
             app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
             app:titleTextColor="@color/white"
             tools:ignore="UnusedAttribute" />
@@ -172,8 +172,8 @@
 
             <Button
                 android:id="@+id/buttonCreate"
-                android:layout_width="0dp"
                 style="@style/CustomButton"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/createaccount"

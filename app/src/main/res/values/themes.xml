@@ -48,7 +48,7 @@
         <item name="boxCornerRadiusBottomEnd">8dp</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:textColorHint">@color/white</item>
-        <item name="boxStrokeColor">@color/white</item>
+        <item name="boxStrokeColor">@drawable/selector_text_input_border</item>
     </style>
 
     <style name="CustomButton">

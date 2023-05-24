@@ -91,7 +91,7 @@ public class CreateUserActivity extends AppCompatActivity {
         infoButton.setOnClickListener(v -> {
             LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             View popupView = inflater.inflate(R.layout.popup_layout, null);
-            PopupWindow popupWindow = new PopupWindow(popupView, 1000, 1100);
+            PopupWindow popupWindow = new PopupWindow(popupView, 1000, 1300);
             popupWindow.setFocusable(true);
             popupWindow.setOutsideTouchable(true);
             popupWindow.showAtLocation(v, Gravity.CENTER, 0, 0);
