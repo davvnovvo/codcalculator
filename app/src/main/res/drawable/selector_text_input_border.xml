@@ -1,0 +1,6 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Estado cuando el TextInputLayout está enfocado -->
+    <item android:color="@color/white" android:state_focused="true" />
+    <!-- Estado cuando el TextInputLayout no está enfocado -->
+    <item android:color="@color/white" />
+</selector>

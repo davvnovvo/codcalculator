@@ -18,6 +18,7 @@ import com.codcalculator.utilities.CustomSpinnerAdapter;
 import com.google.android.material.textfield.TextInputEditText;
 
 import java.text.NumberFormat;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
@@ -54,7 +55,8 @@ public class FromToFragment extends Fragment {
 
         honorTable = new int[]{200, 400, 1200, 3500, 6000, 11500, 17500, 35000, 75000, 150000, 250000, 350000, 500000, 750000, 1000000};
 
-        List<String> honorLevels2 = Arrays.asList(getResources().getStringArray(R.array.honor_levels));
+        List<String> honorLevels2 = new ArrayList<>(Arrays.asList(getResources().getStringArray(R.array.honor_levels)));
+        honorLevels2.add(0, getString(R.string.honor_level_prompt));
         CustomSpinnerAdapter adapter2 = new CustomSpinnerAdapter(getContext(), android.R.layout.simple_spinner_item, honorLevels2, Color.WHITE);
         honor_lvl.setAdapter(adapter2);
 
