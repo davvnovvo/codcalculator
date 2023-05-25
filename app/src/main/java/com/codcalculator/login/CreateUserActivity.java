@@ -30,8 +30,8 @@ import java.util.regex.Pattern;
 
 public class CreateUserActivity extends AppCompatActivity {
 
-    private TextInputEditText mUsernameEditText, mEmailEditText, mPasswordEditText, mConfirmPasswordEditText;
-    private TextInputLayout lUsername, lMail, lPasswd, lConfirmPasswd;
+    private TextInputEditText mEmailEditText, mPasswordEditText, mConfirmPasswordEditText;
+    private TextInputLayout lMail, lPasswd, lConfirmPasswd;
     ImageButton infoButton, passInfo;
     Button buttonCreate;
     TextView textViewForgotPassword, textViewLogin;
@@ -44,11 +44,9 @@ public class CreateUserActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        mUsernameEditText = findViewById(R.id.editTextUserName);
         mEmailEditText = findViewById(R.id.editTextEmail);
         mPasswordEditText = findViewById(R.id.editTextPassword);
         mConfirmPasswordEditText = findViewById(R.id.editTextPassword2);
-        lUsername = findViewById(R.id.username_text_input);
         lMail = findViewById(R.id.email_text_input);
         lPasswd = findViewById(R.id.password_text_input);
         lConfirmPasswd = findViewById(R.id.password2_text_input);
@@ -59,12 +57,10 @@ public class CreateUserActivity extends AppCompatActivity {
         passInfo = findViewById(R.id.password_infobutton);
 
         buttonCreate.setOnClickListener(v -> {
+            lMail.setError(null);
             lPasswd.setError(null);
             lConfirmPasswd.setError(null);
-            if (TextUtils.isEmpty(mUsernameEditText.getText()) || TextUtils.isEmpty(mEmailEditText.getText()) ||
-                    mPasswordEditText.getText().toString().isEmpty() || mConfirmPasswordEditText.getText().toString().isEmpty()) {
-                if (TextUtils.isEmpty(mUsernameEditText.getText()))
-                    lUsername.setError(getString(R.string.emptyFields));
+            if (TextUtils.isEmpty(mEmailEditText.getText()) || mPasswordEditText.getText().toString().isEmpty() || mConfirmPasswordEditText.getText().toString().isEmpty()) {
                 if (TextUtils.isEmpty(mEmailEditText.getText()))
                     lMail.setError(getString(R.string.emptyFields));
                 if (TextUtils.isEmpty(mPasswordEditText.getText()))
@@ -81,7 +77,6 @@ public class CreateUserActivity extends AppCompatActivity {
                 lPasswd.setError(" ");
                 lConfirmPasswd.setError(error);
             } else {
-                SharedPrefsUtil.saveString(this, "username", mUsernameEditText.getText().toString());
                 SharedPrefsUtil.saveString(this, "email", mEmailEditText.getText().toString());
                 SharedPrefsUtil.saveString(this, "password", mPasswordEditText.getText().toString());
                 createUser(SharedPrefsUtil.getString(this, "email"), SharedPrefsUtil.getString(this, "password"));

@@ -21,5 +21,6 @@
     <color name="cod_navigation_bar">#285FA9</color>
 
     <color name="semi_transparent_background">#90000000</color>
+    <color name="yellow_background">#e6a902</color>
 
 </resources>

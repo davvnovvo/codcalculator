@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">codcalculator</string>
+    <string name="app_name">Cod Calculator</string>
     <string name="email">Электронная почта</string>
     <string name="username">Имя пользователя</string>
     <string name="password">Пароль</string>
