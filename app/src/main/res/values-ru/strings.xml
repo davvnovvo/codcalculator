@@ -151,6 +151,9 @@
     <string name="userNotFound">Пользователь не зарегистрирован</string>
     <string name="loginError">Ошибка при входе в систему</string>
 
+    <!--Guest User-->
+    <string name="guestError">Ошибка при анонимной авторизации</string>
+
     <!-- BackPressed -->
     <string name="press_to_exit">Нажмите еще раз, чтобы выйти</string>
 

@@ -148,6 +148,9 @@
     <string name="userNotFound">Utilisateur non enregistré</string>
     <string name="loginError">Erreur de connexion</string>
 
+    <!--Guest User-->
+    <string name="guestError">Erreur lors de la connexion anonyme</string>
+
     <!-- BackPressed -->
     <string name="press_to_exit">Appuyez à nouveau pour quitter</string>
 

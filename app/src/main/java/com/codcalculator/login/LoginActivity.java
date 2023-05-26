@@ -141,8 +141,15 @@ public class LoginActivity extends AppCompatActivity {
 
         //Botón para iniciar sesión como invitado
         guest_button.setOnClickListener(v -> {
-            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-            startActivity(intent);
+            mAuth.signInAnonymously()
+                    .addOnCompleteListener(task -> {
+                        if (task.isSuccessful()) {
+                            FirebaseUser user = mAuth.getCurrentUser();
+                            updateUI(user);
+                        } else {
+                            Toast.makeText(LoginActivity.this, getString(R.string.guestError), Toast.LENGTH_SHORT).show();
+                        }
+                    });
         });
 
         //Botón para crear cuenta nueva
