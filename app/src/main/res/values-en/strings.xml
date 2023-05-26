@@ -144,6 +144,9 @@
     <string name="userNotFound">User not found</string>
     <string name="loginError">Error logging in</string>
 
+    <!--Guest User-->
+    <string name="guestError">Error in anonymous login</string>
+
     <!-- BackPressed -->
     <string name="press_to_exit">Press again to exit</string>
 
