@@ -4,7 +4,7 @@
         android:angle="45"
         android:centerColor="@color/cod_primary"
         android:centerY="0.5"
-        android:endColor="@color/cod_secondary"
+        android:endColor="@color/yellow_background"
         android:endX="1"
         android:endY="1"
         android:startColor="@color/cod_background"
