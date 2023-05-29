@@ -15,6 +15,7 @@ import android.text.style.ForegroundColorSpan;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -28,6 +29,7 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+import com.bumptech.glide.Glide;
 import com.codcalculator.R;
 import com.codcalculator.databinding.ActivityMainBinding;
 import com.codcalculator.login.LoginActivity;
@@ -43,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String CHANNEL_NAME = "My Channel";
     private static final String CHANNEL_DESCRIPTION = "My Channel Description";
     private TextView mailTextView;
+    private ImageView user_icon;
     private FirebaseUser user;
     private FirebaseAuth firebaseAuth;
 
@@ -56,13 +59,31 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(binding.appBarMain.toolbar);
 
         mailTextView = binding.navView.getHeaderView(0).findViewById(R.id.mailTextView);
+        user_icon = binding.navView.getHeaderView(0).findViewById(R.id.user_icon);
 
         firebaseAuth = FirebaseAuth.getInstance();
 
         user = firebaseAuth.getCurrentUser();
 
         if (mailTextView != null && user != null) {
+            if (user.isAnonymous()) {
+                mailTextView.setText(getText(R.string.guestUser));
+                Glide.with(this)
+                        .load(R.drawable.ic_usuario)
+                        .circleCrop()
+                        .into(user_icon);
+            }
+        } else {
+            String photoUrl = user.getPhotoUrl().toString();
             mailTextView.setText(user.getEmail());
+            if (!photoUrl.isEmpty()) {
+                Glide.with(this)
+                        .load(photoUrl)
+                        .placeholder(R.drawable.ic_usuario) // Opcional: una imagen de marcador de posición mientras se carga la imagen
+                        .error(R.drawable.ic_usuario) // Opcional: una imagen de error en caso de que no se pueda cargar la imagen
+                        .circleCrop()
+                        .into(user_icon);
+            }
         }
 
         DrawerLayout drawer = binding.drawerLayout;

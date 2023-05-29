@@ -146,6 +146,7 @@
 
     <!--Guest User-->
     <string name="guestError">Erro no login anônimo</string>
+    <string name="guestUser">Convidado</string>
 
     <!-- BackPressed -->
     <string name="press_to_exit">Pressione novamente para sair</string>

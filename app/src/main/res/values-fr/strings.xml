@@ -150,6 +150,7 @@
 
     <!--Guest User-->
     <string name="guestError">Erreur lors de la connexion anonyme</string>
+    <string name="guestUser">Invité</string>
 
     <!-- BackPressed -->
     <string name="press_to_exit">Appuyez à nouveau pour quitter</string>

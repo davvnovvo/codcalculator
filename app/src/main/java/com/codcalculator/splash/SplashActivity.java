@@ -31,7 +31,7 @@ public class SplashActivity extends AppCompatActivity {
         openApp(ToS);
 
         ImageView logo = findViewById(R.id.logo);
-        TextView textCalculator = findViewById(R.id.textCalculator);
+        ImageView textCalculator = findViewById(R.id.textCalculator);
 
         // Animación del logo
         ObjectAnimator logoScaleX = ObjectAnimator.ofFloat(logo, "scaleX", 1.0f, 0.75f);
