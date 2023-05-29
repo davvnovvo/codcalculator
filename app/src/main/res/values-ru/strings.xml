@@ -153,6 +153,7 @@
 
     <!--Guest User-->
     <string name="guestError">Ошибка при анонимной авторизации</string>
+    <string name="guestUser">Гость</string>
 
     <!-- BackPressed -->
     <string name="press_to_exit">Нажмите еще раз, чтобы выйти</string>
