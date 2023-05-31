@@ -53,9 +53,13 @@ public class TokensFragment extends Fragment implements AdapterView.OnItemSelect
         token_from_spinner3 = root.findViewById(R.id.token_from_spinner3);
         token_from_spinner4 = root.findViewById(R.id.token_from_spinner4);
         token_to_spinner1 = root.findViewById(R.id.token_to_spinner1);
+        token_to_spinner1.setSelection(4);
         token_to_spinner2 = root.findViewById(R.id.token_to_spinner2);
+        token_to_spinner2.setSelection(4);
         token_to_spinner3 = root.findViewById(R.id.token_to_spinner3);
+        token_to_spinner3.setSelection(4);
         token_to_spinner4 = root.findViewById(R.id.token_to_spinner4);
+        token_to_spinner4.setSelection(4);
         token_total = root.findViewById(R.id.token_total);
         tokens_icon = root.findViewById(R.id.tokens_icon);
         ImageButton tokens_info = root.findViewById(R.id.tokens_info);
@@ -74,6 +78,7 @@ public class TokensFragment extends Fragment implements AdapterView.OnItemSelect
         List<String> honorLevels = Arrays.asList(getResources().getStringArray(R.array.token_type));
         CustomSpinnerAdapter adapter = new CustomSpinnerAdapter(getContext(), android.R.layout.simple_spinner_item, honorLevels, Color.WHITE);
         token_type_spinner.setAdapter(adapter);
+        token_type_spinner.setSelection(2);
 
         token_type_spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
