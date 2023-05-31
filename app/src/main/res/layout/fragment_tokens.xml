@@ -29,7 +29,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingEnd="16dp"
-                    android:text="Hero tier: "
+                    android:text="@string/hero_tier"
                     android:textColor="@color/white"
                     android:textSize="18dp"
                     android:textStyle="bold" />
@@ -37,7 +37,7 @@
                 <View
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight=".5" />
+                    android:layout_weight=".25" />
 
                 <Spinner
                     android:id="@+id/token_type_spinner"
@@ -50,7 +50,7 @@
                 <View
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight=".5" />
+                    android:layout_weight=".25" />
 
             </LinearLayout>
 
@@ -65,7 +65,7 @@
                     android:layout_width="65dp"
                     android:layout_height="wrap_content"
                     android:paddingEnd="16dp"
-                    android:text="From: "
+                    android:text="@string/tokens_from"
                     android:textColor="@color/white"
                     android:textSize="18dp"
                     android:textStyle="bold" />
@@ -121,7 +121,7 @@
                     android:layout_width="65dp"
                     android:layout_height="wrap_content"
                     android:paddingEnd="16dp"
-                    android:text="To: "
+                    android:text="@string/tokens_to"
                     android:textColor="@color/white"
                     android:textSize="18dp"
                     android:textStyle="bold" />

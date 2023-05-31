@@ -49,7 +49,7 @@
     <string name="rss_tab_gold">Oro</string>
     <string name="rss_tab_wood">Madera</string>
     <string name="rss_tab_stone">Piedra</string>
-    <string name="rss_tab_mana">Mana</string>
+    <string name="rss_tab_mana">Maná</string>
 
     <string name="image_label">Añade tu captura del inventario</string>
     <string name="_500">500</string>
@@ -180,5 +180,8 @@
         <item>Epico</item>
         <item>Legendario</item>
     </string-array>
+    <string name="hero_tier">Nivel del héroe:</string>
+    <string name="tokens_from">Desde:</string>
+    <string name="tokens_to">Hasta:</string>
 
 </resources>

@@ -188,6 +188,9 @@
         <item>Эпический</item>
         <item>Легендарный</item>
     </string-array>
+    <string name="hero_tier">Уровень героя:</string>
+    <string name="tokens_from">От:</string>
+    <string name="tokens_to">До:</string>
 
 
 </resources>
