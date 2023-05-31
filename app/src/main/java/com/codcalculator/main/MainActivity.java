@@ -72,17 +72,17 @@ public class MainActivity extends AppCompatActivity {
                         .load(R.drawable.ic_usuario)
                         .circleCrop()
                         .into(user_icon);
-            }
-        } else {
-            String photoUrl = user.getPhotoUrl().toString();
-            mailTextView.setText(user.getEmail());
-            if (!photoUrl.isEmpty()) {
-                Glide.with(this)
-                        .load(photoUrl)
-                        .placeholder(R.drawable.ic_usuario) // Opcional: una imagen de marcador de posición mientras se carga la imagen
-                        .error(R.drawable.ic_usuario) // Opcional: una imagen de error en caso de que no se pueda cargar la imagen
-                        .circleCrop()
-                        .into(user_icon);
+            } else {
+                String photoUrl = user.getPhotoUrl().toString();
+                mailTextView.setText(user.getEmail());
+                if (!photoUrl.isEmpty()) {
+                    Glide.with(this)
+                            .load(photoUrl)
+                            .placeholder(R.drawable.ic_usuario) // Opcional: una imagen de marcador de posición mientras se carga la imagen
+                            .error(R.drawable.ic_usuario) // Opcional: una imagen de error en caso de que no se pueda cargar la imagen
+                            .circleCrop()
+                            .into(user_icon);
+                }
             }
         }
 
