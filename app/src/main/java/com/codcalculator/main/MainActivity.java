@@ -72,10 +72,11 @@ public class MainActivity extends AppCompatActivity {
                         .load(R.drawable.ic_usuario)
                         .circleCrop()
                         .into(user_icon);
+            }else{
+                mailTextView.setText(user.getEmail());
             }
         } else {
             String photoUrl = user.getPhotoUrl().toString();
-            mailTextView.setText(user.getEmail());
             if (!photoUrl.isEmpty()) {
                 Glide.with(this)
                         .load(photoUrl)
