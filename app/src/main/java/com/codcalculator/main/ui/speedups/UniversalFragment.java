@@ -18,6 +18,7 @@ import android.widget.TextView;
 import androidx.fragment.app.Fragment;
 
 import com.codcalculator.R;
+import com.codcalculator.main.utilities.SharedPreferencesUtil;
 import com.google.android.material.textfield.TextInputEditText;
 
 import java.io.IOException;
@@ -86,6 +87,7 @@ public class UniversalFragment extends Fragment {
 
         reset.setOnClickListener(v -> resetFields(rootView));
 
+        universal_total.setText(SharedPreferencesUtil.getCalculation(getContext(), "universal"));
         calculate.setOnClickListener(v -> {
             BigInteger total = BigInteger.ZERO;
             for (int i = 0; i < fields.length; i++) {
@@ -133,9 +135,9 @@ public class UniversalFragment extends Fragment {
                 formattedTotal = minutes.compareTo(BigInteger.ZERO) > 0 ? res.getString(R.string.time_format_minutes_only, NumberFormat.getInstance().format(minutes), minute) : "";
             }
 
+            SharedPreferencesUtil.saveCalculation(getContext(), "universal", formattedTotal);
             universal_total.setText(formattedTotal);
         });
-
 
         return rootView;
     }
