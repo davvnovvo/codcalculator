@@ -181,5 +181,8 @@
         <item>Epic</item>
         <item>Legendary</item>
     </string-array>
+    <string name="hero_tier">Hero tier: </string>
+    <string name="from">From: </string>
+    <string name="to">To: </string>
 
 </resources>
