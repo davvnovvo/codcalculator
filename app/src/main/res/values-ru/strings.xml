@@ -188,8 +188,10 @@
         <item>Эпический</item>
         <item>Легендарный</item>
     </string-array>
-    <string name="hero_tier">Уровень героя: </string>
-    <string name="from">От: </string>
-    <string name="to">До: </string>
+    <string name="hero_tier">Ранг героя:</string>
+    <string name="tokens_from">От:</string>
+    <string name="tokens_to">До:</string>
+    <string name="tokens_help_info">Здесь вы можете рассчитать количество токенов, которые вам понадобятся для улучшения способностей любого типа героя. Выберите текущий уровень и уровень, которого вы хотите достичь.</string>
+    <string name="popup_help_title">Помощь</string>
 
 </resources>

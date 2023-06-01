@@ -17,6 +17,7 @@ import android.widget.TextView;
 import androidx.fragment.app.Fragment;
 
 import com.codcalculator.R;
+import com.codcalculator.main.utilities.SharedPreferencesUtil;
 import com.google.android.material.textfield.TextInputEditText;
 
 import java.io.IOException;
@@ -84,6 +85,7 @@ public class GoldFragment extends Fragment {
 
         reset.setOnClickListener(v -> resetFields(rootView));
 
+        gold_total.setText(SharedPreferencesUtil.getCalculation(getContext(), "gold"));
         calculate.setOnClickListener(v -> {
             BigInteger total = BigInteger.ZERO;
             for (int i = 0; i < fields.length; i++) {
@@ -92,6 +94,7 @@ public class GoldFragment extends Fragment {
             }
             NumberFormat numberFormat = NumberFormat.getNumberInstance(Locale.getDefault());
             String formattedTotal = total.compareTo(BigInteger.ZERO) > 0 ? numberFormat.format(total) : "";
+            SharedPreferencesUtil.saveCalculation(getContext(), "gold", formattedTotal);
             gold_total.setText(formattedTotal);
         });
 

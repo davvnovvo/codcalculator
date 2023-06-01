@@ -181,8 +181,10 @@
         <item>Épico</item>
         <item>Lendário</item>
     </string-array>
-    <string name="hero_tier">Nível do herói: </string>
-    <string name="from">De: </string>
-    <string name="to">Para: </string>
+    <string name="hero_tier">Nível do herói:</string>
+    <string name="tokens_from">De:</string>
+    <string name="tokens_to">Para:</string>
+    <string name="tokens_help_info">Aqui você pode calcular os tokens que você precisará para melhorar as habilidades de qualquer tipo de herói. Selecione o nível atual e o nível que você deseja alcançar.</string>
+    <string name="popup_help_title">Ajuda</string>
 
 </resources>

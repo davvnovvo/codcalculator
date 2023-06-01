@@ -185,8 +185,10 @@
         <item>Épique</item>
         <item>Légendaire</item>
     </string-array>
-    <string name="hero_tier">Niveau du héros : </string>
-    <string name="from">De : </string>
-    <string name="to">À : </string>
+    <string name="hero_tier">Niveau du héros :</string>
+    <string name="tokens_from">De :</string>
+    <string name="tokens_to">À :</string>
+    <string name="tokens_help_info">Ici, vous pouvez calculer les jetons dont vous aurez besoin pour améliorer les compétences de tout type de héros. Sélectionnez le niveau actuel et le niveau que vous souhaitez atteindre.</string>
+    <string name="popup_help_title">Aide</string>
 
 </resources>

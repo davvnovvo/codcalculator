@@ -99,7 +99,6 @@ public class FromToFragment extends Fragment {
         NumberFormat numberFormat = NumberFormat.getNumberInstance(Locale.getDefault());
         String formattedTotal = numberFormat.format(remainingPoints);
         honor_total.setText(formattedTotal);
-
     }
 
     private int calculateCurrentLevel(int honorPoints) {
