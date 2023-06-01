@@ -184,5 +184,7 @@
     <string name="hero_tier">Hero tier:</string>
     <string name="tokens_from">From:</string>
     <string name="tokens_to">To:</string>
+    <string name="tokens_help_info">Here you can calculate the tokens you will need to upgrade the abilities of any type of hero. Select the current level and the level you want to reach.</string>
+    <string name="popup_help_title">Help</string>
 
 </resources>

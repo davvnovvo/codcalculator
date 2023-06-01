@@ -180,8 +180,10 @@
         <item>Epico</item>
         <item>Legendario</item>
     </string-array>
-    <string name="hero_tier">Nivel del héroe:</string>
+    <string name="hero_tier">Rango del héroe:</string>
     <string name="tokens_from">Desde:</string>
     <string name="tokens_to">Hasta:</string>
+    <string name="tokens_help_info">Aquí puedes calcular los tokens que vas a necesitar para subir las habilidades de cualquier tipo héroe.\nSelecciona el nivel actual, y el nivel al que quieres llegar.</string>
+    <string name="popup_help_title">Ayuda</string>
 
 </resources>

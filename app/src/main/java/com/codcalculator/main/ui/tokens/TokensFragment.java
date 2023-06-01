@@ -1,13 +1,16 @@
 package com.codcalculator.main.ui.tokens;
 
+import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.PopupWindow;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -92,6 +95,15 @@ public class TokensFragment extends Fragment implements AdapterView.OnItemSelect
             public void onNothingSelected(AdapterView<?> parent) {
                 // No se requiere ninguna acción cuando no se selecciona ningún elemento
             }
+        });
+
+        tokens_info.setOnClickListener(v -> {
+            LayoutInflater info_inflater = (LayoutInflater) requireContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            View popupView = info_inflater.inflate(R.layout.tokens_info_layout, null);
+            PopupWindow popupWindow = new PopupWindow(popupView, 1000, 1000);
+            popupWindow.setFocusable(true);
+            popupWindow.setOutsideTouchable(true);
+            popupWindow.showAtLocation(v, Gravity.BOTTOM, 0, 0);
         });
 
         return root;
