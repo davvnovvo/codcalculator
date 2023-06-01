@@ -176,9 +176,12 @@
 
     <!--Tokens -->
     <string-array name="token_type">
-        <item>Elite</item>
-        <item>Epico</item>
+        <item>Élite</item>
+        <item>Épico</item>
         <item>Legendario</item>
     </string-array>
+    <string name="hero_tier">Nivel de héroe: </string>
+    <string name="from">De: </string>
+    <string name="to">A: </string>
 
 </resources>

@@ -181,5 +181,8 @@
         <item>Épico</item>
         <item>Lendário</item>
     </string-array>
+    <string name="hero_tier">Nível do herói: </string>
+    <string name="from">De: </string>
+    <string name="to">Para: </string>
 
 </resources>
