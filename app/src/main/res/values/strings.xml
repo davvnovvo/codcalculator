@@ -26,11 +26,6 @@
     <string name="volver">Volver</string>
     <string name="yes">Si</string>
     <string name="no">No</string>
-    <string name="faq">FAQ</string>
-    <string name="faq2"><u>Sobre Nosotros</u></string>
-    <string name="faq3">Aplicación</string>
-    <string name="faq4"><u>¿Por qué necesito registrarme?</u></string>
-    <string name="faq5">Es recomendable crear una cuenta para poder tener un mejor control de tu inventario y nosotros poder controlar las imágenes que se suben al inventario.</string>
 
     <!--AUTO GENERADO CON EL DRAWER-->
     <string name="title_activity_main">MainActivity</string>
@@ -126,6 +121,15 @@
     <string name="signout_confirm">¿Está seguro que desea cerrar sesión?</string>
     <string name="closedSession">Sesión cerrada</string>
 
+    <!-- About us -->
+    <string name="faq">FAQ</string>
+    <string name="faq2">Sobre Nosotros</string>
+    <string name="faq3">Esta aplicación ha sido realizada por braveras y davvnovvo para el proyecto final de nuestro grado</string>
+    <string name="faq4">GitHubs</string>
+    <string name="faq5">davvnovvo\nBraveras</string>
+    <string name="faq6">Dudas</string>
+    <string name="faq7">Si tienes alguna duda contacta con nosotros en discord: Braveras#7789</string>
+
     <!-- Crete User -->
     <string name="passwordsDoNotMatch">Las contraseñas no coinciden</string>
     <string name="error_password_length">6 caracteres</string>
@@ -181,7 +185,7 @@
         <item>Legendario</item>
     </string-array>
     <string name="hero_tier">Rango del héroe:</string>
-    <string name="tokens_from">Desde:</string>
+    <string name="tokens_from">De:</string>
     <string name="tokens_to">Hasta:</string>
     <string name="tokens_help_info">Aquí puedes calcular los tokens que vas a necesitar para subir las habilidades de cualquier tipo héroe.\nSelecciona el nivel actual, y el nivel al que quieres llegar.</string>
     <string name="popup_help_title">Ayuda</string>

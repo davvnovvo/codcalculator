@@ -100,7 +100,7 @@ public class TokensFragment extends Fragment implements AdapterView.OnItemSelect
         tokens_info.setOnClickListener(v -> {
             LayoutInflater info_inflater = (LayoutInflater) requireContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             View popupView = info_inflater.inflate(R.layout.tokens_info_layout, null);
-            PopupWindow popupWindow = new PopupWindow(popupView, 1000, 1000);
+            PopupWindow popupWindow = new PopupWindow(popupView, 1000, 500);
             popupWindow.setFocusable(true);
             popupWindow.setOutsideTouchable(true);
             popupWindow.showAtLocation(v, Gravity.BOTTOM, 0, 0);

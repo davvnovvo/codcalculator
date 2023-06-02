@@ -27,11 +27,6 @@
     <string name="volver">Back</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
-    <string name="faq">FAQ</string>
-    <string name="faq2"><u>About Us</u></string>
-    <string name="faq3">Application</string>
-    <string name="faq4"><u>Why do I need to register?</u></string>
-    <string name="faq5">It is recommended to create an account to have better control of your inventory and for us to control the images that are uploaded to the inventory.</string>
 
     <!--AUTO GENERADO CON EL DRAWER-->
     <string name="title_activity_main">MainActivity</string>
@@ -126,6 +121,15 @@
     <string name="signout">Sign out</string>
     <string name="signout_confirm">Are you sure you want to sign out?</string>
     <string name="closedSession">Session closed</string>
+
+    <!-- About us -->
+    <string name="faq">FAQ</string>
+    <string name="faq2">About Us</string>
+    <string name="faq3">This application has been developed by braveras and davvnovvo for our final project in our degree</string>
+    <string name="faq4">GitHubs</string>
+    <string name="faq5">davvnovvo\nBraveras</string>
+    <string name="faq6">Questions</string>
+    <string name="faq7">If you have any questions, contact us on Discord: Braveras#7789</string>
 
     <!-- Crete User -->
     <string name="passwordsDoNotMatch">Passwords do not match</string>
