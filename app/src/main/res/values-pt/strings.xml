@@ -140,6 +140,7 @@
     <string name="error_password_header">Requisitos da senha:</string>
     <string name="newUserSuccess">E-mail de verificação enviado</string>
     <string name="newUserFail">Erro ao criar usuário</string>
+    <string name="emailUsed">Este e-mail já foi utilizado</string>
 
     <!-- Login User -->
     <string name="loginSuccess">Login bem-sucedido</string>

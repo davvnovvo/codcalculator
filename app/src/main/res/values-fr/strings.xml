@@ -143,6 +143,7 @@
     <string name="error_password_header">Exigences de mot de passe:</string>
     <string name="newUserSuccess">Email de vérification envoyé</string>
     <string name="newUserFail">Erreur lors de la création de l\'utilisateur</string>
+    <string name="emailUsed">Cet e-mail a déjà été utilisé</string>
 
     <!-- Login User -->
     <string name="loginSuccess">Connexion réussie</string>
