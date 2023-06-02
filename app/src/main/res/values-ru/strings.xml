@@ -27,12 +27,6 @@
     <string name="volver">Назад</string>
     <string name="yes">Да</string>
     <string name="no">Нет</string>
-    <string name="faq">FAQ</string>
-    <string name="faq2"><u>О нас</u></string>
-    <string name="faq3">Приложение</string>
-    <string name="faq4"><u>Почему мне нужно зарегистрироваться?</u></string>
-    <string name="faq5">Рекомендуется создать учетную запись, чтобы иметь лучший контроль над своим инвентарем, а мы могли контролировать изображения, загружаемые в инвентарь.</string>
-
 
     <!--AUTO GENERADO CON EL DRAWER-->
     <string name="title_activity_main">MainActivity</string>
@@ -133,6 +127,15 @@
     <string name="signout">Выход</string>
     <string name="signout_confirm">Вы уверены, что хотите выйти?</string>
     <string name="closedSession">Сессия закрыта</string>
+
+    <!-- About us -->
+    <string name="faq">FAQ</string>
+    <string name="faq2">О нас</string>
+    <string name="faq3">Это приложение было разработано braveras и davvnovvo для нашего выпускного проекта в нашем дипломе</string>
+    <string name="faq4">GitHubs</string>
+    <string name="faq5">davvnovvo\nBraveras</string>
+    <string name="faq6">Вопросы</string>
+    <string name="faq7">Если у вас есть вопросы, свяжитесь с нами в Discord: Braveras#7789</string>
 
     <!-- Crete User -->
     <string name="passwordsDoNotMatch">Пароли не совпадают</string>

@@ -32,7 +32,7 @@ public class CreateUserActivity extends AppCompatActivity {
 
     private TextInputEditText mEmailEditText, mPasswordEditText, mConfirmPasswordEditText;
     private TextInputLayout lMail, lPasswd, lConfirmPasswd;
-    ImageButton infoButton, passInfo;
+    ImageButton passInfo;
     Button buttonCreate;
     TextView textViewForgotPassword, textViewLogin;
 
@@ -50,7 +50,6 @@ public class CreateUserActivity extends AppCompatActivity {
         lMail = findViewById(R.id.email_text_input);
         lPasswd = findViewById(R.id.password_text_input);
         lConfirmPasswd = findViewById(R.id.password2_text_input);
-        infoButton = findViewById(R.id.buttonInfo);
         buttonCreate = findViewById(R.id.buttonCreate);
         textViewForgotPassword = findViewById(R.id.textViewForgotPassword);
         textViewLogin = findViewById(R.id.textViewLogin);
@@ -81,15 +80,6 @@ public class CreateUserActivity extends AppCompatActivity {
                 SharedPrefsUtil.saveString(this, "password", mPasswordEditText.getText().toString());
                 createUser(SharedPrefsUtil.getString(this, "email"), SharedPrefsUtil.getString(this, "password"));
             }
-        });
-
-        infoButton.setOnClickListener(v -> {
-            LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            View popupView = inflater.inflate(R.layout.popup_layout, null);
-            PopupWindow popupWindow = new PopupWindow(popupView, 1000, 1300);
-            popupWindow.setFocusable(true);
-            popupWindow.setOutsideTouchable(true);
-            popupWindow.showAtLocation(v, Gravity.CENTER, 0, 0);
         });
 
         passInfo.setOnClickListener(view12 -> {

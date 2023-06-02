@@ -117,8 +117,8 @@
 
         <ImageButton
             android:id="@+id/password_infobutton"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
             android:layout_marginTop="12dp"
             android:layout_marginRight="25dp"
             android:background="@drawable/info_btn"
@@ -167,20 +167,10 @@
             app:layout_constraintStart_toStartOf="@+id/linearCreate"
             app:layout_constraintTop_toBottomOf="@+id/linearCreate" />
 
-        <ImageButton
-            android:id="@+id/buttonInfo"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/faq"
-            app:layout_constraintEnd_toEndOf="@+id/textViewLogin"
-            app:layout_constraintStart_toStartOf="@+id/textViewLogin"
-            app:layout_constraintTop_toBottomOf="@+id/textViewLogin" />
-
         <View
             android:layout_width="match_parent"
             android:layout_height="30dp"
-            app:layout_constraintTop_toBottomOf="@+id/buttonInfo" />
+            app:layout_constraintTop_toBottomOf="@+id/textViewLogin" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

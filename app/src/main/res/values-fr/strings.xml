@@ -27,12 +27,6 @@
     <string name="volver">Retour</string>
     <string name="yes">Oui</string>
     <string name="no">Non</string>
-    <string name="faq">FAQ</string>
-    <string name="faq2"><u>À propos de nous</u></string>
-    <string name="faq3">Application</string>
-    <string name="faq4"><u>Pourquoi ai-je besoin de m\'inscrire?</u></string>
-    <string name="faq5">Il est recommandé de créer un compte afin de mieux contrôler votre inventaire et que nous puissions contrôler les images téléchargées dans l\'inventaire.</string>
-
 
     <!--AUTO GENERADO CON EL DRAWER-->
     <string name="title_activity_main">MainActivity</string>
@@ -130,6 +124,15 @@
     <string name="signout">Déconnexion</string>
     <string name="signout_confirm">Êtes-vous sûr de vouloir vous déconnecter?</string>
     <string name="closedSession">Session fermée</string>
+
+    <!-- About us -->
+    <string name="faq">FAQ</string>
+    <string name="faq2">À propos de nous</string>
+    <string name="faq3">Cette application a été réalisée par braveras et davvnovvo pour notre projet final de notre diplôme</string>
+    <string name="faq4">GitHubs</string>
+    <string name="faq5">davvnovvo\nBraveras</string>
+    <string name="faq6">Questions</string>
+    <string name="faq7">Si vous avez des questions, contactez-nous sur Discord : Braveras#7789</string>
 
     <!-- Crete User -->
     <string name="passwordsDoNotMatch">Les mots de passe ne correspondent pas</string>
