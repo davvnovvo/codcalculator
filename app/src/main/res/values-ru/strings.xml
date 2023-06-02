@@ -146,6 +146,7 @@
     <string name="error_password_header">Требования к паролю:</string>
     <string name="newUserSuccess">Отправлено письмо с подтверждением</string>
     <string name="newUserFail">Ошибка при создании пользователя</string>
+    <string name="emailUsed">Этот адрес электронной почты уже использовался</string>
 
     <!-- Login User -->
     <string name="loginSuccess">Успешный вход в систему</string>
