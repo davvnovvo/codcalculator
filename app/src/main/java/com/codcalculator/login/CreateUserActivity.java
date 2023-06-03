@@ -26,13 +26,14 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.UserProfileChangeRequest;
 
+import java.util.List;
 import java.util.regex.Pattern;
 
 public class CreateUserActivity extends AppCompatActivity {
 
     private TextInputEditText mEmailEditText, mPasswordEditText, mConfirmPasswordEditText;
     private TextInputLayout lMail, lPasswd, lConfirmPasswd;
-    ImageButton infoButton, passInfo;
+    ImageButton passInfo;
     Button buttonCreate;
     TextView textViewForgotPassword, textViewLogin;
 
@@ -50,7 +51,6 @@ public class CreateUserActivity extends AppCompatActivity {
         lMail = findViewById(R.id.email_text_input);
         lPasswd = findViewById(R.id.password_text_input);
         lConfirmPasswd = findViewById(R.id.password2_text_input);
-        infoButton = findViewById(R.id.buttonInfo);
         buttonCreate = findViewById(R.id.buttonCreate);
         textViewForgotPassword = findViewById(R.id.textViewForgotPassword);
         textViewLogin = findViewById(R.id.textViewLogin);
@@ -81,15 +81,6 @@ public class CreateUserActivity extends AppCompatActivity {
                 SharedPrefsUtil.saveString(this, "password", mPasswordEditText.getText().toString());
                 createUser(SharedPrefsUtil.getString(this, "email"), SharedPrefsUtil.getString(this, "password"));
             }
-        });
-
-        infoButton.setOnClickListener(v -> {
-            LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            View popupView = inflater.inflate(R.layout.popup_layout, null);
-            PopupWindow popupWindow = new PopupWindow(popupView, 1000, 1300);
-            popupWindow.setFocusable(true);
-            popupWindow.setOutsideTouchable(true);
-            popupWindow.showAtLocation(v, Gravity.CENTER, 0, 0);
         });
 
         passInfo.setOnClickListener(view12 -> {
@@ -154,27 +145,42 @@ public class CreateUserActivity extends AppCompatActivity {
 
     private void createUser(String email, String password) {
         FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
-        firebaseAuth.createUserWithEmailAndPassword(email, password)
+        firebaseAuth.fetchSignInMethodsForEmail(email)
                 .addOnCompleteListener(task -> {
                     if (task.isSuccessful()) {
-                        FirebaseUser user = firebaseAuth.getCurrentUser();
-                        user.sendEmailVerification();
-                        UserProfileChangeRequest profileUpdates = new UserProfileChangeRequest.Builder()
-                                .setDisplayName(SharedPrefsUtil.getString(this, "username"))
-                                .build();
-                        user.updateProfile(profileUpdates)
-                                .addOnCompleteListener(task1 -> {
-                                    if (task1.isSuccessful()) {
-                                        Toast.makeText(this, getString(R.string.newUserSuccess), Toast.LENGTH_SHORT).show();
-                                        Intent i = new Intent(this, LoginActivity.class);
-                                        startActivity(i);
-                                    }
-                                });
+                        List<String> signInMethods = task.getResult().getSignInMethods();
+                        if (signInMethods != null && !signInMethods.isEmpty()) {
+                            // El email ya ha sido utilizado
+                            Toast.makeText(getApplicationContext(), getString(R.string.emailUsed), Toast.LENGTH_SHORT).show();
+                        } else {
+                            // El email no ha sido utilizado, se puede crear el usuario
+                            firebaseAuth.createUserWithEmailAndPassword(email, password)
+                                    .addOnCompleteListener(task1 -> {
+                                        if (task1.isSuccessful()) {
+                                            FirebaseUser user = firebaseAuth.getCurrentUser();
+                                            user.sendEmailVerification();
+                                            UserProfileChangeRequest profileUpdates = new UserProfileChangeRequest.Builder()
+                                                    .setDisplayName(SharedPrefsUtil.getString(this, "username"))
+                                                    .build();
+                                            user.updateProfile(profileUpdates)
+                                                    .addOnCompleteListener(task2 -> {
+                                                        if (task2.isSuccessful()) {
+                                                            Toast.makeText(this, getString(R.string.newUserSuccess), Toast.LENGTH_SHORT).show();
+                                                            Intent i = new Intent(this, LoginActivity.class);
+                                                            startActivity(i);
+                                                        }
+                                                    });
+                                        } else {
+                                            Toast.makeText(getApplicationContext(), getString(R.string.newUserFail), Toast.LENGTH_SHORT).show();
+                                        }
+                                    });
+                        }
                     } else {
                         Toast.makeText(getApplicationContext(), getString(R.string.newUserFail), Toast.LENGTH_SHORT).show();
                     }
                 });
     }
+
 
     @Override
     public void onBackPressed() {

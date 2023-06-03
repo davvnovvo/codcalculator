@@ -27,11 +27,6 @@
     <string name="volver">Voltar</string>
     <string name="yes">Sim</string>
     <string name="no">Não</string>
-    <string name="faq">FAQ</string>
-    <string name="faq2"><u>Sobre Nós</u></string>
-    <string name="faq3">Aplicativo</string>
-    <string name="faq4"><u>Por que eu preciso me registrar?</u></string>
-    <string name="faq5">Recomendamos criar uma conta para ter um melhor controle do seu inventário e para que possamos controlar as imagens que são carregadas no inventário.</string>
 
     <!--AUTO GENERADO CON EL DRAWER-->
     <string name="title_activity_main">MainActivity</string>
@@ -127,6 +122,15 @@
     <string name="signout_confirm">Tem certeza de que deseja sair?</string>
     <string name="closedSession">Sessão encerrada</string>
 
+    <!-- About us -->
+    <string name="faq">FAQ</string>
+    <string name="faq2">Sobre Nós</string>
+    <string name="faq3">Este aplicativo foi desenvolvido por braveras e davvnovvo para nosso projeto final do curso</string>
+    <string name="faq4">GitHubs</string>
+    <string name="faq5">davvnovvo\nBraveras</string>
+    <string name="faq6">Dúvidas</string>
+    <string name="faq7">Se você tiver alguma dúvida, entre em contato conosco no Discord: Braveras#7789</string>
+
     <!-- Crete User -->
     <string name="passwordsDoNotMatch">As senhas não correspondem</string>
     <string name="error_password_length">6 caracteres</string>
@@ -136,6 +140,7 @@
     <string name="error_password_header">Requisitos da senha:</string>
     <string name="newUserSuccess">E-mail de verificação enviado</string>
     <string name="newUserFail">Erro ao criar usuário</string>
+    <string name="emailUsed">Este e-mail já foi utilizado</string>
 
     <!-- Login User -->
     <string name="loginSuccess">Login bem-sucedido</string>
