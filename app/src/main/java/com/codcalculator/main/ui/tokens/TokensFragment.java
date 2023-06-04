@@ -76,8 +76,6 @@ public class TokensFragment extends Fragment implements AdapterView.OnItemSelect
             spinner.setOnItemSelectedListener(this);
         }
 
-        tokens_info.setOnClickListener(v -> showTokenInfo());
-
         List<String> honorLevels = Arrays.asList(getResources().getStringArray(R.array.token_type));
         CustomSpinnerAdapter adapter = new CustomSpinnerAdapter(getContext(), android.R.layout.simple_spinner_item, honorLevels, Color.WHITE);
         token_type_spinner.setAdapter(adapter);
@@ -216,10 +214,6 @@ public class TokensFragment extends Fragment implements AdapterView.OnItemSelect
         }
 
         return 0;
-    }
-
-    public void showTokenInfo() {
-
     }
 
     @Override

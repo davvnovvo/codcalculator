@@ -179,6 +179,7 @@
     <string name="honor_points_empty">Digite seus pontos de honra atuais</string>
     <string name="honor_points_wrong_level">Você já atingiu o nível objetivo</string>
     <string name="honor_level_prompt_error">Selecione um nível de destino válido</string>
+    <string name="honor_help_info">Aqui você pode calcular os pontos de honra que você precisará para subir para qualquer nível. Insira os pontos de honra que você tem atualmente e o nível almejado.</string>
 
     <!-- Tokens -->
     <string-array name="token_type">
