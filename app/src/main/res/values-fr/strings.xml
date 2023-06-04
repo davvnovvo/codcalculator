@@ -178,6 +178,7 @@
     <string name="honor_points_empty">Entrez vos points d\'honneur actuels</string>
     <string name="honor_points_wrong_level">Vous avez déjà atteint le niveau cible</string>
     <string name="honor_level_prompt_error">Sélectionnez un niveau cible valide</string>
+    <string name="honor_help_info">Ici, vous pouvez calculer les points d\'honneur dont vous aurez besoin pour passer à n\'importe quel niveau. Entrez les points d\'honneur que vous avez actuellement et le niveau cible.</string>
 
     <!-- Tokens -->
     <string-array name="token_type">

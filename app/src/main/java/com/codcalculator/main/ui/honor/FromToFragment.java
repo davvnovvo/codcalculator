@@ -1,12 +1,15 @@
 package com.codcalculator.main.ui.honor;
 
+import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
+import android.widget.PopupWindow;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -45,6 +48,7 @@ public class FromToFragment extends Fragment {
         ImageButton calculate = rootView.findViewById(R.id.honor_calculate);
         honor_points = rootView.findViewById(R.id.honor_points_input);
         honor_lvl = rootView.findViewById(R.id.honor_level_spinner);
+        ImageButton honor_info = rootView.findViewById(R.id.honor_info);
 
         String[] honorLevels = getResources().getStringArray(R.array.honor_levels);
         String[] honorLevelsWithPrompt = new String[honorLevels.length + 1];
@@ -64,6 +68,15 @@ public class FromToFragment extends Fragment {
         reset.setOnClickListener(v -> resetFields());
 
         calculate.setOnClickListener(v -> calculateRemainingPoints());
+
+        honor_info.setOnClickListener(v -> {
+            LayoutInflater info_inflater = (LayoutInflater) requireContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            View popupView = info_inflater.inflate(R.layout.honor_info_layout, null);
+            PopupWindow popupWindow = new PopupWindow(popupView, 1000, 2000);
+            popupWindow.setFocusable(true);
+            popupWindow.setOutsideTouchable(true);
+            popupWindow.showAtLocation(v, Gravity.CENTER, 0, 0);
+        });
 
         return rootView;
     }

@@ -181,6 +181,7 @@
     <string name="honor_points_empty">Введите ваши текущие очки чести</string>
     <string name="honor_points_wrong_level">Вы уже достигли целевого уровня</string>
     <string name="honor_level_prompt_error">Выберите допустимый уровень цели</string>
+    <string name="honor_help_info">Здесь вы можете рассчитать количество почетных очков, которые вам потребуются для повышения до любого уровня. Введите текущее количество почетных очков и желаемый уровень.</string>
 
     <!-- Токены -->
     <string-array name="token_type">
