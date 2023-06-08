@@ -22,10 +22,10 @@
                 android:id="@+id/user_icon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:contentDescription="@string/nav_header_desc"
-                android:paddingBottom="@dimen/nav_header_vertical_spacing"
                 android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/nav_header_desc"
                 android:gravity="center"
+                android:paddingBottom="@dimen/nav_header_vertical_spacing"
                 app:srcCompat="@drawable/tokens_example" />
 
             <LinearLayout
@@ -51,9 +51,9 @@
 
                 <Spinner
                     android:id="@+id/token_type_spinner"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_weight="0"
                     android:entries="@array/token_type"
                     android:theme="@style/SpinnerTheme" />
 
@@ -72,12 +72,12 @@
                 android:paddingBottom="24dp">
 
                 <TextView
-                    android:layout_width="65dp"
+                    android:layout_width="70dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight=".1"
                     android:paddingEnd="16dp"
                     android:text="@string/tokens_from"
                     android:textColor="@color/white"
-                    android:layout_weight=".1"
                     android:textSize="18dp"
                     android:textStyle="bold" />
 
@@ -88,7 +88,7 @@
 
                 <Spinner
                     android:id="@+id/token_from_spinner1"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:entries="@array/token_levels"
@@ -96,7 +96,7 @@
 
                 <Spinner
                     android:id="@+id/token_from_spinner2"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:entries="@array/token_levels"
@@ -104,7 +104,7 @@
 
                 <Spinner
                     android:id="@+id/token_from_spinner3"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:entries="@array/token_levels"
@@ -112,7 +112,7 @@
 
                 <Spinner
                     android:id="@+id/token_from_spinner4"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:entries="@array/token_levels"
@@ -129,11 +129,11 @@
                 android:paddingBottom="24dp">
 
                 <TextView
-                    android:layout_width="65dp"
+                    android:layout_width="70dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight=".1"
                     android:paddingEnd="16dp"
                     android:text="@string/tokens_to"
-                    android:layout_weight=".1"
                     android:textColor="@color/white"
                     android:textSize="18dp"
                     android:textStyle="bold" />
@@ -145,7 +145,7 @@
 
                 <Spinner
                     android:id="@+id/token_to_spinner1"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:entries="@array/token_levels"
@@ -153,7 +153,7 @@
 
                 <Spinner
                     android:id="@+id/token_to_spinner2"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:entries="@array/token_levels"
@@ -161,7 +161,7 @@
 
                 <Spinner
                     android:id="@+id/token_to_spinner3"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:entries="@array/token_levels"
@@ -169,7 +169,7 @@
 
                 <Spinner
                     android:id="@+id/token_to_spinner4"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:entries="@array/token_levels"
