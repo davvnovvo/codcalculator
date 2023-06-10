@@ -18,7 +18,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:navigationIcon="@drawable/ic_arrow"
+            app:navigationIcon="@drawable/ic_arrow2"
             app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
             app:titleTextColor="@color/white"
             tools:ignore="UnusedAttribute" />
