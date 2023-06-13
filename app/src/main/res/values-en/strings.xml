@@ -18,6 +18,7 @@
     <string name="language_french">French</string>
     <string name="language_russian">Russian</string>
     <string name="language_portuguese">Portuguese</string>
+    <string name="language_turkish">Turkish</string>
     <string name="reset_pass">RESET PASSWORD</string>
     <string name="emptyFields">This field is required</string>
     <string name="invalidEmail">Please enter a valid email</string>

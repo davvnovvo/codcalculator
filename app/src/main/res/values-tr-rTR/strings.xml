@@ -1,0 +1,193 @@
+<resources>
+    <string name="app_name">Cod Calculator</string>
+    <string name="email">E-posta</string>
+    <string name="username">Kullanıcı Adı</string>
+    <string name="password">Şifre</string>
+    <string name="password2">Şifreyi Tekrarla</string>
+    <string name="login">Giriş Yap</string>
+    <string name="forgot_password">Şifrenizi mi unuttunuz?</string>
+    <string name="createaccount">Hesap Oluştur</string>
+    <string name="createaccount2">HESAP OLUŞTUR</string>
+    <string name="create_account">Hesabınız yok mu?</string>
+    <string name="login_account">Zaten hesabınız var mı?</string>
+    <string name="language">Dil</string>
+    <string name="language2">Dili Seçin</string>
+    <string name="language_spanish">İspanyolca</string>
+    <string name="language_english">İngilizce</string>
+    <string name="language_french">Fransızca</string>
+    <string name="language_russian">Rusça</string>
+    <string name="language_portuguese">Portekizce</string>
+    <string name="language_turkish">Türkçe</string>
+    <string name="reset_pass">ŞİFREYİ SIFIRLA</string>
+    <string name="emptyFields">Bu alan boş bırakılamaz</string>
+    <string name="invalidEmail">Geçerli bir e-posta adresi girin</string>
+    <string name="mailNotFound">Girilen e-posta kayıtlı değil</string>
+    <string name="sentEmail">E-posta gönderildi</string>
+    <string name="exit">Uygulamadan çıkmak istiyor musunuz?</string>
+    <string name="volver">Geri Dön</string>
+    <string name="yes">Evet</string>
+    <string name="no">Hayır</string>
+
+    <!--AUTO GENERADO CON EL DRAWER-->
+    <string name="title_activity_main">AnaAktivite</string>
+    <string name="navigation_drawer_open">Navigasyon çekmecesini aç</string>
+    <string name="navigation_drawer_close">Navigasyon çekmecesini kapat</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigasyon başlığı</string>
+    <string name="action_settings">Ayarlar</string>
+
+    <string name="menu_resources">Kaynaklar</string>
+    <string name="menu_speedups">Hızlandırıcılar</string>
+    <string name="menu_honor">Onur</string>
+    <string name="menu_tokens">Jetonler</string>
+
+    <string name="rss_tab_gold">Altın</string>
+    <string name="rss_tab_wood">Odun</string>
+    <string name="rss_tab_stone">Taş</string>
+    <string name="rss_tab_mana">Mana</string>
+
+    <string name="image_label">Envanterinizin ekran görüntüsünü ekleyin</string>
+    <string name="_500">500</string>
+    <string name="_750">750</string>
+    <string name="_1k">1k</string>
+    <string name="_3k">3k</string>
+    <string name="_7_5k">7.5k</string>
+    <string name="_10k">10k</string>
+    <string name="_15k">15k</string>
+    <string name="_37_5k">37.5k</string>
+    <string name="_50k">50k</string>
+    <string name="_112_5k">112.5k</string>
+    <string name="_150k">150k</string>
+    <string name="_200k">200k</string>
+    <string name="_375k">375k</string>
+    <string name="_500k">500k</string>
+    <string name="_600k">600k</string>
+    <string name="_1_125m">1.125M</string>
+    <string name="_1_5m">1.5M</string>
+    <string name="_2m">2M</string>
+    <string name="_3_75m">3.75M</string>
+    <string name="_5m">5M</string>
+
+    <string name="speedups_building">Yapı İnşaası</string>
+    <string name="speedups_training">Eğitim</string>
+    <string name="speedups_research">Araştırma</string>
+    <string name="speedups_universal">Evrensel</string>
+
+    <string name="_1_min">1 dakika</string>
+    <string name="_5_min">5 dakika</string>
+    <string name="_10_min">10 dakika</string>
+    <string name="_15_min">15 dakika</string>
+    <string name="_30_min">30 dakika</string>
+    <string name="_60_min">60 dakika</string>
+    <string name="_3_hours">3 saat</string>
+    <string name="_8_hours">8 saat</string>
+    <string name="_15_hours">15 saat</string>
+    <string name="_24_hours">24 saat</string>
+    <string name="_3_days">3 gün</string>
+    <string name="_7_days">7 gün</string>
+    <string name="_30_days">30 gün</string>
+
+    <plurals name="day">
+        <item quantity="one">gün</item>
+        <item quantity="other">gün</item>
+    </plurals>
+    <plurals name="hour">
+        <item quantity="one">saat</item>
+        <item quantity="other">saat</item>
+    </plurals>
+    <plurals name="minute">
+        <item quantity="one">dakika</item>
+        <item quantity="other">dakika</item>
+    </plurals>
+    <string name="time_format_days_only">%s %s</string>
+    <string name="time_format_days_and_minutes">%s %s ve %s %s</string>
+    <string name="time_format_days_hours_and_minutes">%s %s, %s %s ve %s %s</string>
+    <string name="time_format_hours_only">%s %s</string>
+    <string name="time_format_hours_and_minutes">%s %s ve %s %s</string>
+    <string name="time_format_minutes_only">%s %s</string>
+
+    <string name="honor_inventory">Envanter</string>
+    <string name="honor_fromto">Seviyeler</string>
+
+    <!-- Google account -->
+    <string name="googleLoginError">Google ile oturum açma başarısız oldu</string>
+    <string name="googleLoginSuccess">Google ile başarılı oturum açma</string>
+
+    <!-- Signout -->
+    <string name="signout">Oturumu Kapat</string>
+    <string name="signout_confirm">Oturumu kapatmak istediğinizden emin misiniz?</string>
+    <string name="closedSession">Oturum Kapatıldı</string>
+
+    <!-- About us -->
+    <string name="faq">SSS</string>
+    <string name="faq2">Hakkımızda</string>
+    <string name="faq3">Bu uygulama, lisans derecemizin son projesi için braveras ve davvnovvo tarafından yapılmıştır</string>
+    <string name="faq4">GitHub</string>
+    <string name="faq5">davvnovvo\nBraveras</string>
+    <string name="faq6">Sorular</string>
+    <string name="faq7">Herhangi bir sorunuz varsa bize Discord üzerinden ulaşın: Braveras#7789</string>
+
+    <!-- Crete User -->
+    <string name="passwordsDoNotMatch">Parolalar eşleşmiyor</string>
+    <string name="error_password_length">6 karakter</string>
+    <string name="error_password_digit">1 rakam</string>
+    <string name="error_password_uppercase">1 büyük harf</string>
+    <string name="error_password_special">1 özel karakter</string>
+    <string name="error_password_header">Parola gereksinimlerini karşılamıyor:</string>
+    <string name="newUserSuccess">Doğrulama e-postası gönderildi</string>
+    <string name="newUserFail">Kullanıcı oluşturma hatası</string>
+    <string name="emailUsed">Bu e-posta zaten kullanılmış</string>
+
+    <!-- Login User -->
+    <string name="loginSuccess">Giriş başarılı</string>
+    <string name="mailNotVerified">E-posta doğrulanmadı</string>
+    <string name="wrongPassword">Yanlış şifre veya e-posta</string>
+    <string name="userNotFound">Kayıtlı kullanıcı bulunamadı</string>
+    <string name="loginError">Giriş hatası</string>
+
+    <!--Guest User-->
+    <string name="guestError">Anonim oturum açma hatası</string>
+    <string name="guestUser">Misafir</string>
+
+    <!-- BackPressed -->
+    <string name="press_to_exit">Tekrar basarak çıkmak için basın</string>
+
+    <!-- Password Requirements -->
+    <string name="password_requirements">Şifre gereksinimleri</string>
+    <string name="password_length">- En az 6 karakter</string>
+    <string name="password_uppercase">- En az 1 büyük harf</string>
+    <string name="password_number">- En az 1 sayı</string>
+    <string name="password_special_char">- En az 1 özel karakter</string>
+
+    <!-- Honor items -->
+    <string name="honor_5">5</string>
+    <string name="honor_10">10</string>
+    <string name="honor_20">20</string>
+    <string name="honor_50">50</string>
+    <string name="honor_100">100</string>
+    <string name="honor_200">200</string>
+    <string name="honor_500">500</string>
+    <string name="honor_1000">1000</string>
+    <string name="honor_2000">2000</string>
+    <string name="honor_5000">5000</string>
+    <string name="honor_level_prompt">Hedef Seviye</string>
+    <string name="honor_points">Honor Puanları</string>
+    <string name="honor_points_empty">Mevcut honor puanlarını girin</string>
+    <string name="honor_points_wrong_level">Hedef seviyeye ulaştınız</string>
+    <string name="honor_level_prompt_error">Geçerli bir hedef seviye seçin</string>
+    <string name="honor_help_info">Herhangi bir seviyeye yükselmek için ihtiyaç duyacağınız honor puanlarını burada hesaplayabilirsiniz. Mevcut honor puanlarınızı ve hedef seviyenizi girin.</string>
+
+    <!--Tokens -->
+    <string-array name="token_type">
+        <item>Elit</item>
+        <item>Epik</item>
+        <item>Destansı</item>
+    </string-array>
+    <string name="hero_tier">Kahraman Seviyesi:</string>
+    <string name="tokens_from">Başlangıç:</string>
+    <string name="tokens_to">Bitiş:</string>
+    <string name="tokens_help_info">Burada herhangi bir kahramanın yeteneklerini yükseltmek için ihtiyaç duyacağınız jetonları hesaplayabilirsiniz.\nMevcut seviyeyi seçin ve ulaşmak istediğiniz seviyeyi seçin.</string>
+    <string name="popup_help_title">Yardım</string>
+
+</resources>

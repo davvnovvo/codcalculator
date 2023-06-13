@@ -282,6 +282,9 @@ public class LoginActivity extends AppCompatActivity {
                     case R.id.portuguese:
                         changeLanguage("pt");
                         return true;
+                    case R.id.turkish:
+                        changeLanguage("tr");
+                        return true;
                     default:
                         return false;
                 }

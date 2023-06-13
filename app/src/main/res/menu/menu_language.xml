@@ -21,5 +21,9 @@
         android:id="@+id/portuguese"
         android:icon="@drawable/pr"
         android:title="@string/language_portuguese" />
+    <item
+        android:id="@+id/turkish"
+        android:icon="@drawable/turq"
+        android:title="@string/language_turkish" />
 
 </menu>

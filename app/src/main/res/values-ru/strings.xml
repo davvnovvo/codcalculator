@@ -18,6 +18,7 @@
     <string name="language_french">Французский</string>
     <string name="language_russian">Русский</string>
     <string name="language_portuguese">Португальский</string>
+    <string name="language_turkish">Турецкий</string>
     <string name="reset_pass">СБРОСИТЬ ПАРОЛЬ</string>
     <string name="emptyFields">Это поле обязательно</string>
     <string name="invalidEmail">Введите действительный адрес электронной почты</string>
