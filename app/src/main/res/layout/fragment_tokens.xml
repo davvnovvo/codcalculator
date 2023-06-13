@@ -64,22 +64,24 @@
 
             </LinearLayout>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:paddingEnd="16dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/tokens_from"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:orientation="horizontal"
                 android:paddingBottom="24dp">
-
-                <TextView
-                    android:layout_width="70dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight=".1"
-                    android:paddingEnd="16dp"
-                    android:text="@string/tokens_from"
-                    android:textColor="@color/white"
-                    android:textSize="18dp"
-                    android:textStyle="bold" />
 
                 <View
                     android:layout_width="0dp"
@@ -118,8 +120,19 @@
                     android:entries="@array/token_levels"
                     android:theme="@style/SpinnerTheme" />
 
-
             </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0"
+                android:paddingEnd="16dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/tokens_to"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -127,16 +140,6 @@
                 android:gravity="center_horizontal"
                 android:orientation="horizontal"
                 android:paddingBottom="24dp">
-
-                <TextView
-                    android:layout_width="70dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight=".1"
-                    android:paddingEnd="16dp"
-                    android:text="@string/tokens_to"
-                    android:textColor="@color/white"
-                    android:textSize="18dp"
-                    android:textStyle="bold" />
 
                 <View
                     android:layout_width="0dp"

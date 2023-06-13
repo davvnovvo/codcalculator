@@ -18,6 +18,7 @@
     <string name="language_french">Francês</string>
     <string name="language_russian">Russo</string>
     <string name="language_portuguese">Português</string>
+    <string name="language_turkish">Turco</string>
     <string name="reset_pass">REDEFINIR SENHA</string>
     <string name="emptyFields">Este campo é obrigatório</string>
     <string name="invalidEmail">Digite um e-mail válido</string>

@@ -17,6 +17,7 @@
     <string name="language_french">Francés</string>
     <string name="language_russian">Ruso</string>
     <string name="language_portuguese">Portugués</string>
+    <string name="language_turkish">Turco</string>
     <string name="reset_pass">RESTABLECER CONTRASEÑA</string>
     <string name="emptyFields">Este campo es obligatorio</string>
     <string name="invalidEmail">Introduce un correo válido</string>
